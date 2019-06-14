@@ -3,11 +3,13 @@ package testing;
 
 
 import java.net.HttpURLConnection;
+import java.util.List;
 import java.util.Map;
 
 import javax.net.ssl.HttpsURLConnection;
 
 import org.gitlab4j.api.Pager;
+import org.gitlab4j.api.models.Project;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -17,7 +19,6 @@ public class App
 {
     public static void main( String[] args ) throws Exception
     {
-        System.out.println( "Hello World!" );
         
 		HttpURLConnect http=new HttpURLConnect() ;
 		HttpURLConnection httpCon;
@@ -26,7 +27,6 @@ public class App
 		Gson gson=new GsonBuilder().setPrettyPrinting().create();
 		JsonParser jsonParser = new JsonParser();
 		String response;
-		Map responseInMapFormat;
 		
 		System.out.println("Sending a GET Request");
 		
@@ -43,8 +43,21 @@ public class App
 		System.out.println("Printing in JSON Format \n");
 		System.out.println(json);
 
+		System.out.println("Extracting 2 informations and saving it in a table \n");
 		
-
+		//MyProject[] myProject =gson.fromJson(json, MyProject[].class);
+		MyProject2 myProject =gson.fromJson(json, MyProject2.class);
+		
+		System.out.println("Printing the content of the table \n");
+		//myUtils.myProjectListing(myProject);
+		
+		
+		
+		List<String> myUrls=myUtils.myProjectListing2(myProject);
+		myUtils.ShowProjectUrl(myUrls);
+		
+		//ConnectWithGitLabApi connectWithGitLabApi = new ConnectWithGitLabApi();
+		//List<Project> projects=connectWithGitLabApi.getProjets();
 		
 
     }

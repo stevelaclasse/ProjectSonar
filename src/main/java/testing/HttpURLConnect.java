@@ -15,12 +15,44 @@ public class HttpURLConnect {
 
 	private final String USER_AGENT = "Mozilla/5.0";
 
-	private final String base_url = "https://gitlab.com/api/v4/";
+	//private final String base_url = "https://gitlab.com/api/v4/";
+	private  String base_url ="https://api.github.com";
+	private int urlPage=1;
+	private int urlPerPage=100;
+	private String path = "/search/repositories?q=language:java&page="+urlPage+"&per_page"+urlPerPage;
 
+	private void setPath(String strPath) {
+		this.path=strPath;
+	}
+	
+	private String getPath() {
+		return path;
+	}
+	
+	public int getUrlPage() {
+		return urlPage;
+	}
+
+	public void setUrlPage(int urlPage) {
+		this.urlPage = urlPage;
+	}
+
+	public int getUrlPerPage() {
+		return urlPerPage;
+	}
+
+	public void setUrlPerPage(int urlPerPage) {
+		this.urlPerPage = urlPerPage;
+	}
+
+
+	
 	// HTTP GET request
 	protected HttpURLConnection sendGet() throws Exception {
 
-		String path = "projects";
+		//String path = "projects/?with_programming_language=java";
+		//String path = "/repositories?since=100&language:java";
+		
 		String url = base_url + path;
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
