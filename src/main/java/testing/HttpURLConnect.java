@@ -16,36 +16,113 @@ public class HttpURLConnect {
 	private final String USER_AGENT = "Mozilla/5.0";
 
 	//private final String base_url = "https://gitlab.com/api/v4/";
+	
 	private  String base_url ="https://api.github.com";
+	
+
+
+	private String langageJavaUrls="langageJavaUrls.txt";
+	
+	private String mavenProjectUrls="mavenProjectUrls.txt";
+	
+	private String gradleProjectUrls="gradleProjectUrls.txt";
+	
+
+
+	private String jacocoPluginProjectMaven="JacocoPluginProjectMaven.txt";
+	
+	private String jacocoPluginProjectGradle="JacocoPluginProjectGradle.txt";
+	
 	private int urlPage=1;
 	private int urlPerPage=100;
-	private String path = "/search/repositories?q=language:java&page="+urlPage+"&per_page"+urlPerPage;
+	private int since=100;
 
-	private void setPath(String strPath) {
+
+	private String path = "/search/repositories?q=language:java&page="+getUrlPage()+"&per_page="+getUrlPerPage();
+
+	
+	
+	public int getSince() {
+		return since;
+	}
+
+	public void setSince(int since) {
+		this.since = since;
+	}
+	
+	protected String getBase_url() {
+		return base_url;
+	}
+
+	protected void setBase_url(String base_url) {
+		this.base_url = base_url;
+	}
+	
+	protected void setPath(String strPath) {
 		this.path=strPath;
 	}
 	
-	private String getPath() {
+	protected String getPath() {
 		return path;
 	}
 	
-	public int getUrlPage() {
-		return urlPage;
+	protected int getUrlPage() {
+		return this.urlPage;
 	}
 
-	public void setUrlPage(int urlPage) {
+	protected void setUrlPage(int urlPage) {
 		this.urlPage = urlPage;
 	}
 
-	public int getUrlPerPage() {
-		return urlPerPage;
+	protected int getUrlPerPage() {
+		return this.urlPerPage;
 	}
 
-	public void setUrlPerPage(int urlPerPage) {
+	protected void setUrlPerPage(int urlPerPage) {
 		this.urlPerPage = urlPerPage;
 	}
 
 
+	public String getLangageJavaUrls() {
+		return langageJavaUrls;
+	}
+
+	public void setLangageJavaUrls(String langageJavaUrls) {
+		this.langageJavaUrls = langageJavaUrls;
+	}
+
+	public String getMavenProjectUrls() {
+		return mavenProjectUrls;
+	}
+
+	public void setMavenProjectUrls(String mavenProjectUrls) {
+		this.mavenProjectUrls = mavenProjectUrls;
+	}
+
+	
+	public String getGradleProjectUrls() {
+		return gradleProjectUrls;
+	}
+
+	public void setGradleProjectUrls(String gradleProjectUrls) {
+		this.gradleProjectUrls = gradleProjectUrls;
+	}
+
+	public String getJacocoPluginProjectMaven() {
+		return jacocoPluginProjectMaven;
+	}
+
+	public void setJacocoPluginProjectMaven(String jacocoPluginProjectMaven) {
+		this.jacocoPluginProjectMaven = jacocoPluginProjectMaven;
+	}
+
+	public String getJacocoPluginProjectGradle() {
+		return jacocoPluginProjectGradle;
+	}
+
+	public void setJacocoPluginProjectGradle(String jacocoPluginProjectGradle) {
+		this.jacocoPluginProjectGradle = jacocoPluginProjectGradle;
+	}
 	
 	// HTTP GET request
 	protected HttpURLConnection sendGet() throws Exception {
@@ -53,7 +130,10 @@ public class HttpURLConnect {
 		//String path = "projects/?with_programming_language=java";
 		//String path = "/repositories?since=100&language:java";
 		
-		String url = base_url + path;
+		String url = getBase_url()+ getPath();
+		
+		System.out.println("Url in function SendGet:"+url);
+		
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 

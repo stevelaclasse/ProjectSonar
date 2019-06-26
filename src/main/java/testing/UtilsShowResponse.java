@@ -1,10 +1,17 @@
 package testing;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.List;
+
+
 
 import org.gitlab4j.api.models.Project;
 
@@ -21,7 +28,7 @@ public class UtilsShowResponse {
 		in.close();
 
 		// printing result
-		System.out.println(response.toString());
+		//System.out.println(response.toString());
 		
 		return response.toString();
 	}
@@ -64,5 +71,231 @@ public class UtilsShowResponse {
 		
 		return myPomXmlUrl;
 	}
+	
+	
+	protected void writeUrlLangageJavaInFile(List<String> projectUrl,String fileName) 
+			  throws IOException {
+
+			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+			    
+			    
+				for(int i=0;i<projectUrl.size();i++) {
+					
+					writer.write(projectUrl.get(i));
+					writer.write("\n");
+				}
+			     
+			    writer.close();
+			}
+	
+	protected void writeUrlMavenProjectInFile(List<String> projectUrl,String fileName) 
+			  throws Exception {
+
+			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+			    
+				HttpURLConnect http=new HttpURLConnect() ;
+				HttpURLConnection httpCon;
+				
+				int responseCode;
+				
+				http.setBase_url("https://raw.githubusercontent.com/");
+				
+				for(int i=0;i<projectUrl.size();i++) {
+					
+					http.setPath(projectUrl.get(i)+"/master/pom.xml");
+
+					httpCon=http.sendGet();
+					
+					responseCode=httpCon.getResponseCode();
+					
+					if (responseCode==200) {
+					writer.write(projectUrl.get(i));
+					System.out.println("testing raw pom.xml:"+http.getPath());
+					writer.write("\n");
+					}
+				}
+			     
+			    writer.close();
+			}
+	
+	protected void writeUrlGradleProjectInFile(List<String> projectUrl,String fileName) 
+			  throws Exception {
+
+			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+			    
+				HttpURLConnect http=new HttpURLConnect() ;
+				HttpURLConnection httpCon;
+				
+				int responseCode;
+				
+				http.setBase_url("https://raw.githubusercontent.com/");
+				
+				for(int i=0;i<projectUrl.size();i++) {
+					
+					http.setPath(projectUrl.get(i)+"/master/build.gradle");
+
+					httpCon=http.sendGet();
+					
+					responseCode=httpCon.getResponseCode();
+					
+					if (responseCode==200) {
+					writer.write(projectUrl.get(i));
+					System.out.println("testing raw build.gradle:"+http.getPath());
+					writer.write("\n");
+					}
+				}
+			     
+			    writer.close();
+			}
+	
+	protected void writeUrlJacocoGradleInFile(List<String> projectUrl,String fileName) 
+			  throws Exception {
+
+	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+
+		BufferedReader read ;	    
+	    
+		HttpURLConnect http=new HttpURLConnect() ;
+		HttpURLConnection httpCon;
+		int responseCode;
+		String responseData ="";
+		String matchJacocoPlugin="apply plugin: 'jacoco'";
+		http.setBase_url("https://raw.githubusercontent.com/");
+		
+		int jacocoPluginFound;
+		int totalJacocopluginFound=0;
+		
+		for(int i=0;i<projectUrl.size();i++) {
+			
+			http.setPath(projectUrl.get(i)+"/master/build.gradle");
+
+			httpCon=http.sendGet();
+			
+			responseCode=httpCon.getResponseCode();
+			
+			jacocoPluginFound=0;
+			
+			System.out.println("testing raw build.gradle:"+http.getPath());
+			
+			if (responseCode==200) {
+			
+			System.out.println("There ist a raw build.gradle at :"+http.getPath());
+			read = new BufferedReader(new InputStreamReader(httpCon.getInputStream()));
+						
+
+			while ((responseData = read.readLine()) != null) {
+				if(responseData.trim().contains(matchJacocoPlugin.trim())==true) { 
+						jacocoPluginFound++;
+						totalJacocopluginFound++;
+						System.out.println("Plugin Jacoco Found:"+totalJacocopluginFound);
+						System.out.println("Line of the Plugin Jacoco:"+responseData);
+						break;
+				}
+			}
+			read.close();
+			
+			if(jacocoPluginFound==1) {
+				writer.write(projectUrl.get(i));
+				writer.write("\n");
+			}
+			else {
+				System.out.println("No Jacoco Plugin at:"+http.getPath());
+			}
+
+			
+			
+			}
+			
+			else {
+				System.out.println("NO raw build.gradle at :"+http.getPath());	
+			}
+		}
+	     
+	    writer.close();
+	}
+	
+	
+	protected void writeUrlJacocoMavenInFile(List<String> projectUrl,String fileName) 
+			  throws Exception {
+
+	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+
+		BufferedReader read ;	    
+	    
+		HttpURLConnect http=new HttpURLConnect() ;
+		HttpURLConnection httpCon;
+		int responseCode;
+		String responseData ="";
+		String matchJacocoPlugin="<groupId>org.jacoco</groupId>";
+		http.setBase_url("https://raw.githubusercontent.com/");
+		
+		int jacocoPluginFound;
+		int totalJacocopluginFound=0;
+		
+		for(int i=0;i<projectUrl.size();i++) {
+			
+			http.setPath(projectUrl.get(i)+"/master/pom.xml");
+
+			httpCon=http.sendGet();
+			
+			responseCode=httpCon.getResponseCode();
+			
+			jacocoPluginFound=0;
+			
+			System.out.println("testing raw pom.xml:"+http.getPath());
+			
+			if (responseCode==200) {
+			
+			System.out.println("There ist a raw pom.xml at :"+http.getPath());
+			read = new BufferedReader(new InputStreamReader(httpCon.getInputStream()));
+						
+
+			while ((responseData = read.readLine()) != null) {
+				if(responseData.trim().contains(matchJacocoPlugin)==true) { 
+						jacocoPluginFound++;
+						totalJacocopluginFound++;
+						System.out.println("Plugin Jacoco Found:"+totalJacocopluginFound);
+						System.out.println("Line of the Plugin Jacoco:"+responseData);
+						break;
+				}
+			}
+			read.close();
+			
+			if(jacocoPluginFound==1) {
+				writer.write(projectUrl.get(i));
+				writer.write("\n");
+			}
+			else {
+				System.out.println("No Jacoco Plugin at:"+http.getPath());
+			}
+
+			
+			}
+			
+			else {
+				System.out.println("NO raw pom.xml at :"+http.getPath());	
+			}
+		}
+	     
+	    writer.close();
+	}
+	
+	
+	  protected List<String> readUrlFromFile(String fileName)throws Exception 
+	  { 
+
+		  List<String> theUrl=new ArrayList<String>() ;
+		  
+	  File file = new File(fileName); 
+	  
+	  BufferedReader br = new BufferedReader(new FileReader(file)); 
+	  
+	  String st; 
+	  while ((st = br.readLine()) != null) {
+	    theUrl.add(st); 
+	  } 
+	  return theUrl;
+	  
+	  }
 	
 }
