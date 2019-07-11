@@ -10,3 +10,11 @@ String full_name;
 class MyProject2{
 List<MyProject> items ;		
 }
+
+class MyRepositories{
+String url ;		
+}
+
+class MyProject1{
+	List<MyRepositories> repositories;
+}

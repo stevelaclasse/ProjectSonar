@@ -4,8 +4,9 @@ package testing;
 
 import java.net.HttpURLConnection;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
-
+import java.util.Set;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -33,19 +34,66 @@ public class App
 		String response;
 		List<String> myUrls=new ArrayList<String>();
 		
-/*
+		List<String> myUrls1=new ArrayList<String>();
+		
+		
+		
+		  for (int i=1;i<=10;i++) {
+		  
+		  System.out.println("Sending a GET Request Nummber:"+i);
+		  
+		  http.setUrlPage(i);
+		  
+		  http.setPath(http.getPath1()+http.getUrlPage()+"&per_page="+http.getUrlPerPage());
+		  
+		  System.out.println("UrlPage From Main function="+http.getUrlPage());
+		  
+		  System.out.println("Url From Main function="+http.getPath());
+		  
+		  httpCon=http.sendGet();
+		  
+		  
+
+		  
+		  response=myUtils.printResponse(httpCon);
+		  
+		  String json = gson.toJson(jsonParser.parse(response));
+		  
+		  
+		  System.out.println("Printing in JSON Format \n");
+		  
+		  //System.out.println(json);
+		  
+		  System.out.println("Extracting 2 informations and saving it in a table \n");
+		  
+		  //MyProject[] myProject =gson.fromJson(json, MyProject[].class); 
+		  MyProject2 myProject =gson.fromJson(json, MyProject2.class);
+		  
+		  System.out.println("Printing the content of the table \n");
+		  //myUtils.myProjectListing(myProject);
+		  
+		  
+		  myUrls.addAll(myUtils.myProjectListing2(myProject)); //add all Urls
+		  
+		  }
+		 
+		
+		//  myUtils.writeUrlLangageJavaInFile(myUrls, http.getLangageJavaUrls()); //Save all the urls that where fetch  
+
+		  
 		
 		for (int i=1;i<=10;i++) {
-		
-		System.out.println("Sending a GET Request Nummber:"+i);
+			
+		System.out.println("Sending a Second time GET Request Nummber:"+i);
 		
 		http.setUrlPage(i);
+		http.setPath(http.getPath2()+http.getUrlPage());
 
+		System.out.println("UrlPage From Main function="+http.getUrlPage());
+		System.out.println("Url_Path From Main function="+http.getPath());
+		
 		httpCon=http.sendGet();
 		
-		
-		System.out.println("UrlPage From Main function="+http.getUrlPage());
-		System.out.println("Url From Main function="+http.getPath());
 		
 		response=myUtils.printResponse(httpCon);
 		
@@ -59,35 +107,45 @@ public class App
 		System.out.println("Extracting 2 informations and saving it in a table \n");
 		
 		//MyProject[] myProject =gson.fromJson(json, MyProject[].class);
-		MyProject2 myProject =gson.fromJson(json, MyProject2.class);
+		MyProject1 myProject1 =gson.fromJson(json, MyProject1.class);
 		
 		System.out.println("Printing the content of the table \n");
 		//myUtils.myProjectListing(myProject);
 		
 		
 		
-		myUrls.addAll(myUtils.myProjectListing2(myProject)); //add all Urls
+		myUrls1.addAll(myUtils.myProjectListing1(myProject1)); //add all Urls
 		
-		}	
+		}
+		
+		
 		
 		//myUtils.ShowProjectUrl(myUrls);   //Show all the Urls that where recorded
 		
 		
-		myUtils.writeUrlLangageJavaInFile(myUrls, http.getLangageJavaUrls()); //Save all the urls that where fetch
+		//myUtils.writeUrlLangageJavaInFile(myUrls1, http.getLangageJavaUrls()); //Save all the urls that where fetch
+		
+		List<String> myUrlsAll=new ArrayList<String>();
+		
+		myUrlsAll.addAll(myUrls);
+		
+		myUrlsAll.addAll(myUrls1);
+		
+		Set<String> mySetRemoveDouble = new HashSet<String>(myUrlsAll);
+		  
+		List<String> myUrlsUniqueEntry = new ArrayList<String>(mySetRemoveDouble);
 		
 		
+		myUtils.writeUrlLangageJavaInFile(myUrlsUniqueEntry, http.getLangageJavaUrls()); //Save all the urls uniquely that where fetch
 		
 		
-		*/
+		List<String> myUrlsLangageJava=new ArrayList<String>() ;
 		
+		myUrlsLangageJava=myUtils.readUrlFromFile(http.getLangageJavaUrls());//read all the Language Java Urls
 		
-	//	List<String> myUrlsLangageJava=new ArrayList<String>() ;
+		myUtils.writeUrlMavenProjectInFile(myUrlsLangageJava, http.getMavenProjectUrls()); //sort only Maven Project
 		
-	//	myUrlsLangageJava=myUtils.readUrlFromFile(http.getLangageJavaUrls());//read all the Language Java Urls
-		
-	//	myUtils.writeUrlMavenProjectInFile(myUrlsLangageJava, http.getMavenProjectUrls()); //sort only Maven Project
-		
-	//	myUtils.writeUrlGradleProjectInFile(myUrlsLangageJava, http.getGradleProjectUrls()); //sort only Gradle Project
+		myUtils.writeUrlGradleProjectInFile(myUrlsLangageJava, http.getGradleProjectUrls()); //sort only Gradle Project
 		
 		
 		
@@ -112,9 +170,7 @@ public class App
 		//JacocoPluginUrl=myUtils.readUrlFromFile(http.getJacocoPluginProject());//read all Project with the Plugin Jacoco
 		
 		//myUtils.ShowProjectUrl(JacocoPluginUrl);
-		
-		//ConnectWithGitLabApi connectWithGitLabApi = new ConnectWithGitLabApi();
-		//List<Project> projects=connectWithGitLabApi.getProjets();
+
 		
 
     }

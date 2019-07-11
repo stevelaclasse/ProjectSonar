@@ -40,11 +40,17 @@ public class UtilsShowResponse {
 		}
 	}
 	
-	protected void myProjectListing(MyProject[] myProject) {
-		for(int i=0;i<myProject.length;i++) {
-			System.out.println(myProject[i].full_name);
+	
+	protected List<String> myProjectListing1(MyProject1 myProject1) {
+		String removeBaseUrl="https://github.com/";
+		List<String> projectUrl1=new ArrayList<String>() ;
+		for(int i=0;i<myProject1.repositories.size();i++) {
+			//projectUrl1.add(myProject1.repositories.get(i).toString().replace(removeBaseUrl,""));
+			projectUrl1.add(myProject1.repositories.get(i).url.replace(removeBaseUrl,""));
 		}
+		return projectUrl1;
 	}
+	
 	
 	protected List<String> myProjectListing2(MyProject2 myProject) {
 		List<String> projectUrl=new ArrayList<String>() ;
@@ -53,6 +59,7 @@ public class UtilsShowResponse {
 		}
 		return projectUrl;
 	}
+	
 	
 	protected void ShowProjectUrl(List<String> projectUrl) {
 		for(int i=0;i<projectUrl.size();i++) {
@@ -87,6 +94,8 @@ public class UtilsShowResponse {
 			     
 			    writer.close();
 			}
+
+	
 	
 	protected void writeUrlMavenProjectInFile(List<String> projectUrl,String fileName) 
 			  throws Exception {

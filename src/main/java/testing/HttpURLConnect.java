@@ -38,7 +38,11 @@ public class HttpURLConnect {
 	private int since=100;
 
 
-	private String path = "/search/repositories?q=language:java&page="+getUrlPage()+"&per_page="+getUrlPerPage();
+	private String path = "";
+	
+	private String path1 = "/search/repositories?q=language:java&page=";
+	
+	private String path2="/legacy/repos/search/language=java?start_page=";
 
 	
 	
@@ -62,8 +66,25 @@ public class HttpURLConnect {
 		this.path=strPath;
 	}
 	
+	protected void setPath2(String strPath) {
+		this.path2=strPath;
+	}
+	
+	protected void setPath1(String strPath) {
+		this.path1=strPath;
+	}
+	
 	protected String getPath() {
 		return path;
+	}
+	
+	
+	protected String getPath1() {
+		return path1;
+	}
+	
+	protected String getPath2() {
+		return path2;
 	}
 	
 	protected int getUrlPage() {
