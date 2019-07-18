@@ -19,23 +19,34 @@ public class HttpURLConnect {
 	
 	private  String base_url ="https://api.github.com";
 	
+	private String workingDirectory="Projects";
 
-
-	private String langageJavaUrls="langageJavaUrls.txt";
-	
-	private String mavenProjectUrls="mavenProjectUrls.txt";
-	
-	private String gradleProjectUrls="gradleProjectUrls.txt";
+	private String langageJavaUrlsFileName=getWorkingDirectory()+"/langageJavaUrls.txt";
 	
 
+	private String mavenProjectUrlsFileName=getWorkingDirectory()+"/mavenProjectUrls.txt";
+	
+	private String gradleProjectUrlsFileName=getWorkingDirectory()+"/gradleProjectUrls.txt";
+	
 
-	private String jacocoPluginProjectMaven="JacocoPluginProjectMaven.txt";
+
+	private String jacocoPluginProjectMavenFileName=getWorkingDirectory()+"/JacocoPluginProjectMaven.txt";
 	
-	private String jacocoPluginProjectGradle="JacocoPluginProjectGradle.txt";
+	private String jacocoPluginProjectGradleFileName=getWorkingDirectory()+"/JacocoPluginProjectGradle.txt";
 	
-	private String coberturaPluginProjectGradle="CoberturaPluginProjectGradle.txt";
+	private String coberturaPluginProjectGradleFileName=getWorkingDirectory()+"/CoberturaPluginProjectGradle.txt";
 	
-	private String coberturaPluginProjectMaven="CoberturaPluginProjectMaven.txt";
+	private String coberturaPluginProjectMavenFileName=getWorkingDirectory()+"/CoberturaPluginProjectMaven.txt";
+	
+
+	private String jacocoPluginProjectMavenBatFileName=getWorkingDirectory()+"/JacocoPluginProjectMavenBat.bat";
+	
+	private String jacocoPluginProjectGradleBatFileName=getWorkingDirectory()+"/JacocoPluginProjectGradleBat.bat";
+	
+	private String coberturaPluginProjectGradleBatFileName=getWorkingDirectory()+"/CoberturaPluginProjectGradleBat.bat";
+	
+	private String coberturaPluginProjectMavenBatFileName=getWorkingDirectory()+"/CoberturaPluginProjectMavenBat.bat";
+	
 
 	private int urlPage=1;
 	private int urlPerPage=100;
@@ -48,7 +59,13 @@ public class HttpURLConnect {
 	
 	private String path2="/legacy/repos/search/language=java?start_page=";
 
-	
+	public String getWorkingDirectory() {
+		return workingDirectory;
+	}
+
+	public void setWorkingDirectory(String workingDirectory) {
+		this.workingDirectory = workingDirectory;
+	}
 	
 	public int getSince() {
 		return since;
@@ -108,62 +125,94 @@ public class HttpURLConnect {
 	}
 
 
-	public String getLangageJavaUrls() {
-		return langageJavaUrls;
+	public String getLangageJavaUrlsFileName() {
+		return langageJavaUrlsFileName;
 	}
 
-	public void setLangageJavaUrls(String langageJavaUrls) {
-		this.langageJavaUrls = langageJavaUrls;
+	public void setLangageJavaUrlsFileName(String langageJavaUrls) {
+		this.langageJavaUrlsFileName = langageJavaUrls;
 	}
 
-	public String getMavenProjectUrls() {
-		return mavenProjectUrls;
+	public String getMavenProjectUrlsFileName() {
+		return mavenProjectUrlsFileName;
 	}
 
-	public void setMavenProjectUrls(String mavenProjectUrls) {
-		this.mavenProjectUrls = mavenProjectUrls;
+	public void setMavenProjectUrlsFileName(String mavenProjectUrls) {
+		this.mavenProjectUrlsFileName = mavenProjectUrls;
 	}
 
 	
-	public String getGradleProjectUrls() {
-		return gradleProjectUrls;
+	public String getGradleProjectUrlsFileName() {
+		return gradleProjectUrlsFileName;
 	}
 
-	public void setGradleProjectUrls(String gradleProjectUrls) {
-		this.gradleProjectUrls = gradleProjectUrls;
+	public void setGradleProjectUrlsFileName(String gradleProjectUrls) {
+		this.gradleProjectUrlsFileName = gradleProjectUrls;
 	}
 
-	public String getJacocoPluginProjectMaven() {
-		return jacocoPluginProjectMaven;
+	public String getJacocoPluginProjectMavenFileName() {
+		return jacocoPluginProjectMavenFileName;
 	}
 
-	public void setJacocoPluginProjectMaven(String jacocoPluginProjectMaven) {
-		this.jacocoPluginProjectMaven = jacocoPluginProjectMaven;
+	public void setJacocoPluginProjectMavenFileName(String jacocoPluginProjectMaven) {
+		this.jacocoPluginProjectMavenFileName = jacocoPluginProjectMaven;
 	}
 
-	public String getJacocoPluginProjectGradle() {
-		return jacocoPluginProjectGradle;
+	public String getJacocoPluginProjectGradleFileName() {
+		return jacocoPluginProjectGradleFileName;
 	}
 
-	public void setJacocoPluginProjectGradle(String jacocoPluginProjectGradle) {
-		this.jacocoPluginProjectGradle = jacocoPluginProjectGradle;
+	public void setJacocoPluginProjectGradleFileName(String jacocoPluginProjectGradle) {
+		this.jacocoPluginProjectGradleFileName = jacocoPluginProjectGradle;
 	}
 	
 	
-	public String getCoberturaPluginProjectGradle() {
-		return coberturaPluginProjectGradle;
+	public String getCoberturaPluginProjectGradleFileName() {
+		return coberturaPluginProjectGradleFileName;
 	}
 
-	public void setCoberturaPluginProjectGradle(String coberturaPluginProjectGradle) {
-		this.coberturaPluginProjectGradle = coberturaPluginProjectGradle;
+	public void setCoberturaPluginProjectGradleFileName(String coberturaPluginProjectGradle) {
+		this.coberturaPluginProjectGradleFileName = coberturaPluginProjectGradle;
 	}
 
-	public String getCoberturaPluginProjectMaven() {
-		return coberturaPluginProjectMaven;
+	public String getCoberturaPluginProjectMavenFileName() {
+		return coberturaPluginProjectMavenFileName;
 	}
 
-	public void setCoberturaPluginProjectMaven(String coberturaPluginProjectMaven) {
-		this.coberturaPluginProjectMaven = coberturaPluginProjectMaven;
+	public void setCoberturaPluginProjectMavenFileName(String coberturaPluginProjectMaven) {
+		this.coberturaPluginProjectMavenFileName = coberturaPluginProjectMaven;
+	}
+	
+	public String getJacocoPluginProjectMavenBatFileName() {
+		return jacocoPluginProjectMavenBatFileName;
+	}
+
+	public void setJacocoPluginProjectMavenBatFileName(String jacocoPluginProjectMavenBat) {
+		this.jacocoPluginProjectMavenBatFileName = jacocoPluginProjectMavenBat;
+	}
+
+	public String getJacocoPluginProjectGradleBatFileName() {
+		return jacocoPluginProjectGradleBatFileName;
+	}
+
+	public void setJacocoPluginProjectGradleBatFileName(String jacocoPluginProjectGradleBat) {
+		this.jacocoPluginProjectGradleBatFileName = jacocoPluginProjectGradleBat;
+	}
+
+	public String getCoberturaPluginProjectGradleBatFileName() {
+		return coberturaPluginProjectGradleBatFileName;
+	}
+
+	public void setCoberturaPluginProjectGradleBatFileName(String coberturaPluginProjectGradleBat) {
+		this.coberturaPluginProjectGradleBatFileName = coberturaPluginProjectGradleBat;
+	}
+
+	public String getCoberturaPluginProjectMavenBatFileName() {
+		return coberturaPluginProjectMavenBatFileName;
+	}
+
+	public void setCoberturaPluginProjectMavenBatFileName(String coberturaPluginProjectMavenBat) {
+		this.coberturaPluginProjectMavenBatFileName = coberturaPluginProjectMavenBat;
 	}
 	
 	// HTTP GET request

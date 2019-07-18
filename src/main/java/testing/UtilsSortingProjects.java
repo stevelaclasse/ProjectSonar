@@ -15,7 +15,7 @@ import java.util.List;
 
 import org.gitlab4j.api.models.Project;
 
-public class UtilsShowResponse {
+public class UtilsSortingProjects {
 	
 	protected String printResponse(HttpURLConnection connection) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
