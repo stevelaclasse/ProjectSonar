@@ -235,7 +235,8 @@ public class UtilsShowResponse {
 		HttpURLConnection httpCon;
 		int responseCode;
 		String responseData ="";
-		String matchJacocoPlugin="<groupId>org.jacoco</groupId>";
+		//String matchJacocoPlugin="<groupId>org.jacoco</groupId>";
+		String matchJacocoPlugin="<artifactId>jacoco-maven-plugin</artifactId>";
 		http.setBase_url("https://raw.githubusercontent.com/");
 		
 		int jacocoPluginFound;
@@ -289,6 +290,156 @@ public class UtilsShowResponse {
 	    writer.close();
 	}
 	
+	
+	
+	protected void writeUrlCoberturaGradleInFile(List<String> projectUrl,String fileName) 
+			  throws Exception {
+
+	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
+
+		BufferedReader read ;	    
+	    
+		HttpURLConnect http=new HttpURLConnect() ;
+		HttpURLConnection httpCon;
+		int responseCode;
+		String responseData ="";
+		String matchJacocoPlugin1="apply plugin: 'net.saliman.cobertura'";
+		String matchJacocoPlugin2="apply plugin: 'cobertura'";
+		http.setBase_url("https://raw.githubusercontent.com/");
+		
+		int jacocoPluginFound;
+		int totalJacocopluginFound=0;
+		
+		for(int i=0;i<projectUrl.size();i++) {
+			
+			http.setPath(projectUrl.get(i)+"/master/build.gradle");
+
+			httpCon=http.sendGet();
+			
+			responseCode=httpCon.getResponseCode();
+			
+			jacocoPluginFound=0;
+			
+			System.out.println("testing raw build.gradle:"+http.getPath());
+			
+			if (responseCode==200) {
+			
+			System.out.println("There ist a raw build.gradle at :"+http.getPath());
+			read = new BufferedReader(new InputStreamReader(httpCon.getInputStream()));
+						
+
+			while ((responseData = read.readLine()) != null) {
+				if(responseData.trim().contains(matchJacocoPlugin1.trim())==true || responseData.trim().contains(matchJacocoPlugin2.trim())==true) { 
+						jacocoPluginFound++;
+						totalJacocopluginFound++;
+						System.out.println("Plugin Cobertura Found:"+totalJacocopluginFound);
+						System.out.println("Line of the Plugin Cobertura:"+responseData);
+						break;
+				}
+			}
+			read.close();
+			
+			if(jacocoPluginFound==1) {
+				writer.write(projectUrl.get(i));
+				writer.write("\n");
+			}
+			else {
+				System.out.println("No Cobertura Plugin at:"+http.getPath());
+			}
+
+			
+			
+			}
+			
+			else {
+				System.out.println("NO raw build.gradle at :"+http.getPath());	
+			}
+		}
+	     
+	    writer.close();
+	}
+	
+	
+	protected void writeUrlCoberturaMavenInFile(List<String> projectUrl,String fileName) 
+			  throws Exception {
+
+	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
+
+		BufferedReader read ;	    
+	    
+		HttpURLConnect http=new HttpURLConnect() ;
+		HttpURLConnection httpCon;
+		int responseCode;
+		String responseData ="";
+		String matchJacocoPlugin="<artifactId>cobertura-maven-plugin</artifactId>";
+		http.setBase_url("https://raw.githubusercontent.com/");
+		
+		int jacocoPluginFound;
+		int totalJacocopluginFound=0;
+		
+		for(int i=0;i<projectUrl.size();i++) {
+			
+			http.setPath(projectUrl.get(i)+"/master/pom.xml");
+
+			httpCon=http.sendGet();
+			
+			responseCode=httpCon.getResponseCode();
+			
+			jacocoPluginFound=0;
+			
+			System.out.println("testing raw pom.xml:"+http.getPath());
+			
+			if (responseCode==200) {
+			
+			System.out.println("There ist a raw pom.xml at :"+http.getPath());
+			read = new BufferedReader(new InputStreamReader(httpCon.getInputStream()));
+						
+
+			while ((responseData = read.readLine()) != null) {
+				if(responseData.trim().contains(matchJacocoPlugin)==true) { 
+						jacocoPluginFound++;
+						totalJacocopluginFound++;
+						System.out.println("Plugin Cobertura Found:"+totalJacocopluginFound);
+						System.out.println("Line of the Plugin Cobertura:"+responseData);
+						break;
+				}
+			}
+			read.close();
+			
+			if(jacocoPluginFound==1) {
+				writer.write(projectUrl.get(i));
+				writer.write("\n");
+			}
+			else {
+				System.out.println("No Cobertura Plugin at:"+http.getPath());
+			}
+
+			
+			}
+			
+			else {
+				System.out.println("NO raw pom.xml at :"+http.getPath());	
+			}
+		}
+	     
+	    writer.close();
+	}
+	
+	
+	protected void writeUrlInFile(List<String> projectUrl,String fileName) 
+			  throws Exception {
+
+	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));	    
+		
+		for(int i=0;i<projectUrl.size();i++) {
+			
+
+				writer.write(projectUrl.get(i));
+				writer.write("\n");
+		}
+	     
+	    writer.close();
+	}
 	
 	  protected List<String> readUrlFromFile(String fileName)throws Exception 
 	  { 

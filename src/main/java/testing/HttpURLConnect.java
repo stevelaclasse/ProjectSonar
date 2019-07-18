@@ -33,6 +33,10 @@ public class HttpURLConnect {
 	
 	private String jacocoPluginProjectGradle="JacocoPluginProjectGradle.txt";
 	
+	private String coberturaPluginProjectGradle="CoberturaPluginProjectGradle.txt";
+	
+	private String coberturaPluginProjectMaven="CoberturaPluginProjectMaven.txt";
+
 	private int urlPage=1;
 	private int urlPerPage=100;
 	private int since=100;
@@ -143,6 +147,23 @@ public class HttpURLConnect {
 
 	public void setJacocoPluginProjectGradle(String jacocoPluginProjectGradle) {
 		this.jacocoPluginProjectGradle = jacocoPluginProjectGradle;
+	}
+	
+	
+	public String getCoberturaPluginProjectGradle() {
+		return coberturaPluginProjectGradle;
+	}
+
+	public void setCoberturaPluginProjectGradle(String coberturaPluginProjectGradle) {
+		this.coberturaPluginProjectGradle = coberturaPluginProjectGradle;
+	}
+
+	public String getCoberturaPluginProjectMaven() {
+		return coberturaPluginProjectMaven;
+	}
+
+	public void setCoberturaPluginProjectMaven(String coberturaPluginProjectMaven) {
+		this.coberturaPluginProjectMaven = coberturaPluginProjectMaven;
 	}
 	
 	// HTTP GET request
