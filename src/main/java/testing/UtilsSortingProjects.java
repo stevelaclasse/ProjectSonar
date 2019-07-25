@@ -83,7 +83,7 @@ public class UtilsSortingProjects {
 	protected void writeUrlLangageJavaInFile(List<String> projectUrl,String fileName) 
 			  throws IOException {
 
-			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
 			    
 			    
 				for(int i=0;i<projectUrl.size();i++) {
@@ -100,7 +100,7 @@ public class UtilsSortingProjects {
 	protected void writeUrlMavenProjectInFile(List<String> projectUrl,String fileName) 
 			  throws Exception {
 
-			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
 			    
 				HttpURLConnect http=new HttpURLConnect() ;
 				HttpURLConnection httpCon;
@@ -130,7 +130,7 @@ public class UtilsSortingProjects {
 	protected void writeUrlGradleProjectInFile(List<String> projectUrl,String fileName) 
 			  throws Exception {
 
-			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
 			    
 				HttpURLConnect http=new HttpURLConnect() ;
 				HttpURLConnection httpCon;
@@ -160,7 +160,7 @@ public class UtilsSortingProjects {
 	protected void writeUrlJacocoGradleInFile(List<String> projectUrl,String fileName) 
 			  throws Exception {
 
-	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
 
 		BufferedReader read ;	    
 	    
@@ -227,7 +227,7 @@ public class UtilsSortingProjects {
 	protected void writeUrlJacocoMavenInFile(List<String> projectUrl,String fileName) 
 			  throws Exception {
 
-	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName,true));
+	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
 
 		BufferedReader read ;	    
 	    

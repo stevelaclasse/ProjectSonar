@@ -238,22 +238,58 @@ protected void extractingProjectsFromGithub() throws Exception
 protected void createBatCommandForGitDownloadAndCompilationAndSonartest() throws Exception{
 	
 	HttpURLConnect http=new HttpURLConnect() ;
-	HttpURLConnection httpCon;
 	UtilsGeneratingBatFiles nextUtils=new UtilsGeneratingBatFiles();
 	
 	String checkWorkingDirectoryName=http.getWorkingDirectory();
+	String checkWorkingDirectoryBatName=http.getBatDirectory();
+	String checkWorkingDirectoryGitBatName=http.getGitBatDirectory();
+	
     Path checkWorkingDirectory = Paths.get(checkWorkingDirectoryName);
-
+    Path checkWorkingBatDirectory = Paths.get(checkWorkingDirectoryBatName);
+    Path checkWorkingGitBatDirectory = Paths.get(checkWorkingDirectoryGitBatName);
+ 
+    System.out.println(checkWorkingDirectory.getRoot());
+    System.out.println(checkWorkingBatDirectory.getRoot());
+    System.out.println(checkWorkingGitBatDirectory.getRoot());
+    
     if (!Files.exists(checkWorkingDirectory)) {
         
         Files.createDirectory(checkWorkingDirectory);
         System.out.println("Directory created");
     } else {
         
-        System.out.println("Directory already exists");
+        System.out.println("Directory "+checkWorkingDirectory+" already exists");
     }
     
+    
+    if (!Files.exists(checkWorkingBatDirectory)) {
+        
+        Files.createDirectory(checkWorkingBatDirectory);
+        System.out.println("Directory created");
+    } else {
+        
+        System.out.println("Directory "+checkWorkingBatDirectory+" already exists");
+    }
+    
+    
+    if (!Files.exists(checkWorkingGitBatDirectory)) {
+        
+        Files.createDirectory(checkWorkingGitBatDirectory);
+        System.out.println("Directory created");
+    } else {
+        
+        System.out.println("Directory "+checkWorkingGitBatDirectory+" already exists");
+    }
+    
+    
+    
     nextUtils.creatingGitCommandLine();
+    
+    nextUtils.creatingMavenPlugingJacocoAndCoberturaCompileCommandLine();
+    
+    nextUtils.creatingGradlePlugingJacocoAndCoberturaCompileCommandLine();
+    
+    nextUtils.creatingMavenAndGradlePlugingJacocoAndCoberturaSonartestCommandLine();
 	
 	}
 
