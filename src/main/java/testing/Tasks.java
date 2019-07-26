@@ -290,7 +290,47 @@ protected void createBatCommandForGitDownloadAndCompilationAndSonartest() throws
     nextUtils.creatingGradlePlugingJacocoAndCoberturaCompileCommandLine();
     
     nextUtils.creatingMavenAndGradlePlugingJacocoAndCoberturaSonartestCommandLine();
+    
 	
+	}
+
+	protected void  launchBatCommandInBatFiles() throws Exception {
+		UtilsexecutingBatCommands utilsBatExecutor=new UtilsexecutingBatCommands() ;
+		HttpURLConnect http=new HttpURLConnect() ;
+		
+		/*
+		 * System.out.println("Begining with GIT JACOCO MAVEN");
+		 * utilsBatExecutor.executeCommandInBatFile(http.
+		 * getJacocoPluginProjectMavenGitCommandLineBatFileName());
+		 * System.out.println("Begining with GIT JACOCO GRADLE");
+		 * utilsBatExecutor.executeCommandInBatFile(http.
+		 * getJacocoPluginProjectGradleGitCommandLineBatFileName());
+		 * System.out.println("Begining with GIT COBERTURA MAVEN");
+		 * utilsBatExecutor.executeCommandInBatFile(http.
+		 * getCoberturaPluginProjectMavenGitCommandLineBatFileName());
+		 * System.out.println("Begining with GIT COBERTURA GRADLE");
+		 * utilsBatExecutor.executeCommandInBatFile(http.
+		 * getCoberturaPluginProjectGradleGitCommandLineBatFileName());
+		 */
+		
+		System.out.println("Begining with COMPILE JACOCO MAVEN");
+		utilsBatExecutor.executeCommandInBatFile(http.getJacocoPluginProjectMavenCompileCommandLineBatFilename());
+		System.out.println("Begining with COMPILE JACOCO GRADLE");
+		utilsBatExecutor.executeCommandInBatFile(http.getJacocoPluginProjectGradleCompileCommandLineBatFilename());
+		System.out.println("Begining with COMPILE COBERTURA MAVEN");
+		utilsBatExecutor.executeCommandInBatFile(http.getCoberturaPluginProjectMavenCompileCommandLineBatFilename());
+		System.out.println("Begining with COMPILE COBERTURA GRADLE");
+		utilsBatExecutor.executeCommandInBatFile(http.getCoberturaPluginProjectGradleCompileCommandLineBatFilename());
+		
+		
+		System.out.println("Begining with SONARTEST JACOCO MAVEN");
+		utilsBatExecutor.executeCommandInBatFile(http.getJacocoPluginProjectMavenSonarTestCommandLineBatFilename());
+		System.out.println("Begining with SONARTEST JACOCO GRADLE");
+		utilsBatExecutor.executeCommandInBatFile(http.getJacocoPluginProjectGradleSonarTestCommandLineBatFilename());
+		System.out.println("Begining with SONARTEST COBERTURA MAVEN");
+		utilsBatExecutor.executeCommandInBatFile(http.getCoberturaPluginProjectMavenSonarTestCommandLineBatFilename());
+		System.out.println("Begining with SONARTEST COBERTURA GRADLE");
+		utilsBatExecutor.executeCommandInBatFile(http.getCoberturaPluginProjectGradleSonarTestCommandLineBatFilename());
 	}
 
 }

@@ -88,7 +88,7 @@ public class UtilsGeneratingBatFiles {
 		
 		String jacocoFirstPart ="call mvn clean test -Dmaven.test.failure.ignore=true -f";
 		
-		String jacocoLastPart="pom.xml";
+		String jacocoLastPart="/pom.xml";
 		
 		String coberturaFirstPart="call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f";
 		
@@ -200,22 +200,22 @@ public class UtilsGeneratingBatFiles {
 		String sonarServerPassword="admin";
 		
 		for(int i=0;i<jacocoPluginMavenSonarTestCommandLine.size();i++) {
-			jacocoPluginMavenSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", "#")
+			jacocoPluginMavenSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", ",")
 					+" "+"-Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+sonarJacocoPluginMavenBaseDir+"\\"+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+"\""+" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPaths=target/jacoco.exec -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword);
 		}
 		
 		for(int i=0;i<coberturaPluginMavenSonarTestCommandLine.size();i++) {
-			coberturaPluginMavenSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", "#")
+			coberturaPluginMavenSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", ",")
 					+" "+"-Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+sonarCoberturaPluginMavenBaseDir+"\\"+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+"\""+" -Dsonar.java.coveragePlugin=cobertura -Dsonar.cobertura.reportPath=target/site/cobertura/coverage.xml -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword);
 		}
 		
 		for(int i=0;i<jacocoPluginGradleSonarTestCommandLine.size();i++) {
-			jacocoPluginGradleSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", "#")
+			jacocoPluginGradleSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", ",")
 					+" "+"-Dsonar.java.binaries=build/classes/java/main  -Dsonar.java.test.binaries=build/classes/java/test -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+sonarJacocoPluginGradleBaseDir+"\\"+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+"\""+" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPaths=build/jacoco/test.exec -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword);
 		}
 		
 		for(int i=0;i<coberturaPluginGradleSonarTestCommandLine.size();i++) {
-			coberturaPluginGradleSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", "#")
+			coberturaPluginGradleSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", ",")
 					+" "+"-Dsonar.java.binaries=build/classes/java/main  -Dsonar.java.test.binaries=build/classes/java/test -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+sonarCoberturaPluginGradleBaseDir+"\\"+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+"\""+" -Dsonar.java.coveragePlugin=cobertura -Dsonar.cobertura.reportPath=build/reports/cobertura/coverage.xml -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword);
 		}
 		
