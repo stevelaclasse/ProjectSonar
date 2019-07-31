@@ -67,11 +67,14 @@ class BatCommandRunner implements Runnable {
 
 public class UtilsexecutingBatCommands {
 
-	protected void executeCommandInBatFile(String fileName) throws Exception {
+	protected void executeCommandInBatFile(String fileName,String goodCompiledProjectLocation) throws Exception {
 		
 		
 		UtilsSortingProjects myUtils=new UtilsSortingProjects();
 		List<String> batCommandListToExecute=new ArrayList<String>();
+		
+		List<String> batCommandListToExecuteSuccess=new ArrayList<String>();
+		
 		
 		batCommandListToExecute.addAll(myUtils.readUrlFromFile(fileName));
 		
@@ -94,11 +97,31 @@ public class UtilsexecutingBatCommands {
 
             System.out.println("Executing Command:\t"+batCommandListToExecute.get(i));
             batCommandProcessExecutor = batCommandProcessBuilder.start();
-            fluxInAndErr = new BatCommandRunner(batCommandProcessExecutor.getInputStream(),batCommandProcessExecutor.getErrorStream(),batCommandListToExecute.get(i),i);
+            fluxInAndErr = new BatCommandRunner(batCommandProcessExecutor.getInputStream(),batCommandProcessExecutor.getErrorStream(),batCommandListToExecute.get(i),i+1);
             new Thread(fluxInAndErr ).start();
             batCommandProcessExecutor.waitFor();
             exitStatus=batCommandProcessExecutor.exitValue();
             System.out.println("Exist Code for the Project:"+batCommandListToExecute.get(i)+"\t =="+exitStatus);
+            if (exitStatus==0) {
+            	System.out.println("\n\n\n***************************************************");
+            	System.out.println("*                                                 *");
+            	System.out.println("\t ONE MORE GOOD COMPILED PROJECT\t	");
+            	System.out.println("\t "+batCommandListToExecute.get(i));
+            	System.out.println("*                                                 *");
+            	System.out.println("***************************************************\n\n\n");
+            	
+            	batCommandListToExecuteSuccess.add(batCommandListToExecute.get(i));
+            }else
+            {
+            	System.out.println("\n\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            	System.out.println("!                                                 !");
+            	System.out.println("t COMPILATION FAILED\t	");
+            	System.out.println("\t Error Code="+exitStatus);
+            	System.out.println("\t "+batCommandListToExecute.get(i));
+               	System.out.println("!                                                 !");
+            	System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n\n");
+ 
+            }
             batCommandProcessExecutor.destroy();
 
         } catch (IOException e) {
@@ -108,6 +131,8 @@ public class UtilsexecutingBatCommands {
         }
         
 		} 
+		
+		myUtils.writeUrlInFile(batCommandListToExecuteSuccess, goodCompiledProjectLocation);
         
 	}  
 }

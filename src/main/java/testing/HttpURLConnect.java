@@ -66,6 +66,25 @@ public class HttpURLConnect {
 	
 	private String coberturaPluginProjectMavenFileName=getWorkingDirectory()+"/CoberturaPluginProjectMaven.txt";
 	
+	
+	private String jacocoPluginProjectMavenGoodCompiledProjectFilename=getBatDirectory()+"/JacocoPluginProjectMavenGoodCompiledProjectFilename.txt";
+	
+	private String jacocoPluginProjectGradleGoodCompiledProjectFilename=getBatDirectory()+"/JacocoPluginProjectGradleGoodCompiledProjectFilename.txt";
+	
+	private String CoberturaPluginProjectMavenGoodCompiledProjectFilename=getBatDirectory()+"/CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt";
+	
+	private String CoberturaPluginProjectGradleGoodCompiledProjectFilename=getBatDirectory()+"/CoberturaPluginProjectGradleGoodCompiledProjectFilename.txt";
+	
+	
+	private String jacocoPluginProjectMavenGoodSonarTestFilename=getBatDirectory()+"/JacocoPluginProjectMavenGoodSonarTestFilename.txt";
+	
+	private String jacocoPluginProjectGradleGoodSonarTestFilename=getBatDirectory()+"/JacocoPluginProjectGradleGoodSonarTestFilename.txt";
+	
+	private String CoberturaPluginProjectMavenGoodSonarTestFilename=getBatDirectory()+"/CoberturaPluginProjectMavenGoodSonarTestFilename.txt";
+	
+	private String CoberturaPluginProjectGradleGoodSonarTestFilename=getBatDirectory()+"/CoberturaPluginProjectGradleGoodSonarTestFilename.txt";
+	
+	
 
 	private String jacocoPluginProjectMavenGitCommandLineBatFileName=getGitBatDirectory()+"/JacocoPluginProjectMavenGitCommandLineBat.bat";
 	
@@ -280,6 +299,78 @@ public class HttpURLConnect {
 		this.coberturaPluginProjectMavenFileName = coberturaPluginProjectMaven;
 	}
 	
+	
+	
+	public String getJacocoPluginProjectMavenGoodSonarTestFilename() {
+		return jacocoPluginProjectMavenGoodSonarTestFilename;
+	}
+
+	public void setJacocoPluginProjectMavenGoodSonarTestFilename(String jacocoPluginProjectMavenGoodSonarTestFilename) {
+		this.jacocoPluginProjectMavenGoodSonarTestFilename = jacocoPluginProjectMavenGoodSonarTestFilename;
+	}
+
+	public String getJacocoPluginProjectGradleGoodSonarTestFilename() {
+		return jacocoPluginProjectGradleGoodSonarTestFilename;
+	}
+
+	public void setJacocoPluginProjectGradleGoodSonarTestFilename(String jacocoPluginProjectGradleGoodSonarTestFilename) {
+		this.jacocoPluginProjectGradleGoodSonarTestFilename = jacocoPluginProjectGradleGoodSonarTestFilename;
+	}
+
+	public String getCoberturaPluginProjectMavenGoodSonarTestFilename() {
+		return CoberturaPluginProjectMavenGoodSonarTestFilename;
+	}
+
+	public void setCoberturaPluginProjectMavenGoodSonarTestFilename(
+			String coberturaPluginProjectMavenGoodSonarTestFilename) {
+		CoberturaPluginProjectMavenGoodSonarTestFilename = coberturaPluginProjectMavenGoodSonarTestFilename;
+	}
+
+	public String getCoberturaPluginProjectGradleGoodSonarTestFilename() {
+		return CoberturaPluginProjectGradleGoodSonarTestFilename;
+	}
+
+	public void setCoberturaPluginProjectGradleGoodSonarTestFilename(
+			String coberturaPluginProjectGradleGoodSonarTestFilename) {
+		CoberturaPluginProjectGradleGoodSonarTestFilename = coberturaPluginProjectGradleGoodSonarTestFilename;
+	}
+
+	public String getJacocoPluginProjectMavenGoodCompiledProjectFilename() {
+		return jacocoPluginProjectMavenGoodCompiledProjectFilename;
+	}
+
+	public void setJacocoPluginProjectMavenGoodCompiledProjectFilename(
+			String jacocoPluginProjectMavenGoodCompiledProjectFilename) {
+		this.jacocoPluginProjectMavenGoodCompiledProjectFilename = jacocoPluginProjectMavenGoodCompiledProjectFilename;
+	}
+
+	public String getJacocoPluginProjectGradleGoodCompiledProjectFilename() {
+		return jacocoPluginProjectGradleGoodCompiledProjectFilename;
+	}
+
+	public void setJacocoPluginProjectGradleGoodCompiledProjectFilename(
+			String jacocoPluginProjectGradleGoodCompiledProjectFilename) {
+		this.jacocoPluginProjectGradleGoodCompiledProjectFilename = jacocoPluginProjectGradleGoodCompiledProjectFilename;
+	}
+
+	public String getCoberturaPluginProjectMavenGoodCompiledProjectFilename() {
+		return CoberturaPluginProjectMavenGoodCompiledProjectFilename;
+	}
+
+	public void setCoberturaPluginProjectMavenGoodCompiledProjectFilename(
+			String coberturaPluginProjectMavenGoodCompiledProjectFilename) {
+		CoberturaPluginProjectMavenGoodCompiledProjectFilename = coberturaPluginProjectMavenGoodCompiledProjectFilename;
+	}
+
+	public String getCoberturaPluginProjectGradleGoodCompiledProjectFilename() {
+		return CoberturaPluginProjectGradleGoodCompiledProjectFilename;
+	}
+
+	public void setCoberturaPluginProjectGradleGoodCompiledProjectFilename(
+			String coberturaPluginProjectGradleGoodCompiledProjectFilename) {
+		CoberturaPluginProjectGradleGoodCompiledProjectFilename = coberturaPluginProjectGradleGoodCompiledProjectFilename;
+	}
+
 	public String getJacocoPluginProjectMavenGitCommandLineBatFileName() {
 		return jacocoPluginProjectMavenGitCommandLineBatFileName;
 	}

@@ -17,13 +17,17 @@ public class UtilsGeneratingBatFiles {
 			HttpURLConnect http=new HttpURLConnect() ;
 			UtilsSortingProjects myUtils=new UtilsSortingProjects();
 		
-			gitJacocoPluginMaven.addAll(myUtils.readUrlFromFile(http.getJacocoPluginProjectMavenFileName()));
+			gitJacocoPluginMaven=(myUtils.readUrlFromFile(http.getJacocoPluginProjectMavenFileName()));
+
 			
-			gitJacocoPluginGradle.addAll(myUtils.readUrlFromFile(http.getJacocoPluginProjectGradleFileName()));
+			gitJacocoPluginGradle=(myUtils.readUrlFromFile(http.getJacocoPluginProjectGradleFileName()));
+	
 			
-			gitCoberturaPluginMaven.addAll(myUtils.readUrlFromFile(http.getCoberturaPluginProjectMavenFileName()));
+			gitCoberturaPluginMaven=(myUtils.readUrlFromFile(http.getCoberturaPluginProjectMavenFileName()));
+
 			
-			gitCoberturaPluginGradle.addAll(myUtils.readUrlFromFile(http.getCoberturaPluginProjectGradleFileName()));
+			gitCoberturaPluginGradle=(myUtils.readUrlFromFile(http.getCoberturaPluginProjectGradleFileName()));
+
 			
 			String firstPart ="git clone";
 			String secondPart="https://github.com/";
@@ -75,9 +79,11 @@ public class UtilsGeneratingBatFiles {
 		
 		System.out.println("Starting generating Maven Compile CommandLine");
 		
-		jacocoPluginMavenCompileCommandLine.addAll(myUtils.readUrlFromFile(http.getJacocoPluginProjectMavenFileName()));
+		jacocoPluginMavenCompileCommandLine=(myUtils.readUrlFromFile(http.getJacocoPluginProjectMavenFileName()));
+
 		
-		coberturaPluginMavenCompileCommandLine.addAll(myUtils.readUrlFromFile(http.getCoberturaPluginProjectMavenFileName()));
+		coberturaPluginMavenCompileCommandLine=(myUtils.readUrlFromFile(http.getCoberturaPluginProjectMavenFileName()));
+		
 		
 		String[] jacocoPluginMavenFolderAddForCompilation=http.getJacocoPluginMavenDownloadedProject().split("/");
 		
@@ -85,19 +91,31 @@ public class UtilsGeneratingBatFiles {
 		
 		int n=jacocoPluginMavenFolderAddForCompilation.length;
 		
+		File jacocoGoodCompiled=new File(http.getJacocoPluginProjectMavenGoodCompiledProjectFilename());
 		
-		String jacocoFirstPart ="call mvn clean test -Dmaven.test.failure.ignore=true -f";
+		File coberturaGoodCompiled=new File(http.getCoberturaPluginProjectMavenGoodCompiledProjectFilename());
 		
-		String jacocoLastPart="/pom.xml";
+		String jacocoFirstPart ="@echo off \r\n Set var=call mvn clean test -Dmaven.test.failure.ignore=true -f";
 		
-		String coberturaFirstPart="call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f";
+		//String jacocoLastPart="/pom.xml";
+		
+		String jacocoLastPart="/pom.xml \r\n echo executing Command: %var% \r\n %var% \r\n IF %ERRORLEVEL% EQU 0 ( "
+				+ "\r\n echo ECHO #####GOOD COMPILED PROJECT##### \r\n echo %var% \r\n echo %var% 1>> "+jacocoGoodCompiled.getName()+" \r\n"
+				+ ")ELSE ( \r\n echo ECHO -----FAILED----- \r\n echo %var% \r\n ) \r\n";
+		
+		String coberturaLastPart="/pom.xml \r\n echo executing Command: %var% \r\n %var% \r\n IF %ERRORLEVEL% EQU 0 ( "
+				+ "\r\n echo ECHO #####GOOD COMPILED PROJECT##### \r\n echo %var% \r\n echo %var% 1>> "+coberturaGoodCompiled.getName()+" \r\n"
+				+ ")ELSE ( \r\n echo ECHO -----FAILED----- \r\n echo %var% \r\n ) \r\n";
+		
+		String coberturaFirstPart="@echo off \r\n Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f";
+		
 		
 		for(int i=0;i<jacocoPluginMavenCompileCommandLine.size();i++) {
 			jacocoPluginMavenCompileCommandLine.set(i,jacocoFirstPart+" "+jacocoPluginMavenFolderAddForCompilation[n-3]+"/"+jacocoPluginMavenFolderAddForCompilation[n-2]+"/"+jacocoPluginMavenFolderAddForCompilation[n-1]+"/"+jacocoPluginMavenCompileCommandLine.get(i).replace("/", "#")+jacocoLastPart);
 		}
 		
 		for(int i=0;i<coberturaPluginMavenCompileCommandLine.size();i++) {
-			coberturaPluginMavenCompileCommandLine.set(i,coberturaFirstPart+" "+coberturaPluginMavenFolderAddForCompilation[n-3]+"/"+coberturaPluginMavenFolderAddForCompilation[n-2]+"/"+coberturaPluginMavenFolderAddForCompilation[n-1]+"/"+coberturaPluginMavenCompileCommandLine.get(i).replace("/", "#"));
+			coberturaPluginMavenCompileCommandLine.set(i,coberturaFirstPart+" "+coberturaPluginMavenFolderAddForCompilation[n-3]+"/"+coberturaPluginMavenFolderAddForCompilation[n-2]+"/"+coberturaPluginMavenFolderAddForCompilation[n-1]+"/"+coberturaPluginMavenCompileCommandLine.get(i).replace("/", "#")+coberturaLastPart);
 		}
 		
 		myUtils.writeUrlInFile(jacocoPluginMavenCompileCommandLine, http.getJacocoPluginProjectMavenCompileCommandLineBatFilename());
@@ -116,9 +134,9 @@ public class UtilsGeneratingBatFiles {
 		
 		System.out.println("Starting generating Gradle Compile CommandLine");
 		
-		jacocoPluginGradleCompileCommandLine.addAll(myUtils.readUrlFromFile(http.getJacocoPluginProjectGradleFileName()));
+		jacocoPluginGradleCompileCommandLine=(myUtils.readUrlFromFile(http.getJacocoPluginProjectGradleFileName()));
 		
-		coberturaPluginGradleCompileCommandLine.addAll(myUtils.readUrlFromFile(http.getCoberturaPluginProjectGradleFileName()));
+		coberturaPluginGradleCompileCommandLine=(myUtils.readUrlFromFile(http.getCoberturaPluginProjectGradleFileName()));
 		
 		String[] jacocoPluginGradleFolderAddForCompilation=http.getJacocoPluginGradleDownloadedProject().split("/");
 		
@@ -126,17 +144,28 @@ public class UtilsGeneratingBatFiles {
 		
 		int n=jacocoPluginGradleFolderAddForCompilation.length;
 		
+		File jacocoGoodCompiled=new File(http.getJacocoPluginProjectGradleGoodCompiledProjectFilename());
 		
-		String jacocoFirstPart ="call gradle clean build test --continue -p";
+		File coberturaGoodCompiled=new File(http.getCoberturaPluginProjectGradleGoodCompiledProjectFilename());
 		
-		String coberturaFirstPart="call gradle clean build test --continue -p";
+		String jacocoFirstPart ="@echo off \r\n Set var=call gradle clean build test --continue -p";
+		
+		String coberturaFirstPart="@echo off \r\n Set var=call gradle clean build test --continue -p";
+		
+		String jacocoLastPart="\r\n echo executing Command: %var% \r\n %var% \r\n IF %ERRORLEVEL% EQU 0 ( "
+				+ "\r\n echo ECHO #####GOOD COMPILED PROJECT##### \r\n echo %var% \r\n echo %var% 1>> "+jacocoGoodCompiled.getName()+" \r\n"
+				+ ")ELSE ( \r\n echo ECHO -----FAILED----- \r\n echo %var% \r\n ) \r\n";
+		
+		String coberturaLastPart="\r\n echo executing Command: %var% \r\n %var% \r\n IF %ERRORLEVEL% EQU 0 ( "
+				+ "\r\n echo ECHO #####GOOD COMPILED PROJECT##### \r\n echo %var% \r\n echo %var% 1>> "+coberturaGoodCompiled.getName()+" \r\n"
+				+ ")ELSE ( \r\n echo ECHO -----FAILED----- \r\n echo %var% \r\n ) \r\n";
 		
 		for(int i=0;i<jacocoPluginGradleCompileCommandLine.size();i++) {
-			jacocoPluginGradleCompileCommandLine.set(i,jacocoFirstPart+" "+jacocoPluginGradleFolderAddForCompilation[n-3]+"/"+jacocoPluginGradleFolderAddForCompilation[n-2]+"/"+jacocoPluginGradleFolderAddForCompilation[n-1]+"/"+jacocoPluginGradleCompileCommandLine.get(i).replace("/", "#"));
+			jacocoPluginGradleCompileCommandLine.set(i,jacocoFirstPart+" "+jacocoPluginGradleFolderAddForCompilation[n-3]+"/"+jacocoPluginGradleFolderAddForCompilation[n-2]+"/"+jacocoPluginGradleFolderAddForCompilation[n-1]+"/"+jacocoPluginGradleCompileCommandLine.get(i).replace("/", "#")+jacocoLastPart);
 		}
 		
 		for(int i=0;i<coberturaPluginGradleCompileCommandLine.size();i++) {
-			coberturaPluginGradleCompileCommandLine.set(i,coberturaFirstPart+" "+coberturaPluginGradleFolderAddForCompilation[n-3]+"/"+coberturaPluginGradleFolderAddForCompilation[n-2]+"/"+coberturaPluginGradleFolderAddForCompilation[n-1]+"/"+coberturaPluginGradleCompileCommandLine.get(i).replace("/", "#"));
+			coberturaPluginGradleCompileCommandLine.set(i,coberturaFirstPart+" "+coberturaPluginGradleFolderAddForCompilation[n-3]+"/"+coberturaPluginGradleFolderAddForCompilation[n-2]+"/"+coberturaPluginGradleFolderAddForCompilation[n-1]+"/"+coberturaPluginGradleCompileCommandLine.get(i).replace("/", "#")+coberturaLastPart);
 		}
 		
 		myUtils.writeUrlInFile(jacocoPluginGradleCompileCommandLine, http.getJacocoPluginProjectGradleCompileCommandLineBatFilename());
@@ -155,15 +184,20 @@ public class UtilsGeneratingBatFiles {
 		List<String> jacocoPluginGradleSonarTestCommandLine=new ArrayList<String>();
 		List<String> coberturaPluginGradleSonarTestCommandLine=new ArrayList<String>();
 		
+		List<String> jacocoPluginMavenSonarTestGoodCommandLine=new ArrayList<String>();
+		List<String> coberturaPluginMavenSonarTestGoodCommandLine=new ArrayList<String>();
+		List<String> jacocoPluginGradleSonarTestGoodCommandLine=new ArrayList<String>();
+		List<String> coberturaPluginGradleSonarTestGoodCommandLine=new ArrayList<String>();
+		
 		System.out.println("Starting generating Jacoco and Cobertura Maven and Gradle Sonar Test CommandLine");
 		
-		jacocoPluginMavenSonarTestCommandLine.addAll(myUtils.readUrlFromFile(http.getJacocoPluginProjectMavenFileName()));
+		jacocoPluginMavenSonarTestCommandLine=(myUtils.readUrlFromFile(http.getJacocoPluginProjectMavenFileName()));
 		
-		coberturaPluginMavenSonarTestCommandLine.addAll(myUtils.readUrlFromFile(http.getCoberturaPluginProjectMavenFileName()));
+		coberturaPluginMavenSonarTestCommandLine=(myUtils.readUrlFromFile(http.getCoberturaPluginProjectMavenFileName()));
 		
-		jacocoPluginGradleSonarTestCommandLine.addAll(myUtils.readUrlFromFile(http.getJacocoPluginProjectGradleFileName()));
+		jacocoPluginGradleSonarTestCommandLine=(myUtils.readUrlFromFile(http.getJacocoPluginProjectGradleFileName()));
 		
-		coberturaPluginGradleSonarTestCommandLine.addAll(myUtils.readUrlFromFile(http.getCoberturaPluginProjectGradleFileName()));
+		coberturaPluginGradleSonarTestCommandLine=(myUtils.readUrlFromFile(http.getCoberturaPluginProjectGradleFileName()));
 		
 		File jacocoPluginMavenDownloadedProjectAbsolutePath=new File(http.getJacocoPluginMavenDownloadedProject());
 		
@@ -199,32 +233,164 @@ public class UtilsGeneratingBatFiles {
 		
 		String sonarServerPassword="admin";
 		
+		File testingFileAvaibility;
+		
+		File jacocoMavenGoodSonarTest=new File(http.getJacocoPluginProjectMavenGoodSonarTestFilename());
+		
+		File coberturaMavenGoodSonarTest=new File(http.getCoberturaPluginProjectMavenGoodSonarTestFilename());
+		
+		File jacocoGradleGoodSonarTest=new File(http.getJacocoPluginProjectGradleGoodSonarTestFilename());
+		
+		File coberturaGradleGoodSonarTest=new File(http.getCoberturaPluginProjectGradleGoodSonarTestFilename());
+		
+		String baseDir="";
+		
+		String reportPath="";
+		
+		int numberGoodCompiledProject=0;
+		
+		int numberGoodCompiledProjectTotal=0;
+		
+		String jacocoMavenFirstPart="@echo off \r\n Set var=";
+		
+		String jacocoMavenLastPart="\r\n echo executing Command: %var% \r\n %var% \r\n IF %ERRORLEVEL% EQU 0 ( "
+				+ "\r\n echo ECHO #####GOOD SONAR TESTED PROJECT##### \r\n echo %var% \r\n echo %var% 1>> "+jacocoMavenGoodSonarTest.getName()+" \r\n"
+				+ ")ELSE ( \r\n echo ECHO -----FAILED----- \r\n echo %var% \r\n ) \r\n";
+		
 		for(int i=0;i<jacocoPluginMavenSonarTestCommandLine.size();i++) {
-			jacocoPluginMavenSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", ",")
-					+" "+"-Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+sonarJacocoPluginMavenBaseDir+"\\"+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+"\""+" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPaths=target/jacoco.exec -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword);
+			
+			baseDir=sonarJacocoPluginMavenBaseDir+"\\"+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", "#");
+			
+			reportPath="target/jacoco.exec";
+			
+			testingFileAvaibility=new File(baseDir+"\\"+reportPath.replace("/", "\\"));
+			
+			System.out.println("testingFileAvaibility :"+testingFileAvaibility.getAbsolutePath());
+			
+			if(testingFileAvaibility.exists()==true) {
+			
+			jacocoPluginMavenSonarTestGoodCommandLine.add(jacocoMavenFirstPart+"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+jacocoPluginMavenSonarTestCommandLine.get(i).replace("/", ":")
+					+" "+"-Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+baseDir+"\""+" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath="+reportPath+" "+" -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword+jacocoMavenLastPart);
+			
+			System.out.println("ReportFile Found At :"+testingFileAvaibility.getAbsolutePath());
+			
+			numberGoodCompiledProject++;
+			numberGoodCompiledProjectTotal++;
+			}
+			
 		}
+		
+		System.out.println("Number of Maven Jacoco Report file found:"+numberGoodCompiledProject);
+		
+		numberGoodCompiledProject=0;
+		
+		String coberturaMavenFirstPart="@echo off \r\n Set var=";
+		
+		String coberturaMavenLastPart="\r\n echo executing Command: %var% \r\n %var% \r\n IF %ERRORLEVEL% EQU 0 ( "
+				+ "\r\n echo ECHO #####GOOD SONAR TESTED PROJECT##### \r\n echo %var% \r\n echo %var% 1>> "+coberturaMavenGoodSonarTest.getName()+" \r\n"
+				+ ")ELSE ( \r\n echo ECHO -----FAILED----- \r\n echo %var% \r\n ) \r\n";
 		
 		for(int i=0;i<coberturaPluginMavenSonarTestCommandLine.size();i++) {
-			coberturaPluginMavenSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", ",")
-					+" "+"-Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+sonarCoberturaPluginMavenBaseDir+"\\"+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+"\""+" -Dsonar.java.coveragePlugin=cobertura -Dsonar.cobertura.reportPath=target/site/cobertura/coverage.xml -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword);
+			
+			baseDir=sonarCoberturaPluginMavenBaseDir+"\\"+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", "#");
+			
+			reportPath="target/site/cobertura/coverage.xml";
+			
+			testingFileAvaibility=new File(baseDir+"\\"+reportPath.replace("/", "\\"));
+			
+			System.out.println("testingFileAvaibility :"+testingFileAvaibility.getAbsolutePath());
+			
+			if(testingFileAvaibility.exists()==true) {
+			
+			coberturaPluginMavenSonarTestGoodCommandLine.add(coberturaMavenFirstPart+"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+coberturaPluginMavenSonarTestCommandLine.get(i).replace("/", ":")
+					+" "+"-Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+baseDir+"\""+" -Dsonar.java.coveragePlugin=cobertura -Dsonar.cobertura.reportPath="+reportPath+" "+" -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword+coberturaMavenLastPart);
+			
+			System.out.println("ReportFile Found At :"+testingFileAvaibility.getAbsolutePath());
+			
+			numberGoodCompiledProject++;
+			numberGoodCompiledProjectTotal++;
+			}
 		}
+		
+		System.out.println("Number of Maven Cobertura Report file found:"+numberGoodCompiledProject);
+		
+		
+		
+		numberGoodCompiledProject=0;
+		
+		String jacocoGradleFirstPart="@echo off \r\n Set var=";
+		
+		String jacocoGradleLastPart="\r\n echo executing Command: %var% \r\n %var% \r\n IF %ERRORLEVEL% EQU 0 ( "
+				+ "\r\n echo ECHO #####GOOD SONAR TESTED PROJECT##### \r\n echo %var% \r\n echo %var% 1>> "+jacocoGradleGoodSonarTest.getName()+" \r\n"
+				+ ")ELSE ( \r\n echo ECHO -----FAILED----- \r\n echo %var% \r\n ) \r\n";
 		
 		for(int i=0;i<jacocoPluginGradleSonarTestCommandLine.size();i++) {
-			jacocoPluginGradleSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", ",")
-					+" "+"-Dsonar.java.binaries=build/classes/java/main  -Dsonar.java.test.binaries=build/classes/java/test -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+sonarJacocoPluginGradleBaseDir+"\\"+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+"\""+" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPaths=build/jacoco/test.exec -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword);
+			
+			baseDir=sonarJacocoPluginGradleBaseDir+"\\"+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", "#");
+			
+			reportPath="build/jacoco/test.exec";
+			
+			testingFileAvaibility=new File(baseDir+"\\"+reportPath.replace("/", "\\"));
+			
+			System.out.println("testingFileAvaibility :"+testingFileAvaibility.getAbsolutePath());
+			
+			if(testingFileAvaibility.exists()==true) {
+			jacocoPluginGradleSonarTestGoodCommandLine.add(jacocoGradleFirstPart+"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+jacocoPluginGradleSonarTestCommandLine.get(i).replace("/", ":")
+					+" "+"-Dsonar.java.binaries=build/classes/java/main  -Dsonar.java.test.binaries=build/classes/java/test -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+baseDir+"\""+" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath="+reportPath+" "+" -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword+jacocoGradleLastPart);
+			
+			System.out.println("ReportFile Found At :"+testingFileAvaibility.getAbsolutePath());
+			
+			numberGoodCompiledProject++;
+			numberGoodCompiledProjectTotal++;
 		}
+		}
+		
+		System.out.println("Number of Gradle Jacoco Report file found:"+numberGoodCompiledProject);
+		
+		
+		
+		numberGoodCompiledProject=0;
+		
+		String coberturaGradleFirstPart="@echo off \r\n Set var=";
+		
+		String coberturaGradleLastPart="\r\n echo executing Command: %var% \r\n %var% \r\n IF %ERRORLEVEL% EQU 0 ( "
+				+ "\r\n echo ECHO #####GOOD SONAR TESTED PROJECT##### \r\n echo %var% \r\n echo %var% 1>> "+coberturaGradleGoodSonarTest.getName()+" \r\n"
+				+ ")ELSE ( \r\n echo ECHO -----FAILED----- \r\n echo %var% \r\n ) \r\n";
+		
 		
 		for(int i=0;i<coberturaPluginGradleSonarTestCommandLine.size();i++) {
-			coberturaPluginGradleSonarTestCommandLine.set(i,"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", ",")
-					+" "+"-Dsonar.java.binaries=build/classes/java/main  -Dsonar.java.test.binaries=build/classes/java/test -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+sonarCoberturaPluginGradleBaseDir+"\\"+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+"\""+" -Dsonar.java.coveragePlugin=cobertura -Dsonar.cobertura.reportPath=build/reports/cobertura/coverage.xml -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword);
+			
+			baseDir=sonarCoberturaPluginGradleBaseDir+"\\"+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", "#");
+			
+			reportPath="build/reports/cobertura/coverage.xml";
+			
+			testingFileAvaibility=new File(baseDir+"\\"+reportPath.replace("/", "\\"));
+			
+			System.out.println("testingFileAvaibility :"+testingFileAvaibility.getAbsolutePath());
+			
+			if(testingFileAvaibility.exists()==true) {
+			
+			coberturaPluginGradleSonarTestGoodCommandLine.add(coberturaGradleFirstPart+"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+coberturaPluginGradleSonarTestCommandLine.get(i).replace("/", ":")
+					+" "+"-Dsonar.java.binaries=build/classes/java/main  -Dsonar.java.test.binaries=build/classes/java/test -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+baseDir+"\""+" -Dsonar.java.coveragePlugin=cobertura -Dsonar.cobertura.reportPath="+reportPath+" "+" -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword+coberturaGradleLastPart);
+		
+			System.out.println("ReportFile Found At :"+testingFileAvaibility.getAbsolutePath());
+			
+			numberGoodCompiledProject++;
+			numberGoodCompiledProjectTotal++;
+			}
+		
 		}
 		
-		myUtils.writeUrlInFile(jacocoPluginMavenSonarTestCommandLine, http.getJacocoPluginProjectMavenSonarTestCommandLineBatFilename());
-		myUtils.writeUrlInFile(coberturaPluginMavenSonarTestCommandLine, http.getCoberturaPluginProjectMavenSonarTestCommandLineBatFilename());
-		myUtils.writeUrlInFile(jacocoPluginGradleSonarTestCommandLine, http.getJacocoPluginProjectGradleSonarTestCommandLineBatFilename());
-		myUtils.writeUrlInFile(coberturaPluginGradleSonarTestCommandLine, http.getCoberturaPluginProjectGradleSonarTestCommandLineBatFilename());
+		System.out.println("Number of Gradle Cobertura Report file found:"+numberGoodCompiledProject);
+		
+		myUtils.writeUrlInFile(jacocoPluginMavenSonarTestGoodCommandLine, http.getJacocoPluginProjectMavenSonarTestCommandLineBatFilename());
+		myUtils.writeUrlInFile(coberturaPluginMavenSonarTestGoodCommandLine, http.getCoberturaPluginProjectMavenSonarTestCommandLineBatFilename());
+		myUtils.writeUrlInFile(jacocoPluginGradleSonarTestGoodCommandLine, http.getJacocoPluginProjectGradleSonarTestCommandLineBatFilename());
+		myUtils.writeUrlInFile(coberturaPluginGradleSonarTestGoodCommandLine, http.getCoberturaPluginProjectGradleSonarTestCommandLineBatFilename());
 	
 		System.out.println("End generating Jacoco and Cobertura Maven and Gradle Sonar Test CommandLine");
+		
+		System.out.println("\n\n\n Total Number of Report file found:"+numberGoodCompiledProjectTotal+"\n\n");
 		
 	}
 	else {

@@ -1,0 +1,61 @@
+ call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/alibaba#arthas/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/alibaba#druid/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/alibaba#fastjson/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/alibaba#jetcache/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/amaembo#streamex/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/Anil-Adhikari#IMPL/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/apache#dubbo/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/automate-website#waml-io/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/AxonFramework#AxonFramework/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/BroadleafCommerce#BroadleafCommerce/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/brunocvcunha#mdmlang/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/ctripcorp#apollo/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/daniloarcidiacono#commons-lang/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/dbi1463#SortDescriptor/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/docker-java#docker-java/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/eclipse#eclipse.jdt.ls/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/EnterpriseQualityCoding#FizzBuzzEnterpriseEdition/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/FINRAOS#JTAF-XCore/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/gerryai#pddl-parser/pom.xml   
+
+##hazelcast#hazelcastinterupted##
+
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/ivan-vasilev#neuralnetworks/pom.xml   
+
+##jersey#jersey## interupted
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/joschi#JadConfig/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/jtablesaw#tablesaw/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/Kong#unirest-java/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/koushikr#jelastic/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/lettuce-io#lettuce-core/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/mabe02#lanterna/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/microsoft#lsif-java/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/modelmapper#modelmapper/pom.xml   
+
+##MorphiaOrg#morphia## interupted
+
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/mybatis#mybatis-3/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/NanoHttpd#nanohttpd/pom.xml  
+
+ ##netty#netty## interupted
+ 
+ 
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/opentracing#opentracing-java/pom.xml   
+
+##orientechnologies#orientdb## interupted
+
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/OryxProject#oryx/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/panda-lang#panda/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/ptitjes#jlato/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/pure4j#pure4j/pom.xml   
+
+##quarkusio#quarkus## interupted
+
+
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/speedment#speedment/pom.xml   
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/spotify#apollo/pom.xml   
+
+##spring-cloud#spring-cloud-netflix## interupted
+
+
+call mvn clean test -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/JACOCO/xuhuisheng#lemon/pom.xml   
