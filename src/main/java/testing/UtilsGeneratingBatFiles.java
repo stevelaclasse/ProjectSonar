@@ -35,13 +35,13 @@ public class UtilsGeneratingBatFiles {
 			
 			System.out.println("Start creating git commandline");
 			
-			String[] jacocoPluginMavenFolderAddForCompilation=http.getJacocoPluginMavenDownloadedProject().split("/");
+			String[] jacocoPluginMavenFolderAddForCompilation=http.getJacocoPluginMavenDownloadedProjectDirectory().split("/");
 			
-			String[] jacocoPluginGradleFolderAddForCompilation=http.getJacocoPluginGradleDownloadedProject().split("/");
+			String[] jacocoPluginGradleFolderAddForCompilation=http.getJacocoPluginGradleDownloadedProjectDirectory().split("/");
 			
-			String[] coberturaPluginMavenFolderAddForCompilation=http.getCoberturaPluginMavenDownloadedProject().split("/");
+			String[] coberturaPluginMavenFolderAddForCompilation=http.getCoberturaPluginMavenDownloadedProjectDirectory().split("/");
 			
-			String[] coberturaPluginGradleFolderAddForCompilation=http.getCoberturaPluginGradleDownloadedProject().split("/");
+			String[] coberturaPluginGradleFolderAddForCompilation=http.getCoberturaPluginGradleDownloadedProjectDirectory().split("/");
 			
 			int n=coberturaPluginGradleFolderAddForCompilation.length;
 			
@@ -85,9 +85,9 @@ public class UtilsGeneratingBatFiles {
 		coberturaPluginMavenCompileCommandLine=(myUtils.readUrlFromFile(http.getCoberturaPluginProjectMavenFileName()));
 		
 		
-		String[] jacocoPluginMavenFolderAddForCompilation=http.getJacocoPluginMavenDownloadedProject().split("/");
+		String[] jacocoPluginMavenFolderAddForCompilation=http.getJacocoPluginMavenDownloadedProjectDirectory().split("/");
 		
-		String[] coberturaPluginMavenFolderAddForCompilation=http.getCoberturaPluginMavenDownloadedProject().split("/");
+		String[] coberturaPluginMavenFolderAddForCompilation=http.getCoberturaPluginMavenDownloadedProjectDirectory().split("/");
 		
 		int n=jacocoPluginMavenFolderAddForCompilation.length;
 		
@@ -138,9 +138,9 @@ public class UtilsGeneratingBatFiles {
 		
 		coberturaPluginGradleCompileCommandLine=(myUtils.readUrlFromFile(http.getCoberturaPluginProjectGradleFileName()));
 		
-		String[] jacocoPluginGradleFolderAddForCompilation=http.getJacocoPluginGradleDownloadedProject().split("/");
+		String[] jacocoPluginGradleFolderAddForCompilation=http.getJacocoPluginGradleDownloadedProjectDirectory().split("/");
 		
-		String[] coberturaPluginGradleFolderAddForCompilation=http.getCoberturaPluginGradleDownloadedProject().split("/");
+		String[] coberturaPluginGradleFolderAddForCompilation=http.getCoberturaPluginGradleDownloadedProjectDirectory().split("/");
 		
 		int n=jacocoPluginGradleFolderAddForCompilation.length;
 		
@@ -199,13 +199,13 @@ public class UtilsGeneratingBatFiles {
 		
 		coberturaPluginGradleSonarTestCommandLine=(myUtils.readUrlFromFile(http.getCoberturaPluginProjectGradleFileName()));
 		
-		File jacocoPluginMavenDownloadedProjectAbsolutePath=new File(http.getJacocoPluginMavenDownloadedProject());
+		File jacocoPluginMavenDownloadedProjectAbsolutePath=new File(http.getJacocoPluginMavenDownloadedProjectDirectory());
 		
-		File coberturaPluginMavenDownloadedProjectAbsolutePath=new File(http.getCoberturaPluginMavenDownloadedProject());
+		File coberturaPluginMavenDownloadedProjectAbsolutePath=new File(http.getCoberturaPluginMavenDownloadedProjectDirectory());
 		
-		File jacocoPluginGradleDownloadedProjectAbsolutePath=new File(http.getJacocoPluginGradleDownloadedProject());
+		File jacocoPluginGradleDownloadedProjectAbsolutePath=new File(http.getJacocoPluginGradleDownloadedProjectDirectory());
 		
-		File coberturaPluginGradleDownloadedProjectAbsolutePath=new File(http.getCoberturaPluginGradleDownloadedProject());
+		File coberturaPluginGradleDownloadedProjectAbsolutePath=new File(http.getCoberturaPluginGradleDownloadedProjectDirectory());
 		
 		System.out.println("Jacoco Plugin Maven DownloadedProject AbsolutePath="+jacocoPluginMavenDownloadedProjectAbsolutePath.getAbsolutePath()+"\texist="+jacocoPluginMavenDownloadedProjectAbsolutePath.getAbsoluteFile().exists());
 		
@@ -229,9 +229,9 @@ public class UtilsGeneratingBatFiles {
 		
 		String sonarHostUrl=http.getSonarHosturl();
 		
-		String sonarServerLogin="admin";
+		String sonarServerLogin=http.getSonarServerUser();
 		
-		String sonarServerPassword="admin";
+		String sonarServerPassword=http.getSonarServerPassword();
 		
 		File testingFileAvaibility;
 		
@@ -397,5 +397,120 @@ public class UtilsGeneratingBatFiles {
 		System.out.println("The Project Directory Could not be found");
 	}
 	}
+	
+	public void creatingUniqueMavenGitCompileAndSonartestWithJacocoAgentCommandLine() throws Exception{
+		
+		HttpURLConnect http=new HttpURLConnect() ;
+		UtilsSortingProjects myUtils=new UtilsSortingProjects();
+		List<String> uniqueCommandLine=new ArrayList<String>();
+		List<String> uniqueCommandLineCopy=new ArrayList<String>();
+
+		
+		System.out.println("Starting generating the unique complet CommandLine");
+		
+		uniqueCommandLine=(myUtils.readUrlFromFile(http.getMavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName()));
+		
+		
+		File mavenGoodStructuredProjectDownloadFileName=new File(http.getMavenExploitableProjectUniqueGitCompileAndSonarTestFileName());
+		
+		
+		//System.out.println("Maven Good Structured DownloadedProject Folder="+mavenGoodStructuredProjectDownloadFileName.getAbsolutePath()+"\texist="+mavenGoodStructuredProjectDownloadFileName.getAbsoluteFile().exists());
+		
+		
+		
+		//String mavenGoodStructuredProjectBaseDir=mavenGoodStructuredProjectDownloadFileName.getAbsolutePath();
+		
+		
+		String sonarScannerLocation=http.getSonnarScannerBatFileLocation();
+		
+		String sonarHostUrl=http.getSonarHosturl();
+		
+		String sonarServerLogin=http.getSonarServerUser();
+		
+		String sonarServerPassword=http.getSonarServerPassword();	
+		
+		String gitFirstPart ="@echo off \r\n set var=call git clone ";
+		String gitSecondPart="https://github.com/";
+		String gitLastPart=".git";
+		
+		String gitDownloadDir="";
+		
+		String[] gitDownloadFolder=http.getMavenGoodStruturedDownloadedProjectDirectory().split("/");
+		
+		int n=gitDownloadFolder.length;
+		
+		String gitCommandLine="";
+		
+		String gitTemp="";
+		
+		String mavenCompileDir="";
+		
+		String mavenCommandLine="";
+		
+		String mavenTemp="";
+		
+		String sonarTestBaseDir=http.getMavenGoodStruturedDownloadedProjectDirectory();
+		
+		String sonarTestCommandLine="";
+		
+		File testingFileAvaibility;
+		
+		String reportPath="";
+		
+		String sonarTestFirstPart="@echo off \r\n Set var=";
+		
+		String sonarTestTemp="";
+		
+		uniqueCommandLineCopy.add("git config --system core.longpaths true \r\n");
+		uniqueCommandLineCopy.add("setlocal enableDelayedExpansion \r\n");
+		
+		for(int i=0;i<uniqueCommandLine.size();i++) {
+			
+			gitDownloadDir=gitDownloadFolder[n-2]+"/"+gitDownloadFolder[n-1]+"/"+uniqueCommandLine.get(i).replace("/","#");
+			
+			gitCommandLine=gitFirstPart+gitSecondPart+uniqueCommandLine.get(i)+gitLastPart+" "+gitDownloadDir;
+			
+			gitTemp="\r\n echo executing git command line: %var% \r\n %var% \r\n IF %ERRORLEVEL% EQU 0 ( \r\n"
+					+ "echo Git Command Success \r\n";
+			
+			mavenCompileDir=gitDownloadDir;
+			
+			mavenCommandLine="@echo off \r\n set var=call mvn -DargLine=-javaagent:"+http.getJacocoAgentFileLocation()+"=output=file,destfile=target/jacoco.exec"
+					+ " clean test -f  "+mavenCompileDir ;
+			
+
+			
+			
+			
+			reportPath="target/jacoco.exec";
+			
+			mavenTemp=" \r\n echo executing maven Command Line: !var! \r\n !var! \r\n IF %ERRORLEVEL% EQU 0 "
+					+ "IF EXIST "+gitDownloadDir.replace("/", "\\")+"\\"+reportPath.replace("/", "\\")+" ( \r\n" 
+					+"echo Maven Compilation Command Success And Jacoco Repoprt Success \r\n";
+			
+			testingFileAvaibility=new File(sonarTestBaseDir);
+			
+			System.out.println("testingFileAvaibility :"+testingFileAvaibility.getAbsolutePath());
+			
+			sonarTestCommandLine=sonarTestFirstPart+"call \""+sonarScannerLocation+"\""+" "+"-Dsonar.host.url="+sonarHostUrl+" "+"-Dsonar.projectName="+uniqueCommandLine.get(i).replace("/", "#")+" "+"-Dsonar.projectVersion=1.0"+" "+"-Dsonar.projectKey="+uniqueCommandLine.get(i).replace("/", ":")
+					+" "+"-Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java \"-Dsonar.projectBaseDir="+testingFileAvaibility.getAbsolutePath().replace("/", "\\")+"\\"+uniqueCommandLine.get(i).replace("/", "#")+"\""+" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath="+reportPath+" "+" -Dsonar.login="+sonarServerLogin+" "+"-Dsonar.password="+sonarServerPassword;
+				
+			sonarTestTemp="\r\n echo executing SonarTest Commmand Line:!var! \r\n !var! \r\n"
+					+ "IF %ERRORLEVEL% EQU 0 (\r\n echo SonarTest Succes \r\n echo "+uniqueCommandLine.get(i)+" 1>>"+mavenGoodStructuredProjectDownloadFileName.getName()+"\r\n"
+					+") ELSE ( \r\n echo Sonar Test error \r\n RD /S /Q "+gitDownloadDir.replace("/", "\\")+"\r\n ) \r\n )"
+							+ "ELSE ( \r\n  echo Maven compile error or no generated reportPath \r\n" + 
+							" echo Maven exit code: %ERRORLEVEL% \r\n RD /S /Q "+gitDownloadDir.replace("/", "\\")+"\r\n ) \r\n )"
+							+ "ELSE ( \r\n echo git error \r\n RD /S /Q "+gitDownloadDir.replace("/", "\\")+"\r\n ) \r\n";
+					
+			
+			uniqueCommandLineCopy.add(gitCommandLine+gitTemp+mavenCommandLine+mavenTemp+sonarTestCommandLine+sonarTestTemp);
+		}
+		
+		
+		
+		myUtils.writeUrlInFile(uniqueCommandLineCopy, http.getMavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine());
+		
+		System.out.println("End Generation of Unique CommandLine");
+	} 
 	
 }

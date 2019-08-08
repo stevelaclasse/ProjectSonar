@@ -127,6 +127,38 @@ public class UtilsSortingProjects {
 			    writer.close();
 			}
 	
+	
+	protected void writeUrlMavenGoodStructuredProjectInFile(List<String> projectUrl,String fileName) 
+			  throws Exception {
+
+			    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
+			    
+				HttpURLConnect http=new HttpURLConnect() ;
+				HttpURLConnection httpCon;
+				
+				int responseCode;
+				
+				http.setBase_url("https://api.github.com/repos/");
+				
+				for(int i=0;i<projectUrl.size();i++) {
+					
+					http.setPath(projectUrl.get(i)+"/contents/src/main/java"+"?access_token="+http.getAccess_token());
+
+					httpCon=http.sendGet();
+					
+					responseCode=httpCon.getResponseCode();
+					
+					if (responseCode==200) {
+					writer.write(projectUrl.get(i));
+					System.out.println("testing /src/main/java:"+http.getPath());
+					writer.write("\n");
+					}
+				}
+			     
+			    writer.close();
+			}
+	
+	
 	protected void writeUrlGradleProjectInFile(List<String> projectUrl,String fileName) 
 			  throws Exception {
 

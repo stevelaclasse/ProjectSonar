@@ -24,6 +24,7 @@ public class ConnectWithGitLabApi {
 		//https://api.github.com/legacy/repos/search/language=java;
 		//https://api.github.com/repos/rzwitserloot/lombok/contents/
 		//https://api.github.com/search/repositories?q=maven+language:java&page=2&per_page=100
+		//https://api.github.com/repos/octokit/octokit.rb/contents/spec1
 		
 		//Don't forget to ignore test failure with maven or gradle
 

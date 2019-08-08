@@ -37,17 +37,21 @@ public class HttpURLConnect {
 	
 	private String downloadedProject = getBatDirectory()+"/ALLPROJECTS";
 	
-	private String jacocoPluginMavenDownloadedProject = getDownloadedProject()+"/MAVEN/JACOCO";
+	private String mavenGoodStruturedDownloadedProjectDirectory = getDownloadedProject()+"/NEW_MAVEN_PROJECTS";
 	
-	private String jacocoPluginGradleDownloadedProject = getDownloadedProject()+"/GRADLE/JACOCO";
+	private String jacocoPluginMavenDownloadedProjectDirectory = getDownloadedProject()+"/MAVEN/JACOCO";
 	
-	private String coberturaPluginMavenDownloadedProject = getDownloadedProject()+"/MAVEN/COBERTURA";
+	private String jacocoPluginGradleDownloadedProjectDirectory = getDownloadedProject()+"/GRADLE/JACOCO";
 	
-	private String coberturaPluginGradleDownloadedProject = getDownloadedProject()+"/GRADLE/COBERTURA";
+	private String coberturaPluginMavenDownloadedProjectDirectory = getDownloadedProject()+"/MAVEN/COBERTURA";
+	
+	private String coberturaPluginGradleDownloadedProjectDirectory = getDownloadedProject()+"/GRADLE/COBERTURA";
 	
 	private String sonnarScannerBatFileLocation="C:\\Users\\wfozing\\Downloads\\sonar-scanner-cli-3.3.0.1492-windows\\sonar-scanner-3.3.0.1492-windows\\bin\\sonar-scanner.bat";
 	
-	private String sonarHosturl="http://localhost:9000";
+	private String jacocoAgentFileLocation="C:\\Users\\wfozing\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.3\\org.jacoco.agent-0.8.3-runtime.jar";
+	
+
 
 	private String langageJavaUrlsFileName=getWorkingDirectory()+"/langageJavaUrls.txt";
 	
@@ -56,7 +60,8 @@ public class HttpURLConnect {
 	
 	private String gradleProjectUrlsFileName=getWorkingDirectory()+"/gradleProjectUrls.txt";
 	
-
+	private String excelResultsFileName=getWorkingDirectory()+"/excelResultsFileName.xlsx";
+	
 
 	private String jacocoPluginProjectMavenFileName=getWorkingDirectory()+"/JacocoPluginProjectMaven.txt";
 	
@@ -66,6 +71,9 @@ public class HttpURLConnect {
 	
 	private String coberturaPluginProjectMavenFileName=getWorkingDirectory()+"/CoberturaPluginProjectMaven.txt";
 	
+	private String mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName=getWorkingDirectory()+"/mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName.txt";
+	
+	private String mavenExploitableProjectUniqueGitCompileAndSonarTestFileName=getWorkingDirectory()+"/mavenExploitableProjectUniqueGitCompileAndSonarTestFileName.txt";
 	
 	private String jacocoPluginProjectMavenGoodCompiledProjectFilename=getBatDirectory()+"/JacocoPluginProjectMavenGoodCompiledProjectFilename.txt";
 	
@@ -84,7 +92,7 @@ public class HttpURLConnect {
 	
 	private String CoberturaPluginProjectGradleGoodSonarTestFilename=getBatDirectory()+"/CoberturaPluginProjectGradleGoodSonarTestFilename.txt";
 	
-	
+	private String mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine = getBatDirectory()+"/mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine.bat";
 
 	private String jacocoPluginProjectMavenGitCommandLineBatFileName=getGitBatDirectory()+"/JacocoPluginProjectMavenGitCommandLineBat.bat";
 	
@@ -123,8 +131,49 @@ public class HttpURLConnect {
 	
 	private String path2="/legacy/repos/search/language=java?start_page=";
 
+	private String access_token="c818b41a65cf9e388083a466b6a6e33a27697ff7";
+	
+	private String sonarHosturl="http://localhost:9000/";
+	
+	private String sonarServerUser="admin";
+	
+	private String sonarServerPassword="admin";
 	
 	
+	
+
+	public String getExcelResultsFileName() {
+		return excelResultsFileName;
+	}
+
+	public void setExcelResultsFileName(String excelResultsFileName) {
+		this.excelResultsFileName = excelResultsFileName;
+	}
+
+	public String getSonarServerUser() {
+		return sonarServerUser;
+	}
+
+	public void setSonarServerUser(String sonarServerUser) {
+		this.sonarServerUser = sonarServerUser;
+	}
+
+	public String getSonarServerPassword() {
+		return sonarServerPassword;
+	}
+
+	public void setSonarServerPassword(String sonarServerPassword) {
+		this.sonarServerPassword = sonarServerPassword;
+	}
+
+	public String getAccess_token() {
+		return access_token;
+	}
+
+	public void setAccess_token(String access_token) {
+		this.access_token = access_token;
+	}
+
 	public String getSonnarScannerBatFileLocation() {
 		return sonnarScannerBatFileLocation;
 	}
@@ -405,6 +454,51 @@ public class HttpURLConnect {
 	
 	
 	
+	
+	
+	public String getMavenExploitableProjectUniqueGitCompileAndSonarTestFileName() {
+		return mavenExploitableProjectUniqueGitCompileAndSonarTestFileName;
+	}
+
+	public void setMavenExploitableProjectUniqueGitCompileAndSonarTestFileName(
+			String mavenExploitableProjectUniqueGitCompileAndSonarTestFileName) {
+		this.mavenExploitableProjectUniqueGitCompileAndSonarTestFileName = mavenExploitableProjectUniqueGitCompileAndSonarTestFileName;
+	}
+
+	public String getJacocoAgentFileLocation() {
+		return jacocoAgentFileLocation;
+	}
+
+	public void setJacocoAgentFileLocation(String jacocoAgentFileLocation) {
+		this.jacocoAgentFileLocation = jacocoAgentFileLocation;
+	}
+
+	public String getMavenGoodStruturedDownloadedProjectDirectory() {
+		return mavenGoodStruturedDownloadedProjectDirectory;
+	}
+
+	public void setMavenGoodStruturedDownloadedProjectDirectory(String mavenGoodStruturedDownloadedProject) {
+		this.mavenGoodStruturedDownloadedProjectDirectory = mavenGoodStruturedDownloadedProject;
+	}
+
+	public String getMavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName() {
+		return mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName;
+	}
+
+	public void setMavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName(
+			String mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName) {
+		this.mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName = mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName;
+	}
+
+	public String getMavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine() {
+		return mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine;
+	}
+
+	public void setMavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine(
+			String mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine) {
+		this.mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine = mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine;
+	}
+
 	public String getDownloadedProject() {
 		return downloadedProject;
 	}
@@ -413,36 +507,36 @@ public class HttpURLConnect {
 		this.downloadedProject = downloadedProject;
 	}
 
-	public String getJacocoPluginMavenDownloadedProject() {
-		return jacocoPluginMavenDownloadedProject;
+	public String getJacocoPluginMavenDownloadedProjectDirectory() {
+		return jacocoPluginMavenDownloadedProjectDirectory;
 	}
 
-	public void setJacocoPluginMavenDownloadedProject(String jacocoPluginMavenDownloadedProject) {
-		this.jacocoPluginMavenDownloadedProject = jacocoPluginMavenDownloadedProject;
+	public void setJacocoPluginMavenDownloadedProjectDirectory(String jacocoPluginMavenDownloadedProject) {
+		this.jacocoPluginMavenDownloadedProjectDirectory = jacocoPluginMavenDownloadedProject;
 	}
 
-	public String getJacocoPluginGradleDownloadedProject() {
-		return jacocoPluginGradleDownloadedProject;
+	public String getJacocoPluginGradleDownloadedProjectDirectory() {
+		return jacocoPluginGradleDownloadedProjectDirectory;
 	}
 
-	public void setJacocoPluginGradleDownloadedProject(String jacocoPluginGradleDownloadedProject) {
-		this.jacocoPluginGradleDownloadedProject = jacocoPluginGradleDownloadedProject;
+	public void setJacocoPluginGradleDownloadedProjectDirectory(String jacocoPluginGradleDownloadedProject) {
+		this.jacocoPluginGradleDownloadedProjectDirectory = jacocoPluginGradleDownloadedProject;
 	}
 
-	public String getCoberturaPluginMavenDownloadedProject() {
-		return coberturaPluginMavenDownloadedProject;
+	public String getCoberturaPluginMavenDownloadedProjectDirectory() {
+		return coberturaPluginMavenDownloadedProjectDirectory;
 	}
 
-	public void setCoberturaPluginMavenDownloadedProject(String coberturaPluginMavenDownloadedProject) {
-		this.coberturaPluginMavenDownloadedProject = coberturaPluginMavenDownloadedProject;
+	public void setCoberturaPluginMavenDownloadedProjectDirectory(String coberturaPluginMavenDownloadedProject) {
+		this.coberturaPluginMavenDownloadedProjectDirectory = coberturaPluginMavenDownloadedProject;
 	}
 
-	public String getCoberturaPluginGradleDownloadedProject() {
-		return coberturaPluginGradleDownloadedProject;
+	public String getCoberturaPluginGradleDownloadedProjectDirectory() {
+		return coberturaPluginGradleDownloadedProjectDirectory;
 	}
 
-	public void setCoberturaPluginGradleDownloadedProject(String coberturaPluginGradleDownloadedProject) {
-		this.coberturaPluginGradleDownloadedProject = coberturaPluginGradleDownloadedProject;
+	public void setCoberturaPluginGradleDownloadedProjectDirectory(String coberturaPluginGradleDownloadedProject) {
+		this.coberturaPluginGradleDownloadedProjectDirectory = coberturaPluginGradleDownloadedProject;
 	}
 
 	public String getJacocoPluginProjectMavenCompileCommandLineBatFilename() {
