@@ -215,7 +215,8 @@ public class UtilsGeneratingBatFiles {
 		
 		System.out.println("Cobertura Plugin Gradle DownloadedProject Folder="+coberturaPluginGradleDownloadedProjectAbsolutePath.getAbsolutePath()+"\texist="+coberturaPluginGradleDownloadedProjectAbsolutePath.getAbsoluteFile().exists());
 		
-		if(jacocoPluginMavenDownloadedProjectAbsolutePath.exists()==true && coberturaPluginMavenDownloadedProjectAbsolutePath.exists()==true && jacocoPluginGradleDownloadedProjectAbsolutePath.exists()==true && coberturaPluginGradleDownloadedProjectAbsolutePath.exists()==true ) {
+		//adapting to allow the generatio of at soar bat files before te exectio of git comd lie to creat foldes
+		if((1==1) || (jacocoPluginMavenDownloadedProjectAbsolutePath.exists()==true && coberturaPluginMavenDownloadedProjectAbsolutePath.exists()==true && jacocoPluginGradleDownloadedProjectAbsolutePath.exists()==true && coberturaPluginGradleDownloadedProjectAbsolutePath.exists()==true) ) {
 		
 		String sonarJacocoPluginMavenBaseDir=jacocoPluginMavenDownloadedProjectAbsolutePath.getAbsolutePath();
 		

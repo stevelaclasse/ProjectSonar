@@ -1,13 +1,11 @@
 call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/alibaba#jvm-sandbox/pom.xml   
+call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/citerus#dddsample-core/pom.xml   
 call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/codeforamerica#open311_java/pom.xml   
-call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/elasticjob#elastic-job-lite/pom.xml   
+call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/CrawlScript#WebCollector/pom.xml   
 call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/fasseg#exp4j/pom.xml   
-call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/jmxtrans#jmxtrans/pom.xml   
 call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/knightliao#disconf/pom.xml   
+call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/nutzam#nutz/pom.xml   
 call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/optimaize#language-detector/pom.xml   
 call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/pasha4j#xacml4j/pom.xml   
 call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/PhantomYdn#jlll/pom.xml   
-call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/sarxos#webcam-capture/pom.xml   
-call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/searchbox-io#Jest/pom.xml   
 call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/unbxd#java-sdk/pom.xml   
-call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/vdurmont#emoji-java/pom.xml   

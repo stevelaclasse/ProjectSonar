@@ -25,8 +25,8 @@ public class App
         
     	 Tasks myProgramm=new Tasks();
     	//myProgramm.extractingProjectsFromGithub();
-    	//myProgramm.createBatCommandForGitDownloadAndCompilationAndSonartest();
+    	// myProgramm.createBatCommandForGitDownloadAndCompilationAndSonartest();
     	//myProgramm.launchBatCommandInBatFiles();
-    	 myProgramm.extractingAnalyseResultsFromSonarQubeServerIntoExcelFile();
+    	myProgramm.extractingAnalyseResultsFromSonarQubeServerIntoExcelFile();
     }
 }

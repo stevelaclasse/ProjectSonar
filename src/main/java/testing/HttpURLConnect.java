@@ -47,9 +47,9 @@ public class HttpURLConnect {
 	
 	private String coberturaPluginGradleDownloadedProjectDirectory = getDownloadedProject()+"/GRADLE/COBERTURA";
 	
-	private String sonnarScannerBatFileLocation="C:\\Users\\wfozing\\Downloads\\sonar-scanner-cli-3.3.0.1492-windows\\sonar-scanner-3.3.0.1492-windows\\bin\\sonar-scanner.bat";
+	private String sonnarScannerBatFileLocation="C:\\sonar-scanner-cli-4.0.0.1744-windows\\sonar-scanner-4.0.0.1744-windows\\bin\\sonar-scanner.bat";
 	
-	private String jacocoAgentFileLocation="C:\\Users\\wfozing\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.3\\org.jacoco.agent-0.8.3-runtime.jar";
+	private String jacocoAgentFileLocation="C:\\jacoco-maven-plugin-0.8.3\\jacoco-maven-plugin-0.8.3.jar";
 	
 
 
@@ -83,6 +83,7 @@ public class HttpURLConnect {
 	
 	private String CoberturaPluginProjectGradleGoodCompiledProjectFilename=getBatDirectory()+"/CoberturaPluginProjectGradleGoodCompiledProjectFilename.txt";
 	
+	private String gitGoodDownloadedProjectFileName=getBatDirectory()+"/GitGoodDownloadedProjectFilename.txt";
 	
 	private String jacocoPluginProjectMavenGoodSonarTestFilename=getBatDirectory()+"/JacocoPluginProjectMavenGoodSonarTestFilename.txt";
 	
@@ -418,6 +419,16 @@ public class HttpURLConnect {
 	public void setCoberturaPluginProjectGradleGoodCompiledProjectFilename(
 			String coberturaPluginProjectGradleGoodCompiledProjectFilename) {
 		CoberturaPluginProjectGradleGoodCompiledProjectFilename = coberturaPluginProjectGradleGoodCompiledProjectFilename;
+	}
+	
+	
+
+	public String getGitGoodDownloadedProjectFileName() {
+		return gitGoodDownloadedProjectFileName;
+	}
+
+	public void setGitGoodDownloadedProjectFileName(String gitGoodDownloadedProjectFileName) {
+		this.gitGoodDownloadedProjectFileName = gitGoodDownloadedProjectFileName;
 	}
 
 	public String getJacocoPluginProjectMavenGitCommandLineBatFileName() {

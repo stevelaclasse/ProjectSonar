@@ -12,7 +12,20 @@
  ) 
 
 @echo off 
- Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/apache#activemq/pom.xml 
+ Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/apache#zeppelin/pom.xml 
+ echo executing Command: %var% 
+ %var% 
+ IF %ERRORLEVEL% EQU 0 ( 
+ echo ECHO #####GOOD COMPILED PROJECT##### 
+ echo %var% 
+ echo %var% 1>> CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt 
+)ELSE ( 
+ echo ECHO -----FAILED----- 
+ echo %var% 
+ ) 
+
+@echo off 
+ Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/citerus#dddsample-core/pom.xml 
  echo executing Command: %var% 
  %var% 
  IF %ERRORLEVEL% EQU 0 ( 
@@ -38,7 +51,7 @@
  ) 
 
 @echo off 
- Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/deeplearning4j#nd4j/pom.xml 
+ Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/CrawlScript#WebCollector/pom.xml 
  echo executing Command: %var% 
  %var% 
  IF %ERRORLEVEL% EQU 0 ( 
@@ -103,19 +116,6 @@
  ) 
 
 @echo off 
- Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/jmxtrans#jmxtrans/pom.xml 
- echo executing Command: %var% 
- %var% 
- IF %ERRORLEVEL% EQU 0 ( 
- echo ECHO #####GOOD COMPILED PROJECT##### 
- echo %var% 
- echo %var% 1>> CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt 
-)ELSE ( 
- echo ECHO -----FAILED----- 
- echo %var% 
- ) 
-
-@echo off 
  Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/knightliao#disconf/pom.xml 
  echo executing Command: %var% 
  %var% 
@@ -130,6 +130,19 @@
 
 @echo off 
  Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/lets-blade#blade/pom.xml 
+ echo executing Command: %var% 
+ %var% 
+ IF %ERRORLEVEL% EQU 0 ( 
+ echo ECHO #####GOOD COMPILED PROJECT##### 
+ echo %var% 
+ echo %var% 1>> CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt 
+)ELSE ( 
+ echo ECHO -----FAILED----- 
+ echo %var% 
+ ) 
+
+@echo off 
+ Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/nutzam#nutz/pom.xml 
  echo executing Command: %var% 
  %var% 
  IF %ERRORLEVEL% EQU 0 ( 
@@ -181,59 +194,7 @@
  ) 
 
 @echo off 
- Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/qos-ch#logback/pom.xml 
- echo executing Command: %var% 
- %var% 
- IF %ERRORLEVEL% EQU 0 ( 
- echo ECHO #####GOOD COMPILED PROJECT##### 
- echo %var% 
- echo %var% 1>> CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt 
-)ELSE ( 
- echo ECHO -----FAILED----- 
- echo %var% 
- ) 
-
-@echo off 
- Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/rapidoid#rapidoid/pom.xml 
- echo executing Command: %var% 
- %var% 
- IF %ERRORLEVEL% EQU 0 ( 
- echo ECHO #####GOOD COMPILED PROJECT##### 
- echo %var% 
- echo %var% 1>> CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt 
-)ELSE ( 
- echo ECHO -----FAILED----- 
- echo %var% 
- ) 
-
-@echo off 
  Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/samskivert#jmustache/pom.xml 
- echo executing Command: %var% 
- %var% 
- IF %ERRORLEVEL% EQU 0 ( 
- echo ECHO #####GOOD COMPILED PROJECT##### 
- echo %var% 
- echo %var% 1>> CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt 
-)ELSE ( 
- echo ECHO -----FAILED----- 
- echo %var% 
- ) 
-
-@echo off 
- Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/sarxos#webcam-capture/pom.xml 
- echo executing Command: %var% 
- %var% 
- IF %ERRORLEVEL% EQU 0 ( 
- echo ECHO #####GOOD COMPILED PROJECT##### 
- echo %var% 
- echo %var% 1>> CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt 
-)ELSE ( 
- echo ECHO -----FAILED----- 
- echo %var% 
- ) 
-
-@echo off 
- Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/searchbox-io#Jest/pom.xml 
  echo executing Command: %var% 
  %var% 
  IF %ERRORLEVEL% EQU 0 ( 
@@ -259,7 +220,7 @@
  ) 
 
 @echo off 
- Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/unbxd#java-sdk/pom.xml 
+ Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/twitter#distributedlog/pom.xml 
  echo executing Command: %var% 
  %var% 
  IF %ERRORLEVEL% EQU 0 ( 
@@ -272,7 +233,7 @@
  ) 
 
 @echo off 
- Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/vdurmont#emoji-java/pom.xml 
+ Set var=call mvn clean cobertura:cobertura -Dcobertura.report.format=xml -Dmaven.test.failure.ignore=true -f ALLPROJECTS/MAVEN/COBERTURA/unbxd#java-sdk/pom.xml 
  echo executing Command: %var% 
  %var% 
  IF %ERRORLEVEL% EQU 0 ( 
