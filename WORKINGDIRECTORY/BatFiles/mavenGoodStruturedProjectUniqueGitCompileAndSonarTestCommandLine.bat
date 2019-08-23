@@ -15,7 +15,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\vmware#vsphere-automation-sdk-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=vmware#vsphere-automation-sdk-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=vmware:vsphere-automation-sdk-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\vmware#vsphere-automation-sdk-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=vmware#vsphere-automation-sdk-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=vmware:vsphere-automation-sdk-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\vmware#vsphere-automation-sdk-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -48,7 +48,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\micromata#javaapiforkml\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=micromata#javaapiforkml -Dsonar.projectVersion=1.0 -Dsonar.projectKey=micromata:javaapiforkml -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\micromata#javaapiforkml" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=micromata#javaapiforkml -Dsonar.projectVersion=1.0 -Dsonar.projectKey=micromata:javaapiforkml -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\micromata#javaapiforkml" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -81,7 +81,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\ambiverse-nlu#nlu-api-client-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ambiverse-nlu#nlu-api-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ambiverse-nlu:nlu-api-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ambiverse-nlu#nlu-api-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ambiverse-nlu#nlu-api-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ambiverse-nlu:nlu-api-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ambiverse-nlu#nlu-api-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -114,7 +114,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\koushikr#jelastic\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=koushikr#jelastic -Dsonar.projectVersion=1.0 -Dsonar.projectKey=koushikr:jelastic -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\koushikr#jelastic" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=koushikr#jelastic -Dsonar.projectVersion=1.0 -Dsonar.projectKey=koushikr:jelastic -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\koushikr#jelastic" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -147,7 +147,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\killbill#killbill-java-parser\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=killbill#killbill-java-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=killbill:killbill-java-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\killbill#killbill-java-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=killbill#killbill-java-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=killbill:killbill-java-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\killbill#killbill-java-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -180,7 +180,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\sincosmos#javaprj\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=sincosmos#javaprj -Dsonar.projectVersion=1.0 -Dsonar.projectKey=sincosmos:javaprj -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\sincosmos#javaprj" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=sincosmos#javaprj -Dsonar.projectVersion=1.0 -Dsonar.projectKey=sincosmos:javaprj -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\sincosmos#javaprj" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -213,7 +213,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\darren-rogan#LanguageIdentifier\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=darren-rogan#LanguageIdentifier -Dsonar.projectVersion=1.0 -Dsonar.projectKey=darren-rogan:LanguageIdentifier -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\darren-rogan#LanguageIdentifier" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=darren-rogan#LanguageIdentifier -Dsonar.projectVersion=1.0 -Dsonar.projectKey=darren-rogan:LanguageIdentifier -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\darren-rogan#LanguageIdentifier" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -246,7 +246,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\wkgcass#Style\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=wkgcass#Style -Dsonar.projectVersion=1.0 -Dsonar.projectKey=wkgcass:Style -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\wkgcass#Style" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=wkgcass#Style -Dsonar.projectVersion=1.0 -Dsonar.projectKey=wkgcass:Style -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\wkgcass#Style" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -279,7 +279,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\HJKCC#javaUtils\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=HJKCC#javaUtils -Dsonar.projectVersion=1.0 -Dsonar.projectKey=HJKCC:javaUtils -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\HJKCC#javaUtils" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=HJKCC#javaUtils -Dsonar.projectVersion=1.0 -Dsonar.projectKey=HJKCC:javaUtils -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\HJKCC#javaUtils" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -312,7 +312,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\cdtian#java-tutorials\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=cdtian#java-tutorials -Dsonar.projectVersion=1.0 -Dsonar.projectKey=cdtian:java-tutorials -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\cdtian#java-tutorials" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=cdtian#java-tutorials -Dsonar.projectVersion=1.0 -Dsonar.projectKey=cdtian:java-tutorials -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\cdtian#java-tutorials" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -345,7 +345,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\sunxiaobiu#Java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=sunxiaobiu#Java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=sunxiaobiu:Java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\sunxiaobiu#Java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=sunxiaobiu#Java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=sunxiaobiu:Java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\sunxiaobiu#Java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -378,7 +378,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\b0noI#AIF2\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=b0noI#AIF2 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=b0noI:AIF2 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\b0noI#AIF2" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=b0noI#AIF2 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=b0noI:AIF2 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\b0noI#AIF2" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -411,7 +411,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\xaanit#Life\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xaanit#Life -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xaanit:Life -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xaanit#Life" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xaanit#Life -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xaanit:Life -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xaanit#Life" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -444,7 +444,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\CrawlScript#WebCollector\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=CrawlScript#WebCollector -Dsonar.projectVersion=1.0 -Dsonar.projectKey=CrawlScript:WebCollector -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\CrawlScript#WebCollector" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=CrawlScript#WebCollector -Dsonar.projectVersion=1.0 -Dsonar.projectKey=CrawlScript:WebCollector -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\CrawlScript#WebCollector" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -477,7 +477,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\52North#uncertml-api\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=52North#uncertml-api -Dsonar.projectVersion=1.0 -Dsonar.projectKey=52North:uncertml-api -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\52North#uncertml-api" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=52North#uncertml-api -Dsonar.projectVersion=1.0 -Dsonar.projectKey=52North:uncertml-api -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\52North#uncertml-api" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -510,7 +510,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\protegeproject#swrlapi\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=protegeproject#swrlapi -Dsonar.projectVersion=1.0 -Dsonar.projectKey=protegeproject:swrlapi -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\protegeproject#swrlapi" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=protegeproject#swrlapi -Dsonar.projectVersion=1.0 -Dsonar.projectKey=protegeproject:swrlapi -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\protegeproject#swrlapi" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -543,7 +543,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\steveohara#j2mod\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=steveohara#j2mod -Dsonar.projectVersion=1.0 -Dsonar.projectKey=steveohara:j2mod -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\steveohara#j2mod" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=steveohara#j2mod -Dsonar.projectVersion=1.0 -Dsonar.projectKey=steveohara:j2mod -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\steveohara#j2mod" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -576,7 +576,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\bytedeco#javacpp\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=bytedeco#javacpp -Dsonar.projectVersion=1.0 -Dsonar.projectKey=bytedeco:javacpp -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\bytedeco#javacpp" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=bytedeco#javacpp -Dsonar.projectVersion=1.0 -Dsonar.projectKey=bytedeco:javacpp -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\bytedeco#javacpp" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -609,7 +609,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\paypal#digraph-parser\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=paypal#digraph-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=paypal:digraph-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\paypal#digraph-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=paypal#digraph-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=paypal:digraph-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\paypal#digraph-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -642,7 +642,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\antoniomacri#rosie-pattern-language-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=antoniomacri#rosie-pattern-language-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=antoniomacri:rosie-pattern-language-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\antoniomacri#rosie-pattern-language-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=antoniomacri#rosie-pattern-language-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=antoniomacri:rosie-pattern-language-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\antoniomacri#rosie-pattern-language-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -675,7 +675,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\frohoff#ysoserial\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=frohoff#ysoserial -Dsonar.projectVersion=1.0 -Dsonar.projectKey=frohoff:ysoserial -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\frohoff#ysoserial" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=frohoff#ysoserial -Dsonar.projectVersion=1.0 -Dsonar.projectKey=frohoff:ysoserial -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\frohoff#ysoserial" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -708,7 +708,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\prismicio#java-kit\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=prismicio#java-kit -Dsonar.projectVersion=1.0 -Dsonar.projectKey=prismicio:java-kit -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\prismicio#java-kit" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=prismicio#java-kit -Dsonar.projectVersion=1.0 -Dsonar.projectKey=prismicio:java-kit -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\prismicio#java-kit" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -741,7 +741,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\chewiebug#GCViewer\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=chewiebug#GCViewer -Dsonar.projectVersion=1.0 -Dsonar.projectKey=chewiebug:GCViewer -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\chewiebug#GCViewer" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=chewiebug#GCViewer -Dsonar.projectVersion=1.0 -Dsonar.projectKey=chewiebug:GCViewer -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\chewiebug#GCViewer" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -774,7 +774,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\ICO2S#sbolstack-client-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ICO2S#sbolstack-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ICO2S:sbolstack-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ICO2S#sbolstack-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ICO2S#sbolstack-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ICO2S:sbolstack-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ICO2S#sbolstack-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -807,7 +807,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\KengoTODA#Brainjack\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=KengoTODA#Brainjack -Dsonar.projectVersion=1.0 -Dsonar.projectKey=KengoTODA:Brainjack -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\KengoTODA#Brainjack" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=KengoTODA#Brainjack -Dsonar.projectVersion=1.0 -Dsonar.projectKey=KengoTODA:Brainjack -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\KengoTODA#Brainjack" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -840,7 +840,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\socketio#socket.io-client-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=socketio#socket.io-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=socketio:socket.io-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\socketio#socket.io-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=socketio#socket.io-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=socketio:socket.io-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\socketio#socket.io-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -873,7 +873,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\FasterXML#jackson-databind\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=FasterXML#jackson-databind -Dsonar.projectVersion=1.0 -Dsonar.projectKey=FasterXML:jackson-databind -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\FasterXML#jackson-databind" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=FasterXML#jackson-databind -Dsonar.projectVersion=1.0 -Dsonar.projectKey=FasterXML:jackson-databind -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\FasterXML#jackson-databind" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -906,7 +906,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\tomoya92#pyblog\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tomoya92#pyblog -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tomoya92:pyblog -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tomoya92#pyblog" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tomoya92#pyblog -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tomoya92:pyblog -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tomoya92#pyblog" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -939,7 +939,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\hakmesyo#Open-Jazari-Library\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=hakmesyo#Open-Jazari-Library -Dsonar.projectVersion=1.0 -Dsonar.projectKey=hakmesyo:Open-Jazari-Library -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\hakmesyo#Open-Jazari-Library" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=hakmesyo#Open-Jazari-Library -Dsonar.projectVersion=1.0 -Dsonar.projectKey=hakmesyo:Open-Jazari-Library -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\hakmesyo#Open-Jazari-Library" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -972,7 +972,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\qiurunze123#miaosha\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=qiurunze123#miaosha -Dsonar.projectVersion=1.0 -Dsonar.projectKey=qiurunze123:miaosha -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\qiurunze123#miaosha" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=qiurunze123#miaosha -Dsonar.projectVersion=1.0 -Dsonar.projectKey=qiurunze123:miaosha -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\qiurunze123#miaosha" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1005,7 +1005,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Hatik#java-courses\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Hatik#java-courses -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Hatik:java-courses -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Hatik#java-courses" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Hatik#java-courses -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Hatik:java-courses -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Hatik#java-courses" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1038,7 +1038,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\joschi#JadConfig\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=joschi#JadConfig -Dsonar.projectVersion=1.0 -Dsonar.projectKey=joschi:JadConfig -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\joschi#JadConfig" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=joschi#JadConfig -Dsonar.projectVersion=1.0 -Dsonar.projectKey=joschi:JadConfig -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\joschi#JadConfig" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1071,7 +1071,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\RayRuiLi#ThinkingInJavaRay\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=RayRuiLi#ThinkingInJavaRay -Dsonar.projectVersion=1.0 -Dsonar.projectKey=RayRuiLi:ThinkingInJavaRay -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\RayRuiLi#ThinkingInJavaRay" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=RayRuiLi#ThinkingInJavaRay -Dsonar.projectVersion=1.0 -Dsonar.projectKey=RayRuiLi:ThinkingInJavaRay -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\RayRuiLi#ThinkingInJavaRay" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1104,7 +1104,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\unbxd#java-sdk\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=unbxd#java-sdk -Dsonar.projectVersion=1.0 -Dsonar.projectKey=unbxd:java-sdk -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\unbxd#java-sdk" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=unbxd#java-sdk -Dsonar.projectVersion=1.0 -Dsonar.projectKey=unbxd:java-sdk -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\unbxd#java-sdk" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1137,7 +1137,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\spotify#docker-maven-plugin\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=spotify#docker-maven-plugin -Dsonar.projectVersion=1.0 -Dsonar.projectKey=spotify:docker-maven-plugin -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\spotify#docker-maven-plugin" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=spotify#docker-maven-plugin -Dsonar.projectVersion=1.0 -Dsonar.projectKey=spotify:docker-maven-plugin -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\spotify#docker-maven-plugin" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1170,7 +1170,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#druid\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#druid -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:druid -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#druid" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#druid -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:druid -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#druid" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1203,7 +1203,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\dbi1463#SortDescriptor\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=dbi1463#SortDescriptor -Dsonar.projectVersion=1.0 -Dsonar.projectKey=dbi1463:SortDescriptor -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\dbi1463#SortDescriptor" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=dbi1463#SortDescriptor -Dsonar.projectVersion=1.0 -Dsonar.projectKey=dbi1463:SortDescriptor -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\dbi1463#SortDescriptor" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1236,7 +1236,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\spring-projects#spring-mvc-showcase\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=spring-projects#spring-mvc-showcase -Dsonar.projectVersion=1.0 -Dsonar.projectKey=spring-projects:spring-mvc-showcase -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\spring-projects#spring-mvc-showcase" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=spring-projects#spring-mvc-showcase -Dsonar.projectVersion=1.0 -Dsonar.projectKey=spring-projects:spring-mvc-showcase -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\spring-projects#spring-mvc-showcase" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1269,7 +1269,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\vexprel#vexprel\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=vexprel#vexprel -Dsonar.projectVersion=1.0 -Dsonar.projectKey=vexprel:vexprel -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\vexprel#vexprel" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=vexprel#vexprel -Dsonar.projectVersion=1.0 -Dsonar.projectKey=vexprel:vexprel -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\vexprel#vexprel" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1302,7 +1302,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\citerus#dddsample-core\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=citerus#dddsample-core -Dsonar.projectVersion=1.0 -Dsonar.projectKey=citerus:dddsample-core -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\citerus#dddsample-core" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=citerus#dddsample-core -Dsonar.projectVersion=1.0 -Dsonar.projectKey=citerus:dddsample-core -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\citerus#dddsample-core" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1335,7 +1335,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\baidu#uid-generator\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=baidu#uid-generator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=baidu:uid-generator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\baidu#uid-generator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=baidu#uid-generator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=baidu:uid-generator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\baidu#uid-generator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1368,7 +1368,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\romildo#straightline\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=romildo#straightline -Dsonar.projectVersion=1.0 -Dsonar.projectKey=romildo:straightline -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\romildo#straightline" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=romildo#straightline -Dsonar.projectVersion=1.0 -Dsonar.projectKey=romildo:straightline -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\romildo#straightline" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1401,7 +1401,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\ebolwidt#cassowary-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ebolwidt#cassowary-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ebolwidt:cassowary-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ebolwidt#cassowary-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ebolwidt#cassowary-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ebolwidt:cassowary-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ebolwidt#cassowary-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1434,7 +1434,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\joshjdevl#libsodium-jni\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=joshjdevl#libsodium-jni -Dsonar.projectVersion=1.0 -Dsonar.projectKey=joshjdevl:libsodium-jni -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\joshjdevl#libsodium-jni" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=joshjdevl#libsodium-jni -Dsonar.projectVersion=1.0 -Dsonar.projectKey=joshjdevl:libsodium-jni -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\joshjdevl#libsodium-jni" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1467,7 +1467,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\wanasit#chrono-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=wanasit#chrono-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=wanasit:chrono-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\wanasit#chrono-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=wanasit#chrono-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=wanasit:chrono-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\wanasit#chrono-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1500,7 +1500,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\ptitjes#jlato\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ptitjes#jlato -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ptitjes:jlato -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ptitjes#jlato" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ptitjes#jlato -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ptitjes:jlato -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ptitjes#jlato" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1533,7 +1533,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\EnterpriseQualityCoding#FizzBuzzEnterpriseEdition\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=EnterpriseQualityCoding#FizzBuzzEnterpriseEdition -Dsonar.projectVersion=1.0 -Dsonar.projectKey=EnterpriseQualityCoding:FizzBuzzEnterpriseEdition -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\EnterpriseQualityCoding#FizzBuzzEnterpriseEdition" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=EnterpriseQualityCoding#FizzBuzzEnterpriseEdition -Dsonar.projectVersion=1.0 -Dsonar.projectKey=EnterpriseQualityCoding:FizzBuzzEnterpriseEdition -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\EnterpriseQualityCoding#FizzBuzzEnterpriseEdition" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1566,7 +1566,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\optimaize#language-detector\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=optimaize#language-detector -Dsonar.projectVersion=1.0 -Dsonar.projectKey=optimaize:language-detector -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\optimaize#language-detector" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=optimaize#language-detector -Dsonar.projectVersion=1.0 -Dsonar.projectKey=optimaize:language-detector -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\optimaize#language-detector" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1599,7 +1599,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\oasis-open#openc2-lycan-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=oasis-open#openc2-lycan-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=oasis-open:openc2-lycan-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\oasis-open#openc2-lycan-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=oasis-open#openc2-lycan-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=oasis-open:openc2-lycan-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\oasis-open#openc2-lycan-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1632,7 +1632,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Red5#red5-server\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Red5#red5-server -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Red5:red5-server -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Red5#red5-server" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Red5#red5-server -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Red5:red5-server -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Red5#red5-server" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1665,7 +1665,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\awslabs#aws-hal-client-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=awslabs#aws-hal-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=awslabs:aws-hal-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\awslabs#aws-hal-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=awslabs#aws-hal-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=awslabs:aws-hal-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\awslabs#aws-hal-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1698,7 +1698,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\daniloarcidiacono#commons-lang\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=daniloarcidiacono#commons-lang -Dsonar.projectVersion=1.0 -Dsonar.projectKey=daniloarcidiacono:commons-lang -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\daniloarcidiacono#commons-lang" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=daniloarcidiacono#commons-lang -Dsonar.projectVersion=1.0 -Dsonar.projectKey=daniloarcidiacono:commons-lang -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\daniloarcidiacono#commons-lang" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1731,7 +1731,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\algaworks#artigo-destrinchando-jpql-jpa\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=algaworks#artigo-destrinchando-jpql-jpa -Dsonar.projectVersion=1.0 -Dsonar.projectKey=algaworks:artigo-destrinchando-jpql-jpa -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\algaworks#artigo-destrinchando-jpql-jpa" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=algaworks#artigo-destrinchando-jpql-jpa -Dsonar.projectVersion=1.0 -Dsonar.projectKey=algaworks:artigo-destrinchando-jpql-jpa -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\algaworks#artigo-destrinchando-jpql-jpa" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1764,7 +1764,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\eitch#ch.eitchnet.dmedia.filestore\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=eitch#ch.eitchnet.dmedia.filestore -Dsonar.projectVersion=1.0 -Dsonar.projectKey=eitch:ch.eitchnet.dmedia.filestore -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\eitch#ch.eitchnet.dmedia.filestore" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=eitch#ch.eitchnet.dmedia.filestore -Dsonar.projectVersion=1.0 -Dsonar.projectKey=eitch:ch.eitchnet.dmedia.filestore -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\eitch#ch.eitchnet.dmedia.filestore" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1797,7 +1797,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\JakeWharton#DiskLruCache\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=JakeWharton#DiskLruCache -Dsonar.projectVersion=1.0 -Dsonar.projectKey=JakeWharton:DiskLruCache -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\JakeWharton#DiskLruCache" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=JakeWharton#DiskLruCache -Dsonar.projectVersion=1.0 -Dsonar.projectKey=JakeWharton:DiskLruCache -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\JakeWharton#DiskLruCache" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1830,7 +1830,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\lihengming#spring-boot-api-project-seed\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=lihengming#spring-boot-api-project-seed -Dsonar.projectVersion=1.0 -Dsonar.projectKey=lihengming:spring-boot-api-project-seed -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\lihengming#spring-boot-api-project-seed" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=lihengming#spring-boot-api-project-seed -Dsonar.projectVersion=1.0 -Dsonar.projectKey=lihengming:spring-boot-api-project-seed -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\lihengming#spring-boot-api-project-seed" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1863,7 +1863,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\b3log#solo\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=b3log#solo -Dsonar.projectVersion=1.0 -Dsonar.projectKey=b3log:solo -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\b3log#solo" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=b3log#solo -Dsonar.projectVersion=1.0 -Dsonar.projectKey=b3log:solo -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\b3log#solo" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1896,7 +1896,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\jtcl-project#jtcl\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jtcl-project#jtcl -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jtcl-project:jtcl -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jtcl-project#jtcl" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jtcl-project#jtcl -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jtcl-project:jtcl -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jtcl-project#jtcl" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1929,7 +1929,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\smartystreets#smartystreets-java-sdk\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=smartystreets#smartystreets-java-sdk -Dsonar.projectVersion=1.0 -Dsonar.projectKey=smartystreets:smartystreets-java-sdk -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\smartystreets#smartystreets-java-sdk" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=smartystreets#smartystreets-java-sdk -Dsonar.projectVersion=1.0 -Dsonar.projectKey=smartystreets:smartystreets-java-sdk -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\smartystreets#smartystreets-java-sdk" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1962,7 +1962,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\hprose#hprose-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=hprose#hprose-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=hprose:hprose-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\hprose#hprose-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=hprose#hprose-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=hprose:hprose-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\hprose#hprose-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -1995,7 +1995,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\bonnyfone#vectalign\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=bonnyfone#vectalign -Dsonar.projectVersion=1.0 -Dsonar.projectKey=bonnyfone:vectalign -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\bonnyfone#vectalign" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=bonnyfone#vectalign -Dsonar.projectVersion=1.0 -Dsonar.projectKey=bonnyfone:vectalign -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\bonnyfone#vectalign" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2028,7 +2028,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\HungNguyenUET#ServerSocketExample\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=HungNguyenUET#ServerSocketExample -Dsonar.projectVersion=1.0 -Dsonar.projectKey=HungNguyenUET:ServerSocketExample -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\HungNguyenUET#ServerSocketExample" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=HungNguyenUET#ServerSocketExample -Dsonar.projectVersion=1.0 -Dsonar.projectKey=HungNguyenUET:ServerSocketExample -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\HungNguyenUET#ServerSocketExample" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2061,7 +2061,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\java8#Java8InAction\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=java8#Java8InAction -Dsonar.projectVersion=1.0 -Dsonar.projectKey=java8:Java8InAction -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\java8#Java8InAction" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=java8#Java8InAction -Dsonar.projectVersion=1.0 -Dsonar.projectKey=java8:Java8InAction -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\java8#Java8InAction" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2094,7 +2094,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\tommyettinger#Gabber\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tommyettinger#Gabber -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tommyettinger:Gabber -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tommyettinger#Gabber" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tommyettinger#Gabber -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tommyettinger:Gabber -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tommyettinger#Gabber" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2127,7 +2127,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\anychart-integrations#java-spring-hibernate-mysql-template\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=anychart-integrations#java-spring-hibernate-mysql-template -Dsonar.projectVersion=1.0 -Dsonar.projectKey=anychart-integrations:java-spring-hibernate-mysql-template -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\anychart-integrations#java-spring-hibernate-mysql-template" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=anychart-integrations#java-spring-hibernate-mysql-template -Dsonar.projectVersion=1.0 -Dsonar.projectKey=anychart-integrations:java-spring-hibernate-mysql-template -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\anychart-integrations#java-spring-hibernate-mysql-template" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2160,7 +2160,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#easyexcel\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#easyexcel -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:easyexcel -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#easyexcel" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#easyexcel -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:easyexcel -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#easyexcel" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2193,7 +2193,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\floragunncom#search-guard\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=floragunncom#search-guard -Dsonar.projectVersion=1.0 -Dsonar.projectKey=floragunncom:search-guard -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\floragunncom#search-guard" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=floragunncom#search-guard -Dsonar.projectVersion=1.0 -Dsonar.projectKey=floragunncom:search-guard -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\floragunncom#search-guard" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2226,7 +2226,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\yellow013#polaris\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=yellow013#polaris -Dsonar.projectVersion=1.0 -Dsonar.projectKey=yellow013:polaris -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\yellow013#polaris" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=yellow013#polaris -Dsonar.projectVersion=1.0 -Dsonar.projectKey=yellow013:polaris -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\yellow013#polaris" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2259,7 +2259,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\55minutes#fiftyfive-util\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=55minutes#fiftyfive-util -Dsonar.projectVersion=1.0 -Dsonar.projectKey=55minutes:fiftyfive-util -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\55minutes#fiftyfive-util" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=55minutes#fiftyfive-util -Dsonar.projectVersion=1.0 -Dsonar.projectKey=55minutes:fiftyfive-util -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\55minutes#fiftyfive-util" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2292,7 +2292,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\jiyeking#java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jiyeking#java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jiyeking:java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jiyeking#java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jiyeking#java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jiyeking:java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jiyeking#java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2325,7 +2325,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\happylynx#fun-of-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=happylynx#fun-of-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=happylynx:fun-of-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\happylynx#fun-of-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=happylynx#fun-of-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=happylynx:fun-of-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\happylynx#fun-of-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2358,7 +2358,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\mcxiaoke#android-volley\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mcxiaoke#android-volley -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mcxiaoke:android-volley -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mcxiaoke#android-volley" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mcxiaoke#android-volley -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mcxiaoke:android-volley -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mcxiaoke#android-volley" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2391,7 +2391,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\titokone#titokone\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=titokone#titokone -Dsonar.projectVersion=1.0 -Dsonar.projectKey=titokone:titokone -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\titokone#titokone" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=titokone#titokone -Dsonar.projectVersion=1.0 -Dsonar.projectKey=titokone:titokone -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\titokone#titokone" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2424,7 +2424,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\WhiteMagic2014#live2d_api_java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=WhiteMagic2014#live2d_api_java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=WhiteMagic2014:live2d_api_java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\WhiteMagic2014#live2d_api_java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=WhiteMagic2014#live2d_api_java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=WhiteMagic2014:live2d_api_java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\WhiteMagic2014#live2d_api_java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2457,7 +2457,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\detectlanguage#detectlanguage-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=detectlanguage#detectlanguage-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=detectlanguage:detectlanguage-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\detectlanguage#detectlanguage-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=detectlanguage#detectlanguage-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=detectlanguage:detectlanguage-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\detectlanguage#detectlanguage-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2490,7 +2490,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\msteindorfer#criterion\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=msteindorfer#criterion -Dsonar.projectVersion=1.0 -Dsonar.projectKey=msteindorfer:criterion -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\msteindorfer#criterion" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=msteindorfer#criterion -Dsonar.projectVersion=1.0 -Dsonar.projectKey=msteindorfer:criterion -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\msteindorfer#criterion" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2523,7 +2523,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\databricks#learning-spark\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=databricks#learning-spark -Dsonar.projectVersion=1.0 -Dsonar.projectKey=databricks:learning-spark -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\databricks#learning-spark" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=databricks#learning-spark -Dsonar.projectVersion=1.0 -Dsonar.projectKey=databricks:learning-spark -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\databricks#learning-spark" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2556,7 +2556,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Wradgio#Jamlin\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Wradgio#Jamlin -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Wradgio:Jamlin -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Wradgio#Jamlin" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Wradgio#Jamlin -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Wradgio:Jamlin -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Wradgio#Jamlin" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2589,7 +2589,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\mateiw#littlebasic\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mateiw#littlebasic -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mateiw:littlebasic -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mateiw#littlebasic" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mateiw#littlebasic -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mateiw:littlebasic -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mateiw#littlebasic" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2622,7 +2622,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#transmittable-thread-local\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#transmittable-thread-local -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:transmittable-thread-local -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#transmittable-thread-local" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#transmittable-thread-local -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:transmittable-thread-local -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#transmittable-thread-local" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2655,7 +2655,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\NLPchina#elasticsearch-sql\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=NLPchina#elasticsearch-sql -Dsonar.projectVersion=1.0 -Dsonar.projectKey=NLPchina:elasticsearch-sql -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\NLPchina#elasticsearch-sql" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=NLPchina#elasticsearch-sql -Dsonar.projectVersion=1.0 -Dsonar.projectKey=NLPchina:elasticsearch-sql -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\NLPchina#elasticsearch-sql" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2688,7 +2688,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\metamx#java-util\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=metamx#java-util -Dsonar.projectVersion=1.0 -Dsonar.projectKey=metamx:java-util -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\metamx#java-util" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=metamx#java-util -Dsonar.projectVersion=1.0 -Dsonar.projectKey=metamx:java-util -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\metamx#java-util" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2721,7 +2721,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\BTCMarkets#sample-api-client-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=BTCMarkets#sample-api-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=BTCMarkets:sample-api-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\BTCMarkets#sample-api-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=BTCMarkets#sample-api-client-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=BTCMarkets:sample-api-client-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\BTCMarkets#sample-api-client-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2754,7 +2754,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\fasseg#exp4j\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=fasseg#exp4j -Dsonar.projectVersion=1.0 -Dsonar.projectKey=fasseg:exp4j -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\fasseg#exp4j" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=fasseg#exp4j -Dsonar.projectVersion=1.0 -Dsonar.projectKey=fasseg:exp4j -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\fasseg#exp4j" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2787,7 +2787,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\pfmiles#bytecode-lego\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pfmiles#bytecode-lego -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pfmiles:bytecode-lego -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pfmiles#bytecode-lego" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pfmiles#bytecode-lego -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pfmiles:bytecode-lego -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pfmiles#bytecode-lego" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2820,7 +2820,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\PhantomYdn#jlll\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=PhantomYdn#jlll -Dsonar.projectVersion=1.0 -Dsonar.projectKey=PhantomYdn:jlll -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\PhantomYdn#jlll" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=PhantomYdn#jlll -Dsonar.projectVersion=1.0 -Dsonar.projectKey=PhantomYdn:jlll -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\PhantomYdn#jlll" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2853,7 +2853,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Contargo#intermodal-domain\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Contargo#intermodal-domain -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Contargo:intermodal-domain -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Contargo#intermodal-domain" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Contargo#intermodal-domain -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Contargo:intermodal-domain -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Contargo#intermodal-domain" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2886,7 +2886,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\vmi#indylisp\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=vmi#indylisp -Dsonar.projectVersion=1.0 -Dsonar.projectKey=vmi:indylisp -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\vmi#indylisp" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=vmi#indylisp -Dsonar.projectVersion=1.0 -Dsonar.projectKey=vmi:indylisp -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\vmi#indylisp" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2919,7 +2919,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\pvdlg#enml4j\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pvdlg#enml4j -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pvdlg:enml4j -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pvdlg#enml4j" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pvdlg#enml4j -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pvdlg:enml4j -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pvdlg#enml4j" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2952,7 +2952,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\frohoff#inspector-gadget\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=frohoff#inspector-gadget -Dsonar.projectVersion=1.0 -Dsonar.projectKey=frohoff:inspector-gadget -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\frohoff#inspector-gadget" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=frohoff#inspector-gadget -Dsonar.projectVersion=1.0 -Dsonar.projectKey=frohoff:inspector-gadget -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\frohoff#inspector-gadget" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -2985,7 +2985,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\addthis#stream-lib\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=addthis#stream-lib -Dsonar.projectVersion=1.0 -Dsonar.projectKey=addthis:stream-lib -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\addthis#stream-lib" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=addthis#stream-lib -Dsonar.projectVersion=1.0 -Dsonar.projectKey=addthis:stream-lib -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\addthis#stream-lib" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3018,7 +3018,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\seintur#jmixer\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=seintur#jmixer -Dsonar.projectVersion=1.0 -Dsonar.projectKey=seintur:jmixer -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\seintur#jmixer" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=seintur#jmixer -Dsonar.projectVersion=1.0 -Dsonar.projectKey=seintur:jmixer -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\seintur#jmixer" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3051,7 +3051,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\ronmamo#reflections\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ronmamo#reflections -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ronmamo:reflections -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ronmamo#reflections" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ronmamo#reflections -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ronmamo:reflections -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ronmamo#reflections" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3084,7 +3084,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\anychart-integrations#java-jsp-jdbc-mysql-template\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=anychart-integrations#java-jsp-jdbc-mysql-template -Dsonar.projectVersion=1.0 -Dsonar.projectKey=anychart-integrations:java-jsp-jdbc-mysql-template -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\anychart-integrations#java-jsp-jdbc-mysql-template" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=anychart-integrations#java-jsp-jdbc-mysql-template -Dsonar.projectVersion=1.0 -Dsonar.projectKey=anychart-integrations:java-jsp-jdbc-mysql-template -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\anychart-integrations#java-jsp-jdbc-mysql-template" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3117,7 +3117,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\denysvitali#ifunny\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=denysvitali#ifunny -Dsonar.projectVersion=1.0 -Dsonar.projectKey=denysvitali:ifunny -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\denysvitali#ifunny" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=denysvitali#ifunny -Dsonar.projectVersion=1.0 -Dsonar.projectKey=denysvitali:ifunny -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\denysvitali#ifunny" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3150,7 +3150,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\jhy#jsoup\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jhy#jsoup -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jhy:jsoup -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jhy#jsoup" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jhy#jsoup -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jhy:jsoup -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jhy#jsoup" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3183,7 +3183,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\bytedeco#javacv\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=bytedeco#javacv -Dsonar.projectVersion=1.0 -Dsonar.projectKey=bytedeco:javacv -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\bytedeco#javacv" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=bytedeco#javacv -Dsonar.projectVersion=1.0 -Dsonar.projectKey=bytedeco:javacv -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\bytedeco#javacv" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3216,7 +3216,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\mrniko#netty-socketio\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mrniko#netty-socketio -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mrniko:netty-socketio -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mrniko#netty-socketio" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mrniko#netty-socketio -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mrniko:netty-socketio -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mrniko#netty-socketio" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3249,7 +3249,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\pvto#konte-art\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pvto#konte-art -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pvto:konte-art -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pvto#konte-art" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pvto#konte-art -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pvto:konte-art -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pvto#konte-art" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3282,7 +3282,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\code4craft#tiny-spring\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=code4craft#tiny-spring -Dsonar.projectVersion=1.0 -Dsonar.projectKey=code4craft:tiny-spring -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\code4craft#tiny-spring" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=code4craft#tiny-spring -Dsonar.projectVersion=1.0 -Dsonar.projectKey=code4craft:tiny-spring -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\code4craft#tiny-spring" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3315,7 +3315,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\crossoverJie#JCSprout\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=crossoverJie#JCSprout -Dsonar.projectVersion=1.0 -Dsonar.projectKey=crossoverJie:JCSprout -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\crossoverJie#JCSprout" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=crossoverJie#JCSprout -Dsonar.projectVersion=1.0 -Dsonar.projectKey=crossoverJie:JCSprout -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\crossoverJie#JCSprout" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3348,7 +3348,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\ortolanph#JavaBasicConcepts\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ortolanph#JavaBasicConcepts -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ortolanph:JavaBasicConcepts -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ortolanph#JavaBasicConcepts" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=ortolanph#JavaBasicConcepts -Dsonar.projectVersion=1.0 -Dsonar.projectKey=ortolanph:JavaBasicConcepts -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\ortolanph#JavaBasicConcepts" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3381,7 +3381,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\yunify#qingstor-sdk-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=yunify#qingstor-sdk-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=yunify:qingstor-sdk-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\yunify#qingstor-sdk-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=yunify#qingstor-sdk-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=yunify:qingstor-sdk-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\yunify#qingstor-sdk-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3414,7 +3414,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\brunocvcunha#mdmlang\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=brunocvcunha#mdmlang -Dsonar.projectVersion=1.0 -Dsonar.projectKey=brunocvcunha:mdmlang -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\brunocvcunha#mdmlang" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=brunocvcunha#mdmlang -Dsonar.projectVersion=1.0 -Dsonar.projectKey=brunocvcunha:mdmlang -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\brunocvcunha#mdmlang" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3447,7 +3447,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\doraig#jcef\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=doraig#jcef -Dsonar.projectVersion=1.0 -Dsonar.projectKey=doraig:jcef -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\doraig#jcef" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=doraig#jcef -Dsonar.projectVersion=1.0 -Dsonar.projectKey=doraig:jcef -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\doraig#jcef" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3480,7 +3480,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\trung#gauge-java-bridge\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=trung#gauge-java-bridge -Dsonar.projectVersion=1.0 -Dsonar.projectKey=trung:gauge-java-bridge -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\trung#gauge-java-bridge" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=trung#gauge-java-bridge -Dsonar.projectVersion=1.0 -Dsonar.projectKey=trung:gauge-java-bridge -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\trung#gauge-java-bridge" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3513,7 +3513,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Netflix#curator\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Netflix#curator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Netflix:curator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Netflix#curator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Netflix#curator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Netflix:curator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Netflix#curator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3546,7 +3546,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\pedrovgs#Algorithms\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pedrovgs#Algorithms -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pedrovgs:Algorithms -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pedrovgs#Algorithms" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pedrovgs#Algorithms -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pedrovgs:Algorithms -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pedrovgs#Algorithms" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3579,7 +3579,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\deephacks#streamql\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=deephacks#streamql -Dsonar.projectVersion=1.0 -Dsonar.projectKey=deephacks:streamql -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\deephacks#streamql" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=deephacks#streamql -Dsonar.projectVersion=1.0 -Dsonar.projectKey=deephacks:streamql -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\deephacks#streamql" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3612,7 +3612,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\lettuce-io#lettuce-core\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=lettuce-io#lettuce-core -Dsonar.projectVersion=1.0 -Dsonar.projectKey=lettuce-io:lettuce-core -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\lettuce-io#lettuce-core" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=lettuce-io#lettuce-core -Dsonar.projectVersion=1.0 -Dsonar.projectKey=lettuce-io:lettuce-core -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\lettuce-io#lettuce-core" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3645,7 +3645,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Anil-Adhikari#IMPL\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Anil-Adhikari#IMPL -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Anil-Adhikari:IMPL -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Anil-Adhikari#IMPL" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Anil-Adhikari#IMPL -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Anil-Adhikari:IMPL -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Anil-Adhikari#IMPL" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3678,7 +3678,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\codeforamerica#open311_java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=codeforamerica#open311_java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=codeforamerica:open311_java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\codeforamerica#open311_java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=codeforamerica#open311_java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=codeforamerica:open311_java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\codeforamerica#open311_java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3711,7 +3711,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\metamx#bytebuffer-collections\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=metamx#bytebuffer-collections -Dsonar.projectVersion=1.0 -Dsonar.projectKey=metamx:bytebuffer-collections -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\metamx#bytebuffer-collections" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=metamx#bytebuffer-collections -Dsonar.projectVersion=1.0 -Dsonar.projectKey=metamx:bytebuffer-collections -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\metamx#bytebuffer-collections" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3744,7 +3744,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\italiangrid#jdl-api-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=italiangrid#jdl-api-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=italiangrid:jdl-api-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\italiangrid#jdl-api-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=italiangrid#jdl-api-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=italiangrid:jdl-api-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\italiangrid#jdl-api-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3777,7 +3777,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\traccar#traccar\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=traccar#traccar -Dsonar.projectVersion=1.0 -Dsonar.projectKey=traccar:traccar -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\traccar#traccar" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=traccar#traccar -Dsonar.projectVersion=1.0 -Dsonar.projectKey=traccar:traccar -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\traccar#traccar" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3810,7 +3810,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\mbsambangi#aws-java-spring-cloud-function-demo\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mbsambangi#aws-java-spring-cloud-function-demo -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mbsambangi:aws-java-spring-cloud-function-demo -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mbsambangi#aws-java-spring-cloud-function-demo" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mbsambangi#aws-java-spring-cloud-function-demo -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mbsambangi:aws-java-spring-cloud-function-demo -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mbsambangi#aws-java-spring-cloud-function-demo" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3843,7 +3843,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Exrick#xpay\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Exrick#xpay -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Exrick:xpay -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Exrick#xpay" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Exrick#xpay -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Exrick:xpay -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Exrick#xpay" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3876,7 +3876,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\RichardWarburton#Monads-in-Java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=RichardWarburton#Monads-in-Java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=RichardWarburton:Monads-in-Java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\RichardWarburton#Monads-in-Java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=RichardWarburton#Monads-in-Java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=RichardWarburton:Monads-in-Java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\RichardWarburton#Monads-in-Java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3909,7 +3909,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\jelly-liu#NettyAuthorityServerDiscovery\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jelly-liu#NettyAuthorityServerDiscovery -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jelly-liu:NettyAuthorityServerDiscovery -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jelly-liu#NettyAuthorityServerDiscovery" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jelly-liu#NettyAuthorityServerDiscovery -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jelly-liu:NettyAuthorityServerDiscovery -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jelly-liu#NettyAuthorityServerDiscovery" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3942,7 +3942,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\NLPchina#ansj_seg\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=NLPchina#ansj_seg -Dsonar.projectVersion=1.0 -Dsonar.projectKey=NLPchina:ansj_seg -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\NLPchina#ansj_seg" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=NLPchina#ansj_seg -Dsonar.projectVersion=1.0 -Dsonar.projectKey=NLPchina:ansj_seg -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\NLPchina#ansj_seg" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -3975,7 +3975,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\timabilov#irequest\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=timabilov#irequest -Dsonar.projectVersion=1.0 -Dsonar.projectKey=timabilov:irequest -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\timabilov#irequest" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=timabilov#irequest -Dsonar.projectVersion=1.0 -Dsonar.projectKey=timabilov:irequest -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\timabilov#irequest" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4008,7 +4008,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\brettwooldridge#HikariCP\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=brettwooldridge#HikariCP -Dsonar.projectVersion=1.0 -Dsonar.projectKey=brettwooldridge:HikariCP -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\brettwooldridge#HikariCP" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=brettwooldridge#HikariCP -Dsonar.projectVersion=1.0 -Dsonar.projectKey=brettwooldridge:HikariCP -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\brettwooldridge#HikariCP" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4041,7 +4041,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\LEMS#jLEMS\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=LEMS#jLEMS -Dsonar.projectVersion=1.0 -Dsonar.projectKey=LEMS:jLEMS -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\LEMS#jLEMS" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=LEMS#jLEMS -Dsonar.projectVersion=1.0 -Dsonar.projectKey=LEMS:jLEMS -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\LEMS#jLEMS" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4074,7 +4074,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\tobykurien#Sparkler\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tobykurien#Sparkler -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tobykurien:Sparkler -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tobykurien#Sparkler" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tobykurien#Sparkler -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tobykurien:Sparkler -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tobykurien#Sparkler" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4107,7 +4107,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\aikar#locales\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=aikar#locales -Dsonar.projectVersion=1.0 -Dsonar.projectKey=aikar:locales -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\aikar#locales" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=aikar#locales -Dsonar.projectVersion=1.0 -Dsonar.projectKey=aikar:locales -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\aikar#locales" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4140,7 +4140,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Sparen#Spn-LangAgent\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Sparen#Spn-LangAgent -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Sparen:Spn-LangAgent -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Sparen#Spn-LangAgent" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Sparen#Spn-LangAgent -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Sparen:Spn-LangAgent -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Sparen#Spn-LangAgent" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4173,7 +4173,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\h2oai#h2o-2\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=h2oai#h2o-2 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=h2oai:h2o-2 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\h2oai#h2o-2" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=h2oai#h2o-2 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=h2oai:h2o-2 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\h2oai#h2o-2" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4206,7 +4206,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\klangner#ast-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=klangner#ast-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=klangner:ast-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\klangner#ast-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=klangner#ast-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=klangner:ast-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\klangner#ast-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4239,7 +4239,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\rapid7#le_java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=rapid7#le_java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=rapid7:le_java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\rapid7#le_java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=rapid7#le_java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=rapid7:le_java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\rapid7#le_java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4272,7 +4272,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\dmitry-izmerov#javaexamples\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=dmitry-izmerov#javaexamples -Dsonar.projectVersion=1.0 -Dsonar.projectKey=dmitry-izmerov:javaexamples -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\dmitry-izmerov#javaexamples" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=dmitry-izmerov#javaexamples -Dsonar.projectVersion=1.0 -Dsonar.projectKey=dmitry-izmerov:javaexamples -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\dmitry-izmerov#javaexamples" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4305,7 +4305,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\TooTallNate#Java-WebSocket\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=TooTallNate#Java-WebSocket -Dsonar.projectVersion=1.0 -Dsonar.projectKey=TooTallNate:Java-WebSocket -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\TooTallNate#Java-WebSocket" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=TooTallNate#Java-WebSocket -Dsonar.projectVersion=1.0 -Dsonar.projectKey=TooTallNate:Java-WebSocket -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\TooTallNate#Java-WebSocket" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4338,7 +4338,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\tf-bao#SemanticCutter\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tf-bao#SemanticCutter -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tf-bao:SemanticCutter -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tf-bao#SemanticCutter" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tf-bao#SemanticCutter -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tf-bao:SemanticCutter -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tf-bao#SemanticCutter" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4371,7 +4371,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\cbarbat#Mathematica-Parser\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=cbarbat#Mathematica-Parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=cbarbat:Mathematica-Parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\cbarbat#Mathematica-Parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=cbarbat#Mathematica-Parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=cbarbat:Mathematica-Parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\cbarbat#Mathematica-Parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4404,7 +4404,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\junit-team#junit4\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=junit-team#junit4 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=junit-team:junit4 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\junit-team#junit4" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=junit-team#junit4 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=junit-team:junit4 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\junit-team#junit4" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4437,7 +4437,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\incubos#ev3dev-lang-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=incubos#ev3dev-lang-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=incubos:ev3dev-lang-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\incubos#ev3dev-lang-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=incubos#ev3dev-lang-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=incubos:ev3dev-lang-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\incubos#ev3dev-lang-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4470,7 +4470,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\square#javapoet\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=square#javapoet -Dsonar.projectVersion=1.0 -Dsonar.projectKey=square:javapoet -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\square#javapoet" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=square#javapoet -Dsonar.projectVersion=1.0 -Dsonar.projectKey=square:javapoet -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\square#javapoet" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4503,7 +4503,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\jonathanhds#sql-builder\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jonathanhds#sql-builder -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jonathanhds:sql-builder -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jonathanhds#sql-builder" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jonathanhds#sql-builder -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jonathanhds:sql-builder -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jonathanhds#sql-builder" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4536,7 +4536,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\anod#TaxiStation\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=anod#TaxiStation -Dsonar.projectVersion=1.0 -Dsonar.projectKey=anod:TaxiStation -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\anod#TaxiStation" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=anod#TaxiStation -Dsonar.projectVersion=1.0 -Dsonar.projectKey=anod:TaxiStation -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\anod#TaxiStation" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4569,7 +4569,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\samtingleff#jchronic\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=samtingleff#jchronic -Dsonar.projectVersion=1.0 -Dsonar.projectKey=samtingleff:jchronic -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\samtingleff#jchronic" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=samtingleff#jchronic -Dsonar.projectVersion=1.0 -Dsonar.projectKey=samtingleff:jchronic -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\samtingleff#jchronic" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4602,7 +4602,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\difffate#JavaProject\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=difffate#JavaProject -Dsonar.projectVersion=1.0 -Dsonar.projectKey=difffate:JavaProject -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\difffate#JavaProject" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=difffate#JavaProject -Dsonar.projectVersion=1.0 -Dsonar.projectKey=difffate:JavaProject -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\difffate#JavaProject" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4635,7 +4635,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\snksoft#java-crc\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=snksoft#java-crc -Dsonar.projectVersion=1.0 -Dsonar.projectKey=snksoft:java-crc -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\snksoft#java-crc" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=snksoft#java-crc -Dsonar.projectVersion=1.0 -Dsonar.projectKey=snksoft:java-crc -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\snksoft#java-crc" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4668,7 +4668,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\SYSTRAN#nlp-api-java-client\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=SYSTRAN#nlp-api-java-client -Dsonar.projectVersion=1.0 -Dsonar.projectKey=SYSTRAN:nlp-api-java-client -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\SYSTRAN#nlp-api-java-client" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=SYSTRAN#nlp-api-java-client -Dsonar.projectVersion=1.0 -Dsonar.projectKey=SYSTRAN:nlp-api-java-client -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\SYSTRAN#nlp-api-java-client" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4701,7 +4701,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\gerryai#pddl-parser\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=gerryai#pddl-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=gerryai:pddl-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\gerryai#pddl-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=gerryai#pddl-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=gerryai:pddl-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\gerryai#pddl-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4734,7 +4734,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\citiususc#SimpleNLG-ES\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=citiususc#SimpleNLG-ES -Dsonar.projectVersion=1.0 -Dsonar.projectKey=citiususc:SimpleNLG-ES -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\citiususc#SimpleNLG-ES" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=citiususc#SimpleNLG-ES -Dsonar.projectVersion=1.0 -Dsonar.projectKey=citiususc:SimpleNLG-ES -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\citiususc#SimpleNLG-ES" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4767,7 +4767,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\vlingo#vlingo-actors\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=vlingo#vlingo-actors -Dsonar.projectVersion=1.0 -Dsonar.projectKey=vlingo:vlingo-actors -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\vlingo#vlingo-actors" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=vlingo#vlingo-actors -Dsonar.projectVersion=1.0 -Dsonar.projectKey=vlingo:vlingo-actors -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\vlingo#vlingo-actors" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4800,7 +4800,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\riversun#JavaCommentTranslator\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=riversun#JavaCommentTranslator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=riversun:JavaCommentTranslator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\riversun#JavaCommentTranslator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=riversun#JavaCommentTranslator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=riversun:JavaCommentTranslator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\riversun#JavaCommentTranslator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4833,7 +4833,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\igapyon#blancoApexFormatter\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=igapyon#blancoApexFormatter -Dsonar.projectVersion=1.0 -Dsonar.projectKey=igapyon:blancoApexFormatter -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\igapyon#blancoApexFormatter" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=igapyon#blancoApexFormatter -Dsonar.projectVersion=1.0 -Dsonar.projectKey=igapyon:blancoApexFormatter -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\igapyon#blancoApexFormatter" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4866,7 +4866,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\automate-website#waml-io\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=automate-website#waml-io -Dsonar.projectVersion=1.0 -Dsonar.projectKey=automate-website:waml-io -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\automate-website#waml-io" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=automate-website#waml-io -Dsonar.projectVersion=1.0 -Dsonar.projectKey=automate-website:waml-io -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\automate-website#waml-io" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4899,7 +4899,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\seaswalker#spring-analysis\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=seaswalker#spring-analysis -Dsonar.projectVersion=1.0 -Dsonar.projectKey=seaswalker:spring-analysis -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\seaswalker#spring-analysis" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=seaswalker#spring-analysis -Dsonar.projectVersion=1.0 -Dsonar.projectKey=seaswalker:spring-analysis -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\seaswalker#spring-analysis" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4932,7 +4932,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Saolga#DZ3\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Saolga#DZ3 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Saolga:DZ3 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Saolga#DZ3" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Saolga#DZ3 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Saolga:DZ3 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Saolga#DZ3" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4965,7 +4965,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\KellenSunderland#KenLMJava\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=KellenSunderland#KenLMJava -Dsonar.projectVersion=1.0 -Dsonar.projectKey=KellenSunderland:KenLMJava -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\KellenSunderland#KenLMJava" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=KellenSunderland#KenLMJava -Dsonar.projectVersion=1.0 -Dsonar.projectKey=KellenSunderland:KenLMJava -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\KellenSunderland#KenLMJava" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -4998,7 +4998,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\librato#librato-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=librato#librato-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=librato:librato-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\librato#librato-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=librato#librato-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=librato:librato-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\librato#librato-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5031,7 +5031,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\IsaacChanghau#LeetCode\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=IsaacChanghau#LeetCode -Dsonar.projectVersion=1.0 -Dsonar.projectKey=IsaacChanghau:LeetCode -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\IsaacChanghau#LeetCode" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=IsaacChanghau#LeetCode -Dsonar.projectVersion=1.0 -Dsonar.projectKey=IsaacChanghau:LeetCode -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\IsaacChanghau#LeetCode" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5064,7 +5064,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\zouzg#mybatis-generator-gui\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=zouzg#mybatis-generator-gui -Dsonar.projectVersion=1.0 -Dsonar.projectKey=zouzg:mybatis-generator-gui -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\zouzg#mybatis-generator-gui" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=zouzg#mybatis-generator-gui -Dsonar.projectVersion=1.0 -Dsonar.projectKey=zouzg:mybatis-generator-gui -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\zouzg#mybatis-generator-gui" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5097,7 +5097,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\nytta#cobia\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=nytta#cobia -Dsonar.projectVersion=1.0 -Dsonar.projectKey=nytta:cobia -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\nytta#cobia" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=nytta#cobia -Dsonar.projectVersion=1.0 -Dsonar.projectKey=nytta:cobia -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\nytta#cobia" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5130,7 +5130,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\spring-projects#spring-petclinic\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=spring-projects#spring-petclinic -Dsonar.projectVersion=1.0 -Dsonar.projectKey=spring-projects:spring-petclinic -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\spring-projects#spring-petclinic" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=spring-projects#spring-petclinic -Dsonar.projectVersion=1.0 -Dsonar.projectKey=spring-projects:spring-petclinic -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\spring-projects#spring-petclinic" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5163,7 +5163,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\hengxin#learning-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=hengxin#learning-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=hengxin:learning-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\hengxin#learning-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=hengxin#learning-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=hengxin:learning-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\hengxin#learning-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5196,7 +5196,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\binchencoder#java_study\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=binchencoder#java_study -Dsonar.projectVersion=1.0 -Dsonar.projectKey=binchencoder:java_study -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\binchencoder#java_study" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=binchencoder#java_study -Dsonar.projectVersion=1.0 -Dsonar.projectKey=binchencoder:java_study -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\binchencoder#java_study" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5229,7 +5229,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\checkstyle#checkstyle\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=checkstyle#checkstyle -Dsonar.projectVersion=1.0 -Dsonar.projectKey=checkstyle:checkstyle -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\checkstyle#checkstyle" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=checkstyle#checkstyle -Dsonar.projectVersion=1.0 -Dsonar.projectKey=checkstyle:checkstyle -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\checkstyle#checkstyle" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5262,7 +5262,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\dengyuhan#magnetW\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=dengyuhan#magnetW -Dsonar.projectVersion=1.0 -Dsonar.projectKey=dengyuhan:magnetW -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\dengyuhan#magnetW" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=dengyuhan#magnetW -Dsonar.projectVersion=1.0 -Dsonar.projectKey=dengyuhan:magnetW -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\dengyuhan#magnetW" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5295,7 +5295,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\medcl#elasticsearch-analysis-ik\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=medcl#elasticsearch-analysis-ik -Dsonar.projectVersion=1.0 -Dsonar.projectKey=medcl:elasticsearch-analysis-ik -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\medcl#elasticsearch-analysis-ik" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=medcl#elasticsearch-analysis-ik -Dsonar.projectVersion=1.0 -Dsonar.projectKey=medcl:elasticsearch-analysis-ik -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\medcl#elasticsearch-analysis-ik" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5328,7 +5328,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\agentgt#jatl\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=agentgt#jatl -Dsonar.projectVersion=1.0 -Dsonar.projectKey=agentgt:jatl -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\agentgt#jatl" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=agentgt#jatl -Dsonar.projectVersion=1.0 -Dsonar.projectKey=agentgt:jatl -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\agentgt#jatl" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5361,7 +5361,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\stylefeng#Guns\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=stylefeng#Guns -Dsonar.projectVersion=1.0 -Dsonar.projectKey=stylefeng:Guns -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\stylefeng#Guns" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=stylefeng#Guns -Dsonar.projectVersion=1.0 -Dsonar.projectKey=stylefeng:Guns -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\stylefeng#Guns" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5394,7 +5394,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\rpsl4j#rpsl4j-parser\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=rpsl4j#rpsl4j-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=rpsl4j:rpsl4j-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\rpsl4j#rpsl4j-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=rpsl4j#rpsl4j-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=rpsl4j:rpsl4j-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\rpsl4j#rpsl4j-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5427,7 +5427,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\skurski#antlr-java2c-translator\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=skurski#antlr-java2c-translator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=skurski:antlr-java2c-translator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\skurski#antlr-java2c-translator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=skurski#antlr-java2c-translator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=skurski:antlr-java2c-translator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\skurski#antlr-java2c-translator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5460,7 +5460,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\chaitanyajun12#java-features\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=chaitanyajun12#java-features -Dsonar.projectVersion=1.0 -Dsonar.projectKey=chaitanyajun12:java-features -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\chaitanyajun12#java-features" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=chaitanyajun12#java-features -Dsonar.projectVersion=1.0 -Dsonar.projectKey=chaitanyajun12:java-features -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\chaitanyajun12#java-features" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5493,7 +5493,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\lets-blade#blade\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=lets-blade#blade -Dsonar.projectVersion=1.0 -Dsonar.projectKey=lets-blade:blade -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\lets-blade#blade" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=lets-blade#blade -Dsonar.projectVersion=1.0 -Dsonar.projectKey=lets-blade:blade -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\lets-blade#blade" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5526,7 +5526,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\tozzr#graphql-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tozzr#graphql-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tozzr:graphql-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tozzr#graphql-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tozzr#graphql-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tozzr:graphql-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tozzr#graphql-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5559,7 +5559,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\tasubo#maven-jasmin-plugin\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tasubo#maven-jasmin-plugin -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tasubo:maven-jasmin-plugin -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tasubo#maven-jasmin-plugin" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=tasubo#maven-jasmin-plugin -Dsonar.projectVersion=1.0 -Dsonar.projectKey=tasubo:maven-jasmin-plugin -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\tasubo#maven-jasmin-plugin" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5592,7 +5592,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\xmlet#HtmlApi\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xmlet#HtmlApi -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xmlet:HtmlApi -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xmlet#HtmlApi" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xmlet#HtmlApi -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xmlet:HtmlApi -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xmlet#HtmlApi" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5625,7 +5625,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\joestelmach#natty\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=joestelmach#natty -Dsonar.projectVersion=1.0 -Dsonar.projectKey=joestelmach:natty -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\joestelmach#natty" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=joestelmach#natty -Dsonar.projectVersion=1.0 -Dsonar.projectKey=joestelmach:natty -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\joestelmach#natty" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5658,7 +5658,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\BoulCheng#JLS\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=BoulCheng#JLS -Dsonar.projectVersion=1.0 -Dsonar.projectKey=BoulCheng:JLS -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\BoulCheng#JLS" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=BoulCheng#JLS -Dsonar.projectVersion=1.0 -Dsonar.projectKey=BoulCheng:JLS -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\BoulCheng#JLS" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5691,7 +5691,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\kangyonggan#jcel\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=kangyonggan#jcel -Dsonar.projectVersion=1.0 -Dsonar.projectKey=kangyonggan:jcel -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\kangyonggan#jcel" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=kangyonggan#jcel -Dsonar.projectVersion=1.0 -Dsonar.projectKey=kangyonggan:jcel -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\kangyonggan#jcel" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5724,7 +5724,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\kevin-wayne#algs4\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=kevin-wayne#algs4 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=kevin-wayne:algs4 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\kevin-wayne#algs4" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=kevin-wayne#algs4 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=kevin-wayne:algs4 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\kevin-wayne#algs4" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5757,7 +5757,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\alexeygrigorev#JLP\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alexeygrigorev#JLP -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alexeygrigorev:JLP -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alexeygrigorev#JLP" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alexeygrigorev#JLP -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alexeygrigorev:JLP -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alexeygrigorev#JLP" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5790,7 +5790,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\julianhyde#linq4j\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=julianhyde#linq4j -Dsonar.projectVersion=1.0 -Dsonar.projectKey=julianhyde:linq4j -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\julianhyde#linq4j" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=julianhyde#linq4j -Dsonar.projectVersion=1.0 -Dsonar.projectKey=julianhyde:linq4j -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\julianhyde#linq4j" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5823,7 +5823,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Pwn9#PwnFilter\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Pwn9#PwnFilter -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Pwn9:PwnFilter -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Pwn9#PwnFilter" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Pwn9#PwnFilter -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Pwn9:PwnFilter -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Pwn9#PwnFilter" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5856,7 +5856,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\shred#jinn\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=shred#jinn -Dsonar.projectVersion=1.0 -Dsonar.projectKey=shred:jinn -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\shred#jinn" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=shred#jinn -Dsonar.projectVersion=1.0 -Dsonar.projectKey=shred:jinn -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\shred#jinn" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5889,7 +5889,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\VivekRagunathan#JINQ\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=VivekRagunathan#JINQ -Dsonar.projectVersion=1.0 -Dsonar.projectKey=VivekRagunathan:JINQ -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\VivekRagunathan#JINQ" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=VivekRagunathan#JINQ -Dsonar.projectVersion=1.0 -Dsonar.projectKey=VivekRagunathan:JINQ -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\VivekRagunathan#JINQ" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5922,7 +5922,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\hankcs#HanLP\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=hankcs#HanLP -Dsonar.projectVersion=1.0 -Dsonar.projectKey=hankcs:HanLP -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\hankcs#HanLP" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=hankcs#HanLP -Dsonar.projectVersion=1.0 -Dsonar.projectKey=hankcs:HanLP -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\hankcs#HanLP" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5955,7 +5955,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\liyifeng1994#ssm\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=liyifeng1994#ssm -Dsonar.projectVersion=1.0 -Dsonar.projectKey=liyifeng1994:ssm -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\liyifeng1994#ssm" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=liyifeng1994#ssm -Dsonar.projectVersion=1.0 -Dsonar.projectKey=liyifeng1994:ssm -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\liyifeng1994#ssm" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -5988,7 +5988,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\brunoribeiro#sql-parser\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=brunoribeiro#sql-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=brunoribeiro:sql-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\brunoribeiro#sql-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=brunoribeiro#sql-parser -Dsonar.projectVersion=1.0 -Dsonar.projectKey=brunoribeiro:sql-parser -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\brunoribeiro#sql-parser" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6021,7 +6021,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\alexismeneses#language-detection\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alexismeneses#language-detection -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alexismeneses:language-detection -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alexismeneses#language-detection" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alexismeneses#language-detection -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alexismeneses:language-detection -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alexismeneses#language-detection" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6054,7 +6054,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\FINRAOS#JTAF-XCore\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=FINRAOS#JTAF-XCore -Dsonar.projectVersion=1.0 -Dsonar.projectKey=FINRAOS:JTAF-XCore -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\FINRAOS#JTAF-XCore" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=FINRAOS#JTAF-XCore -Dsonar.projectVersion=1.0 -Dsonar.projectKey=FINRAOS:JTAF-XCore -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\FINRAOS#JTAF-XCore" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6087,7 +6087,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\simplenlg#simplenlg\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=simplenlg#simplenlg -Dsonar.projectVersion=1.0 -Dsonar.projectKey=simplenlg:simplenlg -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\simplenlg#simplenlg" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=simplenlg#simplenlg -Dsonar.projectVersion=1.0 -Dsonar.projectKey=simplenlg:simplenlg -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\simplenlg#simplenlg" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6120,7 +6120,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\perwendel#spark\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=perwendel#spark -Dsonar.projectVersion=1.0 -Dsonar.projectKey=perwendel:spark -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\perwendel#spark" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=perwendel#spark -Dsonar.projectVersion=1.0 -Dsonar.projectKey=perwendel:spark -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\perwendel#spark" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6153,7 +6153,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\iTransformers#expect4java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=iTransformers#expect4java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=iTransformers:expect4java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\iTransformers#expect4java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=iTransformers#expect4java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=iTransformers:expect4java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\iTransformers#expect4java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6186,7 +6186,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\eclipse-vertx#vert.x\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=eclipse-vertx#vert.x -Dsonar.projectVersion=1.0 -Dsonar.projectKey=eclipse-vertx:vert.x -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\eclipse-vertx#vert.x" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=eclipse-vertx#vert.x -Dsonar.projectVersion=1.0 -Dsonar.projectKey=eclipse-vertx:vert.x -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\eclipse-vertx#vert.x" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6219,7 +6219,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\dvare#dvare-framework\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=dvare#dvare-framework -Dsonar.projectVersion=1.0 -Dsonar.projectKey=dvare:dvare-framework -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\dvare#dvare-framework" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=dvare#dvare-framework -Dsonar.projectVersion=1.0 -Dsonar.projectKey=dvare:dvare-framework -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\dvare#dvare-framework" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6252,7 +6252,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Ethico#java-8-samples\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Ethico#java-8-samples -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Ethico:java-8-samples -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Ethico#java-8-samples" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Ethico#java-8-samples -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Ethico:java-8-samples -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Ethico#java-8-samples" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6285,7 +6285,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\jfinal#jfinal\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jfinal#jfinal -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jfinal:jfinal -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jfinal#jfinal" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jfinal#jfinal -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jfinal:jfinal -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jfinal#jfinal" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6318,7 +6318,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#TProfiler\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#TProfiler -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:TProfiler -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#TProfiler" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#TProfiler -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:TProfiler -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#TProfiler" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6351,7 +6351,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\monkeylearn#monkeylearn-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=monkeylearn#monkeylearn-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=monkeylearn:monkeylearn-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\monkeylearn#monkeylearn-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=monkeylearn#monkeylearn-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=monkeylearn:monkeylearn-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\monkeylearn#monkeylearn-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6384,7 +6384,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\TAKETODAY#today-expression\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=TAKETODAY#today-expression -Dsonar.projectVersion=1.0 -Dsonar.projectKey=TAKETODAY:today-expression -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\TAKETODAY#today-expression" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=TAKETODAY#today-expression -Dsonar.projectVersion=1.0 -Dsonar.projectKey=TAKETODAY:today-expression -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\TAKETODAY#today-expression" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6417,7 +6417,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\gkumar111#chess-game\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=gkumar111#chess-game -Dsonar.projectVersion=1.0 -Dsonar.projectKey=gkumar111:chess-game -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\gkumar111#chess-game" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=gkumar111#chess-game -Dsonar.projectVersion=1.0 -Dsonar.projectKey=gkumar111:chess-game -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\gkumar111#chess-game" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6450,7 +6450,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\xetorthio#jedis\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xetorthio#jedis -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xetorthio:jedis -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xetorthio#jedis" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xetorthio#jedis -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xetorthio:jedis -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xetorthio#jedis" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6483,7 +6483,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\google#binnavi\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=google#binnavi -Dsonar.projectVersion=1.0 -Dsonar.projectKey=google:binnavi -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\google#binnavi" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=google#binnavi -Dsonar.projectVersion=1.0 -Dsonar.projectKey=google:binnavi -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\google#binnavi" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6516,7 +6516,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\coobird#thumbnailator\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=coobird#thumbnailator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=coobird:thumbnailator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\coobird#thumbnailator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=coobird#thumbnailator -Dsonar.projectVersion=1.0 -Dsonar.projectKey=coobird:thumbnailator -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\coobird#thumbnailator" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6549,7 +6549,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\fiji#IJ_Robot\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=fiji#IJ_Robot -Dsonar.projectVersion=1.0 -Dsonar.projectKey=fiji:IJ_Robot -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\fiji#IJ_Robot" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=fiji#IJ_Robot -Dsonar.projectVersion=1.0 -Dsonar.projectKey=fiji:IJ_Robot -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\fiji#IJ_Robot" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6582,7 +6582,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\xmlet#RegexApi\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xmlet#RegexApi -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xmlet:RegexApi -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xmlet#RegexApi" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xmlet#RegexApi -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xmlet:RegexApi -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xmlet#RegexApi" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6615,7 +6615,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\eatnumber1#javautil\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=eatnumber1#javautil -Dsonar.projectVersion=1.0 -Dsonar.projectKey=eatnumber1:javautil -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\eatnumber1#javautil" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=eatnumber1#javautil -Dsonar.projectVersion=1.0 -Dsonar.projectKey=eatnumber1:javautil -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\eatnumber1#javautil" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6648,7 +6648,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#fastjson\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#fastjson -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:fastjson -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#fastjson" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#fastjson -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:fastjson -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#fastjson" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6681,7 +6681,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\btiernay#elasticsearch-lang-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=btiernay#elasticsearch-lang-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=btiernay:elasticsearch-lang-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\btiernay#elasticsearch-lang-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=btiernay#elasticsearch-lang-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=btiernay:elasticsearch-lang-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\btiernay#elasticsearch-lang-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6714,7 +6714,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\samskivert#jmustache\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=samskivert#jmustache -Dsonar.projectVersion=1.0 -Dsonar.projectKey=samskivert:jmustache -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\samskivert#jmustache" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=samskivert#jmustache -Dsonar.projectVersion=1.0 -Dsonar.projectKey=samskivert:jmustache -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\samskivert#jmustache" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6747,7 +6747,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\HarendraKumarSingh#openNLP\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=HarendraKumarSingh#openNLP -Dsonar.projectVersion=1.0 -Dsonar.projectKey=HarendraKumarSingh:openNLP -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\HarendraKumarSingh#openNLP" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=HarendraKumarSingh#openNLP -Dsonar.projectVersion=1.0 -Dsonar.projectKey=HarendraKumarSingh:openNLP -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\HarendraKumarSingh#openNLP" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6780,7 +6780,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\fabianishere#brainfuck-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=fabianishere#brainfuck-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=fabianishere:brainfuck-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\fabianishere#brainfuck-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=fabianishere#brainfuck-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=fabianishere:brainfuck-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\fabianishere#brainfuck-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6813,7 +6813,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\b3log#symphony\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=b3log#symphony -Dsonar.projectVersion=1.0 -Dsonar.projectKey=b3log:symphony -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\b3log#symphony" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=b3log#symphony -Dsonar.projectVersion=1.0 -Dsonar.projectKey=b3log:symphony -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\b3log#symphony" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6846,7 +6846,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\idris-hackers#idris-java-rts\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=idris-hackers#idris-java-rts -Dsonar.projectVersion=1.0 -Dsonar.projectKey=idris-hackers:idris-java-rts -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\idris-hackers#idris-java-rts" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=idris-hackers#idris-java-rts -Dsonar.projectVersion=1.0 -Dsonar.projectKey=idris-hackers:idris-java-rts -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\idris-hackers#idris-java-rts" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6879,7 +6879,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Aunmag#shooter\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Aunmag#shooter -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Aunmag:shooter -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Aunmag#shooter" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Aunmag#shooter -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Aunmag:shooter -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Aunmag#shooter" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6912,7 +6912,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\jsolve#sweetener\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jsolve#sweetener -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jsolve:sweetener -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jsolve#sweetener" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jsolve#sweetener -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jsolve:sweetener -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jsolve#sweetener" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6945,7 +6945,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#QLExpress\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#QLExpress -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:QLExpress -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#QLExpress" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=alibaba#QLExpress -Dsonar.projectVersion=1.0 -Dsonar.projectKey=alibaba:QLExpress -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\alibaba#QLExpress" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -6978,7 +6978,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Anniepoo#JavaPengine\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Anniepoo#JavaPengine -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Anniepoo:JavaPengine -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Anniepoo#JavaPengine" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Anniepoo#JavaPengine -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Anniepoo:JavaPengine -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Anniepoo#JavaPengine" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7011,7 +7011,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\automenta#genifer-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=automenta#genifer-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=automenta:genifer-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\automenta#genifer-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=automenta#genifer-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=automenta:genifer-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\automenta#genifer-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7044,7 +7044,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\georgewfraser#java-language-server\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=georgewfraser#java-language-server -Dsonar.projectVersion=1.0 -Dsonar.projectKey=georgewfraser:java-language-server -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\georgewfraser#java-language-server" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=georgewfraser#java-language-server -Dsonar.projectVersion=1.0 -Dsonar.projectKey=georgewfraser:java-language-server -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\georgewfraser#java-language-server" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7077,7 +7077,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\spotinst#spotinst-sdk-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=spotinst#spotinst-sdk-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=spotinst:spotinst-sdk-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\spotinst#spotinst-sdk-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=spotinst#spotinst-sdk-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=spotinst:spotinst-sdk-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\spotinst#spotinst-sdk-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7110,7 +7110,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\fquirin#java-nlu-tools\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=fquirin#java-nlu-tools -Dsonar.projectVersion=1.0 -Dsonar.projectKey=fquirin:java-nlu-tools -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\fquirin#java-nlu-tools" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=fquirin#java-nlu-tools -Dsonar.projectVersion=1.0 -Dsonar.projectKey=fquirin:java-nlu-tools -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\fquirin#java-nlu-tools" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7143,7 +7143,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\pvto#java-sort-experiments\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pvto#java-sort-experiments -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pvto:java-sort-experiments -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pvto#java-sort-experiments" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pvto#java-sort-experiments -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pvto:java-sort-experiments -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pvto#java-sort-experiments" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7176,7 +7176,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\mybatis#mybatis-3\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mybatis#mybatis-3 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mybatis:mybatis-3 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mybatis#mybatis-3" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=mybatis#mybatis-3 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=mybatis:mybatis-3 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\mybatis#mybatis-3" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7209,7 +7209,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\xiyj#learning.java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xiyj#learning.java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xiyj:learning.java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xiyj#learning.java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=xiyj#learning.java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=xiyj:learning.java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\xiyj#learning.java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7242,7 +7242,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\rjeschke#weel\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=rjeschke#weel -Dsonar.projectVersion=1.0 -Dsonar.projectKey=rjeschke:weel -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\rjeschke#weel" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=rjeschke#weel -Dsonar.projectVersion=1.0 -Dsonar.projectKey=rjeschke:weel -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\rjeschke#weel" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7275,7 +7275,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\JakeWharton#RxRelay\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=JakeWharton#RxRelay -Dsonar.projectVersion=1.0 -Dsonar.projectKey=JakeWharton:RxRelay -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\JakeWharton#RxRelay" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=JakeWharton#RxRelay -Dsonar.projectVersion=1.0 -Dsonar.projectKey=JakeWharton:RxRelay -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\JakeWharton#RxRelay" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7308,7 +7308,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\neo4j-contrib#cypher-dsl\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=neo4j-contrib#cypher-dsl -Dsonar.projectVersion=1.0 -Dsonar.projectKey=neo4j-contrib:cypher-dsl -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\neo4j-contrib#cypher-dsl" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=neo4j-contrib#cypher-dsl -Dsonar.projectVersion=1.0 -Dsonar.projectKey=neo4j-contrib:cypher-dsl -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\neo4j-contrib#cypher-dsl" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7341,7 +7341,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\commoncrawl#language-detection-cld2\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=commoncrawl#language-detection-cld2 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=commoncrawl:language-detection-cld2 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\commoncrawl#language-detection-cld2" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=commoncrawl#language-detection-cld2 -Dsonar.projectVersion=1.0 -Dsonar.projectKey=commoncrawl:language-detection-cld2 -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\commoncrawl#language-detection-cld2" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7374,7 +7374,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\Javauto#javauto-core\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Javauto#javauto-core -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Javauto:javauto-core -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Javauto#javauto-core" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=Javauto#javauto-core -Dsonar.projectVersion=1.0 -Dsonar.projectKey=Javauto:javauto-core -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\Javauto#javauto-core" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7407,7 +7407,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\MyCATApache#Mycat-Server\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=MyCATApache#Mycat-Server -Dsonar.projectVersion=1.0 -Dsonar.projectKey=MyCATApache:Mycat-Server -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\MyCATApache#Mycat-Server" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=MyCATApache#Mycat-Server -Dsonar.projectVersion=1.0 -Dsonar.projectKey=MyCATApache:Mycat-Server -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\MyCATApache#Mycat-Server" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7440,7 +7440,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\pfmiles#kan-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pfmiles#kan-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pfmiles:kan-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pfmiles#kan-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pfmiles#kan-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pfmiles:kan-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pfmiles#kan-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7473,7 +7473,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\szerhusenBC#jwt-spring-security-demo\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=szerhusenBC#jwt-spring-security-demo -Dsonar.projectVersion=1.0 -Dsonar.projectKey=szerhusenBC:jwt-spring-security-demo -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\szerhusenBC#jwt-spring-security-demo" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=szerhusenBC#jwt-spring-security-demo -Dsonar.projectVersion=1.0 -Dsonar.projectKey=szerhusenBC:jwt-spring-security-demo -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\szerhusenBC#jwt-spring-security-demo" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7506,7 +7506,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\romildo#picnic-java\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=romildo#picnic-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=romildo:picnic-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\romildo#picnic-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=romildo#picnic-java -Dsonar.projectVersion=1.0 -Dsonar.projectKey=romildo:picnic-java -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\romildo#picnic-java" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7539,7 +7539,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\jacksonCLyu#javalearning\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jacksonCLyu#javalearning -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jacksonCLyu:javalearning -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jacksonCLyu#javalearning" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=jacksonCLyu#javalearning -Dsonar.projectVersion=1.0 -Dsonar.projectKey=jacksonCLyu:javalearning -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\jacksonCLyu#javalearning" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7572,7 +7572,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\pagehelper#Mybatis-PageHelper\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pagehelper#Mybatis-PageHelper -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pagehelper:Mybatis-PageHelper -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pagehelper#Mybatis-PageHelper" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=pagehelper#Mybatis-PageHelper -Dsonar.projectVersion=1.0 -Dsonar.projectKey=pagehelper:Mybatis-PageHelper -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\pagehelper#Mybatis-PageHelper" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (
@@ -7605,7 +7605,7 @@ echo Git Command Success
  IF %ERRORLEVEL% EQU 0 IF EXIST ALLPROJECTS\NEW_MAVEN_PROJECTS\abel533#MyBatis-Spring-Boot\target\jacoco.exec ( 
 echo Maven Compilation Command Success And Jacoco Repoprt Success 
 @echo off 
- Set var=call "C:\sonar-scanner-cli-4.0.0.1744-windows\sonar-scanner-4.0.0.1744-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=abel533#MyBatis-Spring-Boot -Dsonar.projectVersion=1.0 -Dsonar.projectKey=abel533:MyBatis-Spring-Boot -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\VirtualUser\Documents\Maven\SWT2_Projekt\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\abel533#MyBatis-Spring-Boot" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
+ Set var=call "C:\sonar-scanner-cli-3.3.0.1492-windows\sonar-scanner-3.3.0.1492-windows\bin\sonar-scanner.bat" -Dsonar.host.url=http://localhost:9000/ -Dsonar.projectName=abel533#MyBatis-Spring-Boot -Dsonar.projectVersion=1.0 -Dsonar.projectKey=abel533:MyBatis-Spring-Boot -Dsonar.java.binaries=target/classes  -Dsonar.java.test.binaries=target/test-classes -Dsonar.tests=src/test/java -Dsonar.sources=src/main/java "-Dsonar.projectBaseDir=C:\Users\wfozing\Documents\Maven\SonarTest\WORKINGDIRECTORY\BatFiles\ALLPROJECTS\NEW_MAVEN_PROJECTS\abel533#MyBatis-Spring-Boot" -Dsonar.java.coveragePlugin=jacoco -Dsonar.jacoco.reportPath=target/jacoco.exec  -Dsonar.login=admin -Dsonar.password=admin
  echo executing SonarTest Commmand Line:!var! 
  !var! 
 IF %ERRORLEVEL% EQU 0 (

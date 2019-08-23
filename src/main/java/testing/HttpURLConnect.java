@@ -47,7 +47,7 @@ public class HttpURLConnect {
 	
 	private String coberturaPluginGradleDownloadedProjectDirectory = getDownloadedProject()+"/GRADLE/COBERTURA";
 	
-	private String sonnarScannerBatFileLocation="C:\\sonar-scanner-cli-4.0.0.1744-windows\\sonar-scanner-4.0.0.1744-windows\\bin\\sonar-scanner.bat";
+	private String sonnarScannerBatFileLocation="C:\\sonar-scanner-cli-3.3.0.1492-windows\\sonar-scanner-3.3.0.1492-windows\\bin\\sonar-scanner.bat";
 	
 	private String jacocoAgentFileLocation="C:\\jacoco-maven-plugin-0.8.3\\jacoco-maven-plugin-0.8.3.jar";
 	

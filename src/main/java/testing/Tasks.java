@@ -315,13 +315,13 @@ public class Tasks {
 			System.out.println("Directory " + checkWorkingGitBatDirectory + " already exists");
 		}
 
-		/*
-		 * nextUtils.creatingGitCommandLine();
-		 * 
-		 * nextUtils.creatingMavenPlugingJacocoAndCoberturaCompileCommandLine();
-		 * 
-		 * nextUtils.creatingGradlePlugingJacocoAndCoberturaCompileCommandLine();
-		 */
+		
+		  nextUtils.creatingGitCommandLine();
+		  
+		  nextUtils.creatingMavenPlugingJacocoAndCoberturaCompileCommandLine();
+		  
+		  nextUtils.creatingGradlePlugingJacocoAndCoberturaCompileCommandLine();
+		 
 
 		nextUtils.creatingMavenAndGradlePlugingJacocoAndCoberturaSonartestCommandLine();
 		
@@ -424,9 +424,11 @@ public class Tasks {
 		 
 		 List<Map<String, String>> allComponents=new ArrayList<Map<String, String>>();
 		 
-	        String[] sheetTitle={"PROJECTNAME", "BRANCH_COVERAGE", "LINE_COVERAGE","COVERAGE","TESTS","CODE_SMELLS","MAINTAINABILITY_RATING ","TECHNICAL_DEBT","DUPLICATED_LINES","DUPLICATED_LINES_DENSITY (%)","LINES","BUGS","RELIABILITY_RATING","RELIABILITY_REMEDIATION_EFFORT","COMPLEXITY,VULNERABILITIES,SECURITY_REMEDIATION_EFFORT"};
+	        String[] sheetTitle={"PROJECTNAME", "BRANCH_COVERAGE", "LINE_COVERAGE","COVERAGE","TESTS","CODE_SMELLS","SQALE_RATING","SQALE_INDEX","DUPLICATED_LINES","DUPLICATED_LINES_DENSITY","LINES","BUGS","RELIABILITY_RATING","RELIABILITY_REMEDIATION_EFFORT","COMPLEXITY","VULNERABILITIES","SECURITY_REMEDIATION_EFFORT"};
 
-		 
+	        String[] sheetRawTitle={"PROJECTNAME", "BRANCH_COVERAGE", "LINE_COVERAGE","COVERAGE","TESTS","CODE_SMELLS","MAINTAINABILITY RATING","TECHNICAL_DEBT","DUPLICATED_LINES","DUPLICATED_LINES_DENSITY (%)","LINES","BUGS","RELIABILITY_RATING","RELIABILITY_REMEDIATION_EFFORT","COMPLEXITY","VULNERABILITIES","SECURITY_REMEDIATION_EFFORT"};
+
+	        
 		 for (int i=0;i<myComponents.components.size();i++) {
 			 
 			 
@@ -456,12 +458,19 @@ public class Tasks {
 					
 					System.out.println("Number of Metrics:"+myMetrics.component.measures.size());
 					
+					for (int j=1;j<sheetTitle.length;j++) {
+						  
+						  data.put(sheetTitle[j], "0");
+						  System.out.println("Initialising -->"+sheetTitle[j]+":"+
+						  data.get(sheetTitle[j])); }
 					
 					  for (int j=0;j<myMetrics.component.measures.size();j++) {
 					  
 					  data.put(myMetrics.component.measures.get(j).metric.toUpperCase(), myMetrics.component.measures.get(j).value);
 					  System.out.println(myMetrics.component.measures.get(j).metric.toUpperCase()+":"+
 					  myMetrics.component.measures.get(j).value); }
+					  
+					  
 					 
 				
 					allComponents.add(data);
@@ -493,9 +502,9 @@ public class Tasks {
 	        Cell myCell;
 	        System.out.println("adding Title");
 	        
-	        for(int k=0;k<sheetTitle.length;k++) {
+	        for(int k=0;k<sheetRawTitle.length;k++) {
 	        	myCell=myRow.createCell(cellNum++);
-	        	myCell.setCellValue(sheetTitle[k]);
+	        	myCell.setCellValue(sheetRawTitle[k]);
 	        }
 	        
 	        
@@ -510,11 +519,11 @@ public class Tasks {
 		        	if(allComponents.get(i).get(sheetTitle[k])!=null) {
 		        	
 		        	if(k>0){
-		        		System.out.println("adding Number Value:"+Float.parseFloat(allComponents.get(i).get(sheetTitle[k]))+" \t in cell:"+rowNum+"->"+cellNum);
+		        		System.out.println("metric:"+sheetTitle[k]+"-->adding Number Value:"+Float.parseFloat(allComponents.get(i).get(sheetTitle[k]))+" \t in cell:"+rowNum+"->"+cellNum);
 		        		myCell.setCellValue(Float.parseFloat(allComponents.get(i).get(sheetTitle[k])));
 		        	}
 		        	else {
-		        		System.out.println("adding Text Value:"+allComponents.get(i).get(sheetTitle[k])+"\t in cell:"+rowNum+"->"+cellNum);
+		        		System.out.println("metric:"+sheetTitle[k]+"adding Text Value:"+allComponents.get(i).get(sheetTitle[k])+"\t in cell:"+rowNum+"->"+cellNum);
 		        	myCell.setCellValue(allComponents.get(i).get(sheetTitle[k]));
 		        	}
 		        	
