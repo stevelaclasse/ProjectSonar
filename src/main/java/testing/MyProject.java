@@ -3,19 +3,19 @@ package testing;
 import java.util.List;
 
 public class MyProject {
-String full_name;
+	String full_name;
 //String html_url;
 }
 
-class MyProject2{
-List<MyProject> items ;		
+class MyProject2 {
+	List<MyProject> items;
 }
 
-class MyRepositories{
-String url ;		
+class MyRepositories {
+	String url;
 }
 
-class MyProject1{
+class MyProject1 {
 	List<MyRepositories> repositories;
 }
 
@@ -25,31 +25,31 @@ class PagingInformations {
 	int total;
 }
 
-class SonarQubeComponents{
+class SonarQubeComponents {
 	String id;
 	String key;
 	String name;
 }
 
-class AllComponentsSonarQube{
+class AllComponentsSonarQube {
 	PagingInformations paging;
 	List<SonarQubeComponents> components;
 }
 
-class ComponentInformation{
-    String id;
-    String key;
-    String name;
-    List<Metrics> measures;
+class ComponentInformation {
+	String id;
+	String key;
+	String name;
+	List<Metrics> measures;
 }
 
-class Metrics{
-	
+class Metrics {
+
 	String metric;
 	String value;
-	
+
 }
 
-class MetricsValues{
+class MetricsValues {
 	ComponentInformation component;
 }

@@ -8,140 +8,152 @@ import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
 
-
 //import javax.net.ssl.HttpsURLConnection;
 
 public class HttpURLConnect {
 
 	private final String USER_AGENT = "Mozilla/5.0";
 
-	//private final String base_url = "https://gitlab.com/api/v4/";
-	
-	private  String base_url ="https://api.github.com";
-	
-	private String workingDirectory="WORKINGDIRECTORY";
-	
-	private String batDirectory=getWorkingDirectory()+"/BatFiles";
-	
-	//private String gitBatDirectory=getBatDirectory()+"/GIT";
-	
-	//private String mavenBatDirectory=getBatDirectory()+"/MAVEN";
-	
-	//private String gradleBatDirectory=getBatDirectory()+"/GRADLE";
+	// private final String base_url = "https://gitlab.com/api/v4/";
 
-	private String gitBatDirectory=getBatDirectory()+"";
-	
-	private String mavenBatDirectory=getBatDirectory()+"";
-	
-	private String gradleBatDirectory=getBatDirectory()+"";
-	
-	private String downloadedProject = getBatDirectory()+"/ALLPROJECTS";
-	
-	private String mavenGoodStruturedDownloadedProjectDirectory = getDownloadedProject()+"/NEW_MAVEN_PROJECTS";
-	
-	private String jacocoPluginMavenDownloadedProjectDirectory = getDownloadedProject()+"/MAVEN/JACOCO";
-	
-	private String jacocoPluginGradleDownloadedProjectDirectory = getDownloadedProject()+"/GRADLE/JACOCO";
-	
-	private String coberturaPluginMavenDownloadedProjectDirectory = getDownloadedProject()+"/MAVEN/COBERTURA";
-	
-	private String coberturaPluginGradleDownloadedProjectDirectory = getDownloadedProject()+"/GRADLE/COBERTURA";
-	
-	private String sonnarScannerBatFileLocation="C:\\sonar-scanner-cli-3.3.0.1492-windows\\sonar-scanner-3.3.0.1492-windows\\bin\\sonar-scanner.bat";
-	
-	private String jacocoAgentFileLocation="C:\\jacoco-maven-plugin-0.8.3\\jacoco-maven-plugin-0.8.3.jar";
-	
+	private String base_url = "https://api.github.com";
 
+	private String workingDirectory = "WORKINGDIRECTORY";
 
-	private String langageJavaUrlsFileName=getWorkingDirectory()+"/langageJavaUrls.txt";
-	
+	private String batDirectory = getWorkingDirectory() + "/BatFiles";
 
-	private String mavenProjectUrlsFileName=getWorkingDirectory()+"/mavenProjectUrls.txt";
-	
-	private String gradleProjectUrlsFileName=getWorkingDirectory()+"/gradleProjectUrls.txt";
-	
-	private String excelResultsFileName=getWorkingDirectory()+"/excelResultsFileName.xlsx";
-	
+	// private String gitBatDirectory=getBatDirectory()+"/GIT";
 
-	private String jacocoPluginProjectMavenFileName=getWorkingDirectory()+"/JacocoPluginProjectMaven.txt";
-	
-	private String jacocoPluginProjectGradleFileName=getWorkingDirectory()+"/JacocoPluginProjectGradle.txt";
-	
-	private String coberturaPluginProjectGradleFileName=getWorkingDirectory()+"/CoberturaPluginProjectGradle.txt";
-	
-	private String coberturaPluginProjectMavenFileName=getWorkingDirectory()+"/CoberturaPluginProjectMaven.txt";
-	
-	private String mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName=getWorkingDirectory()+"/mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName.txt";
-	
-	private String mavenExploitableProjectUniqueGitCompileAndSonarTestFileName=getWorkingDirectory()+"/mavenExploitableProjectUniqueGitCompileAndSonarTestFileName.txt";
-	
-	private String jacocoPluginProjectMavenGoodCompiledProjectFilename=getBatDirectory()+"/JacocoPluginProjectMavenGoodCompiledProjectFilename.txt";
-	
-	private String jacocoPluginProjectGradleGoodCompiledProjectFilename=getBatDirectory()+"/JacocoPluginProjectGradleGoodCompiledProjectFilename.txt";
-	
-	private String CoberturaPluginProjectMavenGoodCompiledProjectFilename=getBatDirectory()+"/CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt";
-	
-	private String CoberturaPluginProjectGradleGoodCompiledProjectFilename=getBatDirectory()+"/CoberturaPluginProjectGradleGoodCompiledProjectFilename.txt";
-	
-	private String gitGoodDownloadedProjectFileName=getBatDirectory()+"/GitGoodDownloadedProjectFilename.txt";
-	
-	private String jacocoPluginProjectMavenGoodSonarTestFilename=getBatDirectory()+"/JacocoPluginProjectMavenGoodSonarTestFilename.txt";
-	
-	private String jacocoPluginProjectGradleGoodSonarTestFilename=getBatDirectory()+"/JacocoPluginProjectGradleGoodSonarTestFilename.txt";
-	
-	private String CoberturaPluginProjectMavenGoodSonarTestFilename=getBatDirectory()+"/CoberturaPluginProjectMavenGoodSonarTestFilename.txt";
-	
-	private String CoberturaPluginProjectGradleGoodSonarTestFilename=getBatDirectory()+"/CoberturaPluginProjectGradleGoodSonarTestFilename.txt";
-	
-	private String mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine = getBatDirectory()+"/mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine.bat";
+	// private String mavenBatDirectory=getBatDirectory()+"/MAVEN";
 
-	private String jacocoPluginProjectMavenGitCommandLineBatFileName=getGitBatDirectory()+"/JacocoPluginProjectMavenGitCommandLineBat.bat";
-	
-	private String jacocoPluginProjectGradleGitCommandLineBatFileName=getGitBatDirectory()+"/JacocoPluginProjectGradleGitCommandLineBat.bat";
-	
-	private String coberturaPluginProjectGradleGitCommandLineBatFileName=getGitBatDirectory()+"/CoberturaPluginProjectGradleGitCommandLineBat.bat";
-	
-	private String coberturaPluginProjectMavenGitCommandLineBatFileName=getGitBatDirectory()+"/CoberturaPluginProjectMavenGitCommandLineBat.bat";
-	
-	
-	private String jacocoPluginProjectMavenCompileCommandLineBatFilename=getMavenBatDirectory()+"/jacocoPluginProjectMavenCompileCommandLineBat.bat";
+	// private String gradleBatDirectory=getBatDirectory()+"/GRADLE";
 
-	private String coberturaPluginProjectMavenCompileCommandLineBatFilename=getMavenBatDirectory()+"/coberturaPluginProjectMavenCompileCommandLineBat.bat";
-	
-	private String jacocoPluginProjectGradleCompileCommandLineBatFilename=getGradleBatDirectory()+"/jacocoPluginProjectGradleCompileCommandLineBat.bat";
-	
-	private String coberturaPluginProjectGradleCompileCommandLineBatFilename=getGradleBatDirectory()+"/coberturaPluginProjectGradleCompileCommandLineBat.bat";
-	
-	
-	private String jacocoPluginProjectMavenSonarTestCommandLineBatFilename=getMavenBatDirectory()+"/jacocoPluginProjectMavenSonarTestCommandLineBat.bat";
+	private String gitBatDirectory = getBatDirectory() + "";
 
-	private String coberturaPluginProjectMavenSonarTestCommandLineBatFilename=getMavenBatDirectory()+"/coberturaPluginProjectMavenSonarTestCommandLineBat.bat";
-	
-	private String jacocoPluginProjectGradleSonarTestCommandLineBatFilename=getGradleBatDirectory()+"/jacocoPluginProjectGradleSonarTestCommandLineBat.bat";
-	
-	private String coberturaPluginProjectGradleSonarTestCommandLineBatFilename=getGradleBatDirectory()+"/coberturaPluginProjectGradleSonarTestCommandLineBat.bat";
-	
-	private int urlPage=1;
-	private int urlPerPage=100;
-	private int since=100;
+	private String mavenBatDirectory = getBatDirectory() + "";
 
+	private String gradleBatDirectory = getBatDirectory() + "";
+
+	private String downloadedProject = getBatDirectory() + "/ALLPROJECTS";
+
+	private String mavenGoodStruturedDownloadedProjectDirectory = getDownloadedProject() + "/NEW_MAVEN_PROJECTS";
+
+	private String jacocoPluginMavenDownloadedProjectDirectory = getDownloadedProject() + "/MAVEN/JACOCO";
+
+	private String jacocoPluginGradleDownloadedProjectDirectory = getDownloadedProject() + "/GRADLE/JACOCO";
+
+	private String coberturaPluginMavenDownloadedProjectDirectory = getDownloadedProject() + "/MAVEN/COBERTURA";
+
+	private String coberturaPluginGradleDownloadedProjectDirectory = getDownloadedProject() + "/GRADLE/COBERTURA";
+
+	private String sonnarScannerBatFileLocation = "C:\\sonar-scanner-cli-3.3.0.1492-windows\\sonar-scanner-3.3.0.1492-windows\\bin\\sonar-scanner.bat";
+
+	private String jacocoAgentFileLocation = "C:\\jacoco-maven-plugin-0.8.3\\jacoco-maven-plugin-0.8.3.jar";
+
+	private String langageJavaUrlsFileName = getWorkingDirectory() + "/langageJavaUrls.txt";
+
+	private String mavenProjectUrlsFileName = getWorkingDirectory() + "/mavenProjectUrls.txt";
+
+	private String gradleProjectUrlsFileName = getWorkingDirectory() + "/gradleProjectUrls.txt";
+
+	private String excelResultsFileName = getWorkingDirectory() + "/excelResultsFileName.xlsx";
+
+	private String jacocoPluginProjectMavenFileName = getWorkingDirectory() + "/JacocoPluginProjectMaven.txt";
+
+	private String jacocoPluginProjectGradleFileName = getWorkingDirectory() + "/JacocoPluginProjectGradle.txt";
+
+	private String coberturaPluginProjectGradleFileName = getWorkingDirectory() + "/CoberturaPluginProjectGradle.txt";
+
+	private String coberturaPluginProjectMavenFileName = getWorkingDirectory() + "/CoberturaPluginProjectMaven.txt";
+
+	private String mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName = getWorkingDirectory()
+			+ "/mavenGoodStruturedProjectUniqueGitCompileAndSonarTestFileName.txt";
+
+	private String mavenExploitableProjectUniqueGitCompileAndSonarTestFileName = getWorkingDirectory()
+			+ "/mavenExploitableProjectUniqueGitCompileAndSonarTestFileName.txt";
+
+	private String jacocoPluginProjectMavenGoodCompiledProjectFilename = getBatDirectory()
+			+ "/JacocoPluginProjectMavenGoodCompiledProjectFilename.txt";
+
+	private String jacocoPluginProjectGradleGoodCompiledProjectFilename = getBatDirectory()
+			+ "/JacocoPluginProjectGradleGoodCompiledProjectFilename.txt";
+
+	private String CoberturaPluginProjectMavenGoodCompiledProjectFilename = getBatDirectory()
+			+ "/CoberturaPluginProjectMavenGoodCompiledProjectFilename.txt";
+
+	private String CoberturaPluginProjectGradleGoodCompiledProjectFilename = getBatDirectory()
+			+ "/CoberturaPluginProjectGradleGoodCompiledProjectFilename.txt";
+
+	private String gitGoodDownloadedProjectFileName = getBatDirectory() + "/GitGoodDownloadedProjectFilename.txt";
+
+	private String jacocoPluginProjectMavenGoodSonarTestFilename = getBatDirectory()
+			+ "/JacocoPluginProjectMavenGoodSonarTestFilename.txt";
+
+	private String jacocoPluginProjectGradleGoodSonarTestFilename = getBatDirectory()
+			+ "/JacocoPluginProjectGradleGoodSonarTestFilename.txt";
+
+	private String CoberturaPluginProjectMavenGoodSonarTestFilename = getBatDirectory()
+			+ "/CoberturaPluginProjectMavenGoodSonarTestFilename.txt";
+
+	private String CoberturaPluginProjectGradleGoodSonarTestFilename = getBatDirectory()
+			+ "/CoberturaPluginProjectGradleGoodSonarTestFilename.txt";
+
+	private String mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine = getBatDirectory()
+			+ "/mavenGoodStruturedProjectUniqueGitCompileAndSonarTestCommandLine.bat";
+
+	private String jacocoPluginProjectMavenGitCommandLineBatFileName = getGitBatDirectory()
+			+ "/JacocoPluginProjectMavenGitCommandLineBat.bat";
+
+	private String jacocoPluginProjectGradleGitCommandLineBatFileName = getGitBatDirectory()
+			+ "/JacocoPluginProjectGradleGitCommandLineBat.bat";
+
+	private String coberturaPluginProjectGradleGitCommandLineBatFileName = getGitBatDirectory()
+			+ "/CoberturaPluginProjectGradleGitCommandLineBat.bat";
+
+	private String coberturaPluginProjectMavenGitCommandLineBatFileName = getGitBatDirectory()
+			+ "/CoberturaPluginProjectMavenGitCommandLineBat.bat";
+
+	private String jacocoPluginProjectMavenCompileCommandLineBatFilename = getMavenBatDirectory()
+			+ "/jacocoPluginProjectMavenCompileCommandLineBat.bat";
+
+	private String coberturaPluginProjectMavenCompileCommandLineBatFilename = getMavenBatDirectory()
+			+ "/coberturaPluginProjectMavenCompileCommandLineBat.bat";
+
+	private String jacocoPluginProjectGradleCompileCommandLineBatFilename = getGradleBatDirectory()
+			+ "/jacocoPluginProjectGradleCompileCommandLineBat.bat";
+
+	private String coberturaPluginProjectGradleCompileCommandLineBatFilename = getGradleBatDirectory()
+			+ "/coberturaPluginProjectGradleCompileCommandLineBat.bat";
+
+	private String jacocoPluginProjectMavenSonarTestCommandLineBatFilename = getMavenBatDirectory()
+			+ "/jacocoPluginProjectMavenSonarTestCommandLineBat.bat";
+
+	private String coberturaPluginProjectMavenSonarTestCommandLineBatFilename = getMavenBatDirectory()
+			+ "/coberturaPluginProjectMavenSonarTestCommandLineBat.bat";
+
+	private String jacocoPluginProjectGradleSonarTestCommandLineBatFilename = getGradleBatDirectory()
+			+ "/jacocoPluginProjectGradleSonarTestCommandLineBat.bat";
+
+	private String coberturaPluginProjectGradleSonarTestCommandLineBatFilename = getGradleBatDirectory()
+			+ "/coberturaPluginProjectGradleSonarTestCommandLineBat.bat";
+
+	private int urlPage = 1;
+	private int urlPerPage = 100;
+	private int since = 100;
 
 	private String path = "";
-	
-	private String path1 = "/search/repositories?q=language:java&page=";
-	
-	private String path2="/legacy/repos/search/language=java?start_page=";
 
-	private String access_token="c818b41a65cf9e388083a466b6a6e33a27697ff7";
-	
-	private String sonarHosturl="http://localhost:9000/";
-	
-	private String sonarServerUser="admin";
-	
-	private String sonarServerPassword="admin";
-	
-	
-	
+	private String path1 = "/search/repositories?q=language:java&page=";
+
+	private String path2 = "/legacy/repos/search/language=java?start_page=";
+
+	private String access_token = "c818b41a65cf9e388083a466b6a6e33a27697ff7";
+
+	private String sonarHosturl = "http://localhost:9000/";
+
+	private String sonarServerUser = "admin";
+
+	private String sonarServerPassword = "admin";
 
 	public String getExcelResultsFileName() {
 		return excelResultsFileName;
@@ -198,7 +210,7 @@ public class HttpURLConnect {
 	public void setWorkingDirectory(String workingDirectory) {
 		this.workingDirectory = workingDirectory;
 	}
-	
+
 	public String getBatDirectory() {
 		return batDirectory;
 	}
@@ -230,9 +242,7 @@ public class HttpURLConnect {
 	public void setGradleBatDirectory(String gradleBatDirectory) {
 		this.gradleBatDirectory = gradleBatDirectory;
 	}
-	
-	
-	
+
 	public int getSince() {
 		return since;
 	}
@@ -240,7 +250,7 @@ public class HttpURLConnect {
 	public void setSince(int since) {
 		this.since = since;
 	}
-	
+
 	protected String getBase_url() {
 		return base_url;
 	}
@@ -248,32 +258,31 @@ public class HttpURLConnect {
 	protected void setBase_url(String base_url) {
 		this.base_url = base_url;
 	}
-	
+
 	protected void setPath(String strPath) {
-		this.path=strPath;
+		this.path = strPath;
 	}
-	
+
 	protected void setPath2(String strPath) {
-		this.path2=strPath;
+		this.path2 = strPath;
 	}
-	
+
 	protected void setPath1(String strPath) {
-		this.path1=strPath;
+		this.path1 = strPath;
 	}
-	
+
 	protected String getPath() {
 		return path;
 	}
-	
-	
+
 	protected String getPath1() {
 		return path1;
 	}
-	
+
 	protected String getPath2() {
 		return path2;
 	}
-	
+
 	protected int getUrlPage() {
 		return this.urlPage;
 	}
@@ -289,7 +298,6 @@ public class HttpURLConnect {
 	protected void setUrlPerPage(int urlPerPage) {
 		this.urlPerPage = urlPerPage;
 	}
-
 
 	public String getLangageJavaUrlsFileName() {
 		return langageJavaUrlsFileName;
@@ -307,7 +315,6 @@ public class HttpURLConnect {
 		this.mavenProjectUrlsFileName = mavenProjectUrls;
 	}
 
-	
 	public String getGradleProjectUrlsFileName() {
 		return gradleProjectUrlsFileName;
 	}
@@ -331,8 +338,7 @@ public class HttpURLConnect {
 	public void setJacocoPluginProjectGradleFileName(String jacocoPluginProjectGradle) {
 		this.jacocoPluginProjectGradleFileName = jacocoPluginProjectGradle;
 	}
-	
-	
+
 	public String getCoberturaPluginProjectGradleFileName() {
 		return coberturaPluginProjectGradleFileName;
 	}
@@ -348,9 +354,7 @@ public class HttpURLConnect {
 	public void setCoberturaPluginProjectMavenFileName(String coberturaPluginProjectMaven) {
 		this.coberturaPluginProjectMavenFileName = coberturaPluginProjectMaven;
 	}
-	
-	
-	
+
 	public String getJacocoPluginProjectMavenGoodSonarTestFilename() {
 		return jacocoPluginProjectMavenGoodSonarTestFilename;
 	}
@@ -363,7 +367,8 @@ public class HttpURLConnect {
 		return jacocoPluginProjectGradleGoodSonarTestFilename;
 	}
 
-	public void setJacocoPluginProjectGradleGoodSonarTestFilename(String jacocoPluginProjectGradleGoodSonarTestFilename) {
+	public void setJacocoPluginProjectGradleGoodSonarTestFilename(
+			String jacocoPluginProjectGradleGoodSonarTestFilename) {
 		this.jacocoPluginProjectGradleGoodSonarTestFilename = jacocoPluginProjectGradleGoodSonarTestFilename;
 	}
 
@@ -420,8 +425,6 @@ public class HttpURLConnect {
 			String coberturaPluginProjectGradleGoodCompiledProjectFilename) {
 		CoberturaPluginProjectGradleGoodCompiledProjectFilename = coberturaPluginProjectGradleGoodCompiledProjectFilename;
 	}
-	
-	
 
 	public String getGitGoodDownloadedProjectFileName() {
 		return gitGoodDownloadedProjectFileName;
@@ -462,11 +465,7 @@ public class HttpURLConnect {
 	public void setCoberturaPluginProjectMavenGitCommandLineBatFileName(String coberturaPluginProjectMavenBat) {
 		this.coberturaPluginProjectMavenGitCommandLineBatFileName = coberturaPluginProjectMavenBat;
 	}
-	
-	
-	
-	
-	
+
 	public String getMavenExploitableProjectUniqueGitCompileAndSonarTestFileName() {
 		return mavenExploitableProjectUniqueGitCompileAndSonarTestFileName;
 	}
@@ -586,7 +585,6 @@ public class HttpURLConnect {
 		this.coberturaPluginProjectGradleCompileCommandLineBatFilename = coberturaPluginProjectGradleCompileCommandLineBatFilename;
 	}
 
-	
 	public String getJacocoPluginProjectMavenSonarTestCommandLineBatFilename() {
 		return jacocoPluginProjectMavenSonarTestCommandLineBatFilename;
 	}
@@ -626,13 +624,13 @@ public class HttpURLConnect {
 	// HTTP GET request
 	protected HttpURLConnection sendGet() throws Exception {
 
-		//String path = "projects/?with_programming_language=java";
-		//String path = "/repositories?since=100&language:java";
-		
-		String url = getBase_url()+ getPath();
-		
-		System.out.println("Url in function SendGet:"+url);
-		
+		// String path = "projects/?with_programming_language=java";
+		// String path = "/repositories?since=100&language:java";
+
+		String url = getBase_url() + getPath();
+
+		System.out.println("Url in function SendGet:" + url);
+
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
@@ -678,7 +676,5 @@ public class HttpURLConnect {
 		return con;
 
 	}
-
-
 
 }

@@ -27,6 +27,6 @@ public class App
     	//myProgramm.extractingProjectsFromGithub();
     	myProgramm.createBatCommandForGitDownloadAndCompilationAndSonartest();
     	//myProgramm.launchBatCommandInBatFiles();
-    	myProgramm.extractingAnalyseResultsFromSonarQubeServerIntoExcelFile();
+    	//myProgramm.extractingAnalyseResultsFromSonarQubeServerIntoExcelFile();
     }
 }
